@@ -6,6 +6,8 @@ import { PROJECTS, getProjectBySlug } from '@/lib/projects';
 import SectionLabel from '@/components/ui/SectionLabel';
 import ProjectGallery from '@/components/projects/ProjectGallery';
 
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+
 export async function generateStaticParams() {
   return PROJECTS.map((p) => ({ slug: p.slug }));
 }
@@ -14,9 +16,37 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
   if (!project) return { title: 'Project Not Found | Clay and Bricks' };
+
+  const title = `${project.title} — ${project.category} Architecture & Interiors | Clay and Bricks`;
+  const description = `${project.brief} Located in ${project.location}. Turnkey execution by Clay and Bricks, Bhubaneswar.`;
+  const canonical = `/projects/${project.slug}`;
+
   return {
-    title: `${project.title} — ${project.category} | Clay and Bricks`,
-    description: project.brief,
+    title,
+    description,
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://clayandbricks.com${canonical}`,
+      type: 'article',
+      images: [
+        {
+          url: project.cover,
+          width: 1200,
+          height: 800,
+          alt: `${project.title} — ${project.category} in ${project.location}`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [project.cover],
+    },
   };
 }
 
@@ -32,6 +62,25 @@ export default async function ProjectDetailPage({ params }) {
   const currentIndex = PROJECTS.findIndex((p) => p.slug === slug);
   const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
+  const projectSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name: project.title,
+    headline: `${project.title} — ${project.category} Architecture & Interiors in ${project.location}`,
+    description: project.brief,
+    image: project.cover.startsWith('http') ? project.cover : `https://clayandbricks.com${project.cover}`,
+    creator: {
+      '@type': 'Organization',
+      name: 'Clay and Bricks Pvt Ltd',
+      url: 'https://clayandbricks.com',
+    },
+    locationCreated: {
+      '@type': 'Place',
+      name: project.location,
+    },
+    temporalCoverage: project.year,
+  };
+
   return (
     <article
       style={{
@@ -42,6 +91,17 @@ export default async function ProjectDetailPage({ params }) {
         color: 'var(--off-white)',
       }}
     >
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Projects', url: '/projects' },
+          { name: project.title, url: `/projects/${project.slug}` },
+        ]}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchema) }}
+      />
       {/* Top Breadcrumb & Navigation */}
       <div className="page-pad" style={{ marginBottom: '32px' }}>
         <Link

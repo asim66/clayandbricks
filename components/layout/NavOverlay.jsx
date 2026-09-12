@@ -356,15 +356,39 @@ export default function NavOverlay({ isOpen, onClose }) {
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.7)' }}>
                     <Phone size={14} color="var(--gold)" />
-                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.78rem', fontWeight: 300 }}>
-                      +91 94370 00000 / +91 70080 00000
-                    </span>
+                    <a
+                      href="tel:+918867355661"
+                      style={{
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '0.78rem',
+                        fontWeight: 300,
+                        color: 'inherit',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = 'inherit')}
+                    >
+                      +91 88673 55661
+                    </a>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.7)' }}>
                     <Mail size={14} color="var(--gold)" />
-                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.78rem', fontWeight: 300 }}>
-                      contact@clayandbricks.com
-                    </span>
+                    <a
+                      href="mailto:hi.clayandbricks@gmail.com"
+                      style={{
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '0.78rem',
+                        fontWeight: 300,
+                        color: 'inherit',
+                        textDecoration: 'none',
+                        transition: 'color 0.2s ease',
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = 'inherit')}
+                    >
+                      hi.clayandbricks@gmail.com
+                    </a>
                   </div>
                 </div>
 

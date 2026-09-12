@@ -21,20 +21,71 @@ const dmSans = DM_Sans({
   display:  'swap',
 });
 
+import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://clayandbricks.com';
+
 export const metadata = {
+  metadataBase: new URL(baseUrl),
+  alternates: {
+    canonical: '/',
+  },
   title: {
     template: '%s | Clay and Bricks — Luxury Interiors, Bhubaneswar',
     default:  'Clay and Bricks Pvt Ltd | Luxury Interiors & Construction — Bhubaneswar',
   },
   description:
-    'Award-winning luxury interior design and premium construction services in Bhubaneswar, Odisha. Spaces crafted for those who demand perfection.',
-  keywords: 'luxury interior design Bhubaneswar, premium construction Odisha, Clay and Bricks, interior designer Odisha',
+    'Award-winning luxury interior design, architectural planning, and premium turnkey construction services in Bhubaneswar, Odisha. Spaces crafted for those who demand perfection.',
+  keywords: [
+    'luxury interior design Bhubaneswar',
+    'interior designers in Bhubaneswar',
+    'best interior designer in Bhubaneswar',
+    'architects in Bhubaneswar',
+    'turnkey interior contractor Bhubaneswar',
+    'turnkey home construction Bhubaneswar',
+    'civil contractors in Bhubaneswar',
+    'house construction contractors in Bhubaneswar',
+    'modular kitchen design Bhubaneswar',
+    'duplex interior designers in Bhubaneswar',
+    'villa architecture Bhubaneswar',
+    'commercial interior designers Bhubaneswar',
+    'Clay and Bricks',
+    'interior designer Odisha',
+    'Patia interior designers',
+    'Saheed Nagar architects',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title:       'Clay and Bricks Pvt Ltd | Luxury Interiors',
-    description: 'We Build Your Dream House · Crafted spaces. Curated lives.',
+    title:       'Clay and Bricks Pvt Ltd | Luxury Architecture & Turnkey Interiors',
+    description: 'We Build Your Dream House · Odisha’s premier turnkey architectural design and civil construction studio in Bhubaneswar.',
+    url:         baseUrl,
+    siteName:    'Clay and Bricks',
     locale:      'en_IN',
     type:        'website',
-    images:      ['/logo.png'],
+    images: [
+      {
+        url:    '/hero-bg.jpg',
+        width:  1200,
+        height: 630,
+        alt:    'Clay and Bricks Luxury Architecture and Interiors — Bhubaneswar',
+      },
+    ],
+  },
+  twitter: {
+    card:        'summary_large_image',
+    title:       'Clay and Bricks Pvt Ltd | Luxury Architecture & Turnkey Interiors',
+    description: 'Odisha’s premier turnkey architectural design and civil construction studio in Bhubaneswar.',
+    images:      ['/hero-bg.jpg'],
   },
   icons: {
     icon:  '/logo.svg',
@@ -52,6 +103,7 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <body>
+        <LocalBusinessSchema />
         <MagneticCursor />
         <Header />
 

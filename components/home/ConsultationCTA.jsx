@@ -109,7 +109,7 @@ export default function ConsultationCTA() {
           </Link>
 
           <a
-            href="https://wa.me/919437000000"
+            href="https://wa.me/918867355661"
             target="_blank"
             rel="noopener noreferrer"
             data-cursor-expand
@@ -152,7 +152,7 @@ export default function ConsultationCTA() {
               Studio Address
             </span>
             <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(242,237,232,0.7)', fontWeight: 300, lineHeight: 1.5 }}>
-              Jharpada, Cuttack-Puri Road, Bhubaneswar, Odisha 751006
+              Plot No. 400/3226/6837, Lane 1, Mahadev Nagar, Jharpada, Bhubaneswar 751006
             </p>
           </div>
 
@@ -161,7 +161,15 @@ export default function ConsultationCTA() {
               Direct Telephony
             </span>
             <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(242,237,232,0.7)', fontWeight: 300, lineHeight: 1.5 }}>
-              +91 94370 00000 · Mon–Sat 9:30 AM to 7:30 PM
+              <a
+                href="tel:+918867355661"
+                style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = 'inherit')}
+              >
+                +91 88673 55661
+              </a>
+              {' '}· Mon–Sat 10:00 AM to 7:30 PM
             </p>
           </div>
 
@@ -170,7 +178,14 @@ export default function ConsultationCTA() {
               Email Inquiries
             </span>
             <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(242,237,232,0.7)', fontWeight: 300, lineHeight: 1.5 }}>
-              contact@clayandbricks.com
+              <a
+                href="mailto:hi.clayandbricks@gmail.com"
+                style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.2s ease' }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = 'inherit')}
+              >
+                hi.clayandbricks@gmail.com
+              </a>
             </p>
           </div>
         </div>
