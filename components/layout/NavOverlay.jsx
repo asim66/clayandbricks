@@ -448,10 +448,16 @@ export default function NavOverlay({ isOpen, onClose }) {
               Clay & Bricks · Luxury Architecture & Turnkey Interiors · Odisha
             </p>
             <div style={{ display: 'flex', gap: '20px' }}>
-              {['Instagram', 'LinkedIn', 'WhatsApp'].map((s) => (
+              {[
+                { name: 'Instagram', href: 'https://www.instagram.com/clayandbricks' },
+                { name: 'LinkedIn', href: 'https://www.linkedin.com/company/clayandbricks' },
+                { name: 'WhatsApp', href: 'https://wa.me/918867355661' },
+              ].map((item) => (
                 <a
-                  key={s}
-                  href="#"
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     fontFamily: 'var(--font-sans)',
                     fontSize: '0.58rem',
@@ -464,7 +470,7 @@ export default function NavOverlay({ isOpen, onClose }) {
                   onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
                   onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.4)')}
                 >
-                  {s}
+                  {item.name}
                 </a>
               ))}
             </div>
