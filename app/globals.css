@@ -1,0 +1,214 @@
+@import "tailwindcss";
+/* Google Fonts loaded via next/font in layout.js — no CSS @import needed */
+
+/* ─── Design Tokens ─────────────────────────────────── */
+:root {
+  --charcoal: #1a1917;
+  --charcoal-light: #2d2b28;
+  --off-white: #f2ede8;
+  --cream: #ede7dc;
+  --gold: #b8975a;
+  --gold-light: #d4b27a;
+  --terracotta: #c1714f;
+  --muted-text: #8a8278;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+}
+
+/* ─── Reset & Base ───────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: clamp(14px, 1.1vw, 18px);
+  background-color: var(--charcoal);
+  color: var(--off-white);
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 300;
+  background-color: var(--charcoal);
+  color: var(--off-white);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* ─── Lenis smooth scroll ────────────────────────────── */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+/* ─── Custom Magnetic Cursor ─────────────────────────── */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--gold);
+  border-radius: 50%;
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(184, 151, 90, 0.6);
+  border-radius: 50%;
+  position: fixed;
+  top: 0; left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease, border-color 0.3s ease;
+}
+
+.cursor-ring.expanded {
+  width: 80px;
+  height: 80px;
+  border-color: rgba(184, 151, 90, 0.3);
+}
+
+/* ─── Typography Utilities ───────────────────────────── */
+.font-serif { font-family: var(--font-serif); }
+.font-sans  { font-family: var(--font-sans); }
+
+/* ─── Clip masks for text reveals ───────────────────── */
+.clip-text {
+  overflow: hidden;
+  display: block;
+}
+
+/* ─── Noise texture overlay ──────────────────────────── */
+.noise-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--charcoal); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+/* ─── Selection ──────────────────────────────────────── */
+/* ─── Selection ──────────────────────────────────────── */
+::selection { background: var(--gold); color: var(--charcoal); }
+
+/* ─── Native View Transitions (Next.js 16 / React 19) ── */
+/*
+ * Laterite Red curtain wipe between routes.
+ * ::view-transition-new(root) slides in from the bottom,
+ * ::view-transition-old(root) slides out upward.
+ */
+@keyframes vt-slide-in {
+  from { clip-path: inset(100% 0 0 0); }
+  to   { clip-path: inset(0 0 0 0);   }
+}
+@keyframes vt-slide-out {
+  from { clip-path: inset(0 0 0 0);   opacity: 1; }
+  to   { clip-path: inset(0 0 100% 0); opacity: 0; }
+}
+
+::view-transition-old(root) {
+  animation: vt-slide-out 0.55s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+::view-transition-new(root) {
+  animation: vt-slide-in 0.55s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  background: var(--terracotta);
+}
+::view-transition {
+  pointer-events: none;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(*),
+  ::view-transition-new(*),
+  ::view-transition-group(*) {
+    animation-duration: 0s !important;
+    animation-delay:    0s !important;
+  }
+}
+
+/* ─── Page padding utility ───────────────────────────── */
+.page-pad {
+  padding-left:  clamp(24px, 6vw, 96px);
+  padding-right: clamp(24px, 6vw, 96px);
+}
+
+/* ─── Masonry grid (Projects) ────────────────────────── */
+.masonry-grid {
+  columns:    3;
+  gap:        clamp(12px, 2vw, 24px);
+}
+@media (max-width: 900px) { .masonry-grid { columns: 2; } }
+@media (max-width: 540px) { .masonry-grid { columns: 1; } }
+.masonry-item { break-inside: avoid; margin-bottom: clamp(12px, 2vw, 24px); }
+
+/* ─── Floating label inputs ──────────────────────────── */
+.float-field {
+  position: relative;
+  border-bottom: 1px solid rgba(242,237,232,0.18);
+  padding-bottom: 14px;
+  margin-bottom: 36px;
+}
+.float-field input,
+.float-field textarea {
+  background:    transparent;
+  border:        none;
+  outline:       none;
+  color:         var(--off-white);
+  font-family:   var(--font-sans);
+  font-weight:   300;
+  font-size:     clamp(0.9rem, 1.5vw, 1.05rem);
+  letter-spacing: 0.02em;
+  width:         100%;
+  padding:       20px 0 0;
+  resize:        none;
+  cursor:        none;
+}
+.float-field label {
+  position:       absolute;
+  top:            20px;
+  left:           0;
+  font-family:    var(--font-sans);
+  font-size:      0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color:          rgba(242,237,232,0.35);
+  pointer-events: none;
+  transition:     top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+.float-field input:focus ~ label,
+.float-field input:not(:placeholder-shown) ~ label,
+.float-field textarea:focus ~ label,
+.float-field textarea:not(:placeholder-shown) ~ label {
+  top:       0;
+  font-size: 0.54rem;
+  color:     var(--gold);
+}
+.float-field::after {
+  content:        '';
+  position:       absolute;
+  bottom:         -1px;
+  left:           0;
+  width:          0%;
+  height:         1px;
+  background:     var(--gold);
+  transition:     width 0.4s ease;
+}
+.float-field:focus-within::after { width: 100%; }
+
