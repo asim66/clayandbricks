@@ -128,7 +128,7 @@ export default function ContactForm() {
             }}
           >
             <div>
-              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.4)', display: 'block', marginBottom: '8px' }}>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.76rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.65)', display: 'block', marginBottom: '8px' }}>
                 Scope of Work
               </span>
               <select
@@ -140,7 +140,7 @@ export default function ContactForm() {
                   border: '1px solid rgba(242,237,232,0.15)',
                   color: 'var(--off-white)',
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.8rem',
+                  fontSize: '0.92rem',
                   padding: '12px 14px',
                   outline: 'none',
                   cursor: 'none',
@@ -154,7 +154,7 @@ export default function ContactForm() {
             </div>
 
             <div>
-              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.4)', display: 'block', marginBottom: '8px' }}>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.76rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.65)', display: 'block', marginBottom: '8px' }}>
                 Anticipated Budget
               </span>
               <select
@@ -166,7 +166,7 @@ export default function ContactForm() {
                   border: '1px solid rgba(242,237,232,0.15)',
                   color: 'var(--off-white)',
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.8rem',
+                  fontSize: '0.92rem',
                   padding: '12px 14px',
                   outline: 'none',
                   cursor: 'none',
@@ -200,8 +200,9 @@ export default function ContactForm() {
               border: '1px solid var(--gold)',
               padding: '16px 36px',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.72rem',
-              letterSpacing: '0.22em',
+              fontSize: '0.84rem',
+              fontWeight: 500,
+              letterSpacing: '0.16em',
               textTransform: 'uppercase',
               color: 'var(--gold)',
               cursor: 'none',

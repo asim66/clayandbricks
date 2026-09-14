@@ -174,10 +174,10 @@ function ServiceBlock({ item }) {
         <p
           style={{
             fontFamily: 'var(--font-sans)',
-            fontSize: 'clamp(0.9rem, 1.1vw, 1.05rem)',
-            color: 'rgba(242,237,232,0.65)',
-            fontWeight: 300,
-            lineHeight: 1.7,
+            fontSize: 'clamp(0.96rem, 1.2vw, 1.08rem)',
+            color: 'rgba(242,237,232,0.85)',
+            fontWeight: 400,
+            lineHeight: 1.75,
             position: 'relative',
           }}
         >
@@ -224,8 +224,9 @@ function CategorySection({ number, title, color, items, isLast }) {
             <span
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.8rem',
-                letterSpacing: '0.3em',
+                fontSize: '0.82rem',
+                fontWeight: 600,
+                letterSpacing: '0.24em',
                 textTransform: 'uppercase',
                 color: color,
               }}

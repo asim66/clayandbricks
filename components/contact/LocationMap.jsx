@@ -92,15 +92,16 @@ export default function LocationMap() {
           <span
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.58rem',
-              letterSpacing: '0.22em',
+              fontSize: '0.72rem',
+              fontWeight: 500,
+              letterSpacing: '0.14em',
               textTransform: 'uppercase',
               color: 'var(--gold)',
               marginTop: '6px',
-              background: 'rgba(26,25,23,0.85)',
-              padding: '2px 8px',
+              background: 'rgba(26,25,23,0.92)',
+              padding: '3px 10px',
               borderRadius: '2px',
-              border: '1px solid rgba(184,151,90,0.3)',
+              border: '1px solid rgba(184,151,90,0.4)',
               zIndex: 2,
             }}
           >
@@ -112,8 +113,8 @@ export default function LocationMap() {
       {/* Studio Coordinates & Info */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
         <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-          <MapPin size={18} style={{ color: 'var(--terracotta)', flexShrink: 0, marginTop: '2px' }} />
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.82rem', color: 'rgba(242,237,232,0.7)', lineHeight: 1.6 }}>
+          <MapPin size={20} style={{ color: 'var(--terracotta)', flexShrink: 0, marginTop: '2px' }} />
+          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.94rem', fontWeight: 400, color: 'rgba(242,237,232,0.85)', lineHeight: 1.6 }}>
             Plot no. 400/3226/6837, Lane 1, Mahadev Nagar<br />
             Jharpada, Bhubaneswar, Odisha — 751006, India
           </p>
@@ -126,13 +127,14 @@ export default function LocationMap() {
             data-cursor-expand
             style={{
               fontFamily:     'var(--font-sans)',
-              fontSize:       '0.84rem',
-              color:          'rgba(242,237,232,0.75)',
+              fontSize:       '0.96rem',
+              fontWeight:     500,
+              color:          'rgba(242,237,232,0.85)',
               textDecoration: 'none',
               transition:     'color 0.3s ease',
             }}
             onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.75)')}
+            onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.85)')}
           >
             +91 88673 55661
           </a>
@@ -145,21 +147,22 @@ export default function LocationMap() {
             data-cursor-expand
             style={{
               fontFamily:     'var(--font-sans)',
-              fontSize:       '0.84rem',
-              color:          'rgba(242,237,232,0.75)',
+              fontSize:       '0.96rem',
+              fontWeight:     500,
+              color:          'rgba(242,237,232,0.85)',
               textDecoration: 'none',
               transition:     'color 0.3s ease',
             }}
             onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.75)')}
+            onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.85)')}
           >
             hi.clayandbricks@gmail.com
           </a>
         </div>
 
         <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
-          <Clock size={18} style={{ color: 'rgba(242,237,232,0.4)', flexShrink: 0 }} />
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.78rem', color: 'rgba(242,237,232,0.4)' }}>
+          <Clock size={18} style={{ color: 'rgba(242,237,232,0.5)', flexShrink: 0 }} />
+          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', fontWeight: 400, color: 'rgba(242,237,232,0.65)' }}>
             Mon — Sat: 10:00 AM – 7:30 PM (By Appointment)
           </p>
         </div>

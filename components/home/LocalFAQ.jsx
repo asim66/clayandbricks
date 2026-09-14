@@ -103,12 +103,12 @@ export default function LocalFAQ() {
           <p
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.9rem',
-              color: 'rgba(242,237,232,0.6)',
+              fontSize: '1rem',
+              color: 'rgba(242,237,232,0.82)',
               marginTop: '16px',
-              maxWidth: '650px',
-              lineHeight: 1.7,
-              fontWeight: 300,
+              maxWidth: '680px',
+              lineHeight: 1.75,
+              fontWeight: 400,
             }}
           >
             Essential guidance for homeowners, villa commissioners, and commercial developers planning luxury design and construction in Bhubaneswar & Odisha.
@@ -155,8 +155,8 @@ export default function LocalFAQ() {
                   <span
                     style={{
                       fontFamily: 'var(--font-serif)',
-                      fontSize: 'clamp(1.15rem, 1.8vw, 1.45rem)',
-                      fontWeight: 300,
+                      fontSize: 'clamp(1.2rem, 1.8vw, 1.5rem)',
+                      fontWeight: 400,
                       color: isOpen ? 'var(--gold)' : 'var(--off-white)',
                       lineHeight: 1.35,
                       transition: 'color 0.3s ease',
@@ -205,10 +205,10 @@ export default function LocalFAQ() {
                         <p
                           style={{
                             fontFamily: 'var(--font-sans)',
-                            fontSize: '0.88rem',
+                            fontSize: '0.98rem',
                             lineHeight: 1.8,
-                            color: 'rgba(242,237,232,0.75)',
-                            fontWeight: 300,
+                            color: 'rgba(242,237,232,0.88)',
+                            fontWeight: 400,
                             letterSpacing: '0.01em',
                           }}
                         >

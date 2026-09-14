@@ -160,9 +160,10 @@ export default function WorkStyle() {
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.62rem',
-                        letterSpacing: '0.2em',
-                        color: 'rgba(242,237,232,0.35)',
+                        fontSize: '0.76rem',
+                        fontWeight: 500,
+                        letterSpacing: '0.14em',
+                        color: 'rgba(242,237,232,0.6)',
                       }}
                     >
                       {pillar.number}
@@ -172,8 +173,9 @@ export default function WorkStyle() {
                   <span
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.62rem',
-                      letterSpacing: '0.16em',
+                      fontSize: '0.76rem',
+                      fontWeight: 600,
+                      letterSpacing: '0.14em',
                       textTransform: 'uppercase',
                       color: 'var(--terracotta)',
                       display: 'block',
@@ -199,10 +201,10 @@ export default function WorkStyle() {
                   <p
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.82rem',
+                      fontSize: '0.94rem',
                       lineHeight: 1.65,
-                      color: 'rgba(242,237,232,0.65)',
-                      fontWeight: 300,
+                      color: 'rgba(242,237,232,0.82)',
+                      fontWeight: 400,
                     }}
                   >
                     {pillar.description}

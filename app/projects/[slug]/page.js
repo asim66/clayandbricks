@@ -111,16 +111,17 @@ export default async function ProjectDetailPage({ params }) {
             alignItems: 'center',
             gap: '8px',
             fontFamily: 'var(--font-sans)',
-            fontSize: '0.68rem',
-            letterSpacing: '0.2em',
+            fontSize: '0.8rem',
+            fontWeight: 500,
+            letterSpacing: '0.14em',
             textTransform: 'uppercase',
-            color: 'rgba(242,237,232,0.6)',
+            color: 'rgba(242,237,232,0.75)',
             textDecoration: 'none',
             transition: 'color 0.3s ease',
           }}
           data-cursor-expand
         >
-          <ArrowLeft size={14} /> Back to All Projects
+          <ArrowLeft size={15} /> Back to All Projects
         </Link>
       </div>
 
@@ -138,13 +139,14 @@ export default async function ProjectDetailPage({ params }) {
           <span
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.65rem',
-              letterSpacing: '0.24em',
+              fontSize: '0.76rem',
+              fontWeight: 500,
+              letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: 'var(--gold)',
               background: 'rgba(184,151,90,0.12)',
               border: '1px solid rgba(184,151,90,0.3)',
-              padding: '4px 12px',
+              padding: '5px 14px',
               borderRadius: '2px',
             }}
           >
@@ -157,15 +159,15 @@ export default async function ProjectDetailPage({ params }) {
                 alignItems: 'center',
                 gap: '6px',
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.65rem',
-                letterSpacing: '0.18em',
+                fontSize: '0.74rem',
+                letterSpacing: '0.14em',
                 textTransform: 'uppercase',
                 color: '#f59e0b',
-                background: 'rgba(245, 158, 11, 0.12)',
-                border: '1px solid rgba(245, 158, 11, 0.35)',
-                padding: '4px 12px',
+                background: 'rgba(245, 158, 11, 0.14)',
+                border: '1px solid rgba(245, 158, 11, 0.4)',
+                padding: '5px 14px',
                 borderRadius: '2px',
-                fontWeight: 500,
+                fontWeight: 600,
               }}
             >
               <span
@@ -185,27 +187,28 @@ export default async function ProjectDetailPage({ params }) {
             <span
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.65rem',
-                letterSpacing: '0.18em',
+                fontSize: '0.74rem',
+                fontWeight: 500,
+                letterSpacing: '0.14em',
                 textTransform: 'uppercase',
                 color: 'var(--terracotta)',
-                background: 'rgba(193,113,79,0.12)',
-                border: '1px solid rgba(193,113,79,0.3)',
-                padding: '4px 12px',
+                background: 'rgba(193,113,79,0.14)',
+                border: '1px solid rgba(193,113,79,0.35)',
+                padding: '5px 14px',
                 borderRadius: '2px',
               }}
             >
               {project.scope}
             </span>
           )}
-          <span style={{ color: 'rgba(242,237,232,0.3)' }}>/</span>
+          <span style={{ color: 'rgba(242,237,232,0.4)' }}>/</span>
           <span
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.68rem',
-              letterSpacing: '0.14em',
+              fontSize: '0.8rem',
+              letterSpacing: '0.1em',
               textTransform: 'uppercase',
-              color: 'rgba(242,237,232,0.6)',
+              color: 'rgba(242,237,232,0.75)',
             }}
           >
             {project.location}
@@ -239,15 +242,15 @@ export default async function ProjectDetailPage({ params }) {
           }}
         >
           <div>
-            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.4)', marginBottom: '4px' }}>
+            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.6)', marginBottom: '4px' }}>
               Location
             </span>
-            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.95rem', color: 'var(--off-white)', fontWeight: 400 }}>
+            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.98rem', color: 'var(--off-white)', fontWeight: 400 }}>
               {project.location}
             </span>
           </div>
           <div>
-            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.4)', marginBottom: '4px' }}>
+            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.6)', marginBottom: '4px' }}>
               Built-up Area
             </span>
             <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--gold)', fontWeight: 300 }}>
@@ -255,7 +258,7 @@ export default async function ProjectDetailPage({ params }) {
             </span>
           </div>
           <div>
-            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.4)', marginBottom: '4px' }}>
+            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.6)', marginBottom: '4px' }}>
               Timeline / Year
             </span>
             <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--gold)', fontWeight: 300 }}>
@@ -263,10 +266,10 @@ export default async function ProjectDetailPage({ params }) {
             </span>
           </div>
           <div>
-            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.4)', marginBottom: '4px' }}>
+            <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.6)', marginBottom: '4px' }}>
               Scope of Work
             </span>
-            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'var(--terracotta)', fontWeight: 400 }}>
+            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.95rem', color: 'var(--terracotta)', fontWeight: 500 }}>
               {project.scope || 'Architecture & Interiors'}
             </span>
           </div>
@@ -338,8 +341,9 @@ export default async function ProjectDetailPage({ params }) {
               <span
                 style={{
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.62rem',
-                  letterSpacing: '0.24em',
+                  fontSize: '0.76rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.18em',
                   textTransform: 'uppercase',
                   color: 'var(--terracotta)',
                   display: 'block',
@@ -358,8 +362,8 @@ export default async function ProjectDetailPage({ params }) {
                       padding: '8px 16px',
                       borderRadius: '3px',
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.75rem',
-                      letterSpacing: '0.06em',
+                      fontSize: '0.86rem',
+                      letterSpacing: '0.04em',
                       color: 'var(--off-white)',
                     }}
                   >
@@ -374,8 +378,9 @@ export default async function ProjectDetailPage({ params }) {
               <span
                 style={{
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.62rem',
-                  letterSpacing: '0.24em',
+                  fontSize: '0.76rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.18em',
                   textTransform: 'uppercase',
                   color: 'var(--gold)',
                   display: 'block',
@@ -390,12 +395,12 @@ export default async function ProjectDetailPage({ params }) {
                     key={svc}
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.72rem',
-                      color: 'rgba(242,237,232,0.65)',
+                      fontSize: '0.84rem',
+                      color: 'rgba(242,237,232,0.8)',
                       letterSpacing: '0.04em',
-                      border: '1px solid rgba(242,237,232,0.12)',
+                      border: '1px solid rgba(242,237,232,0.14)',
                       padding: '6px 14px',
-                      background: 'rgba(255,255,255,0.02)',
+                      background: 'rgba(255,255,255,0.03)',
                     }}
                   >
                     {svc}
@@ -446,8 +451,9 @@ export default async function ProjectDetailPage({ params }) {
                   <div
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.62rem',
-                      letterSpacing: '0.2em',
+                      fontSize: '0.76rem',
+                      fontWeight: 600,
+                      letterSpacing: '0.16em',
                       textTransform: 'uppercase',
                       color: 'var(--gold)',
                       marginBottom: '12px',
@@ -469,10 +475,10 @@ export default async function ProjectDetailPage({ params }) {
                   <p
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.82rem',
-                      lineHeight: 1.6,
-                      color: 'rgba(242,237,232,0.6)',
-                      fontWeight: 300,
+                      fontSize: '0.94rem',
+                      lineHeight: 1.65,
+                      color: 'rgba(242,237,232,0.82)',
+                      fontWeight: 400,
                     }}
                   >
                     {sp.desc}
@@ -503,10 +509,11 @@ export default async function ProjectDetailPage({ params }) {
             <span
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.65rem',
-                letterSpacing: '0.24em',
+                fontSize: '0.76rem',
+                fontWeight: 500,
+                letterSpacing: '0.18em',
                 textTransform: 'uppercase',
-                color: 'rgba(242,237,232,0.4)',
+                color: 'rgba(242,237,232,0.6)',
                 display: 'block',
                 marginBottom: '8px',
               }}
@@ -545,8 +552,8 @@ export default async function ProjectDetailPage({ params }) {
                 borderRadius: '3px',
                 textDecoration: 'none',
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.75rem',
-                letterSpacing: '0.14em',
+                fontSize: '0.84rem',
+                letterSpacing: '0.12em',
                 textTransform: 'uppercase',
                 fontWeight: 500,
                 transition: 'transform 0.3s ease',

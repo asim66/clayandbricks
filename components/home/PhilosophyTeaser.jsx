@@ -77,7 +77,7 @@ export default function PhilosophyTeaser() {
               fontStyle:     'italic',
               lineHeight:    1.05,
               letterSpacing: '-0.025em',
-              color:         'rgba(242,237,232,0.45)',
+              color:         'rgba(242,237,232,0.78)',
               marginBottom:  '36px',
             }}
           >
@@ -86,11 +86,11 @@ export default function PhilosophyTeaser() {
           <p
             style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      'clamp(0.82rem, 1.2vw, 0.96rem)',
-              fontWeight:    300,
+              fontSize:      'clamp(0.96rem, 1.25vw, 1.1rem)',
+              fontWeight:    400,
               lineHeight:    1.8,
-              color:         'rgba(242,237,232,0.5)',
-              maxWidth:      '380px',
+              color:         'rgba(242,237,232,0.82)',
+              maxWidth:      '440px',
               letterSpacing: '0.015em',
             }}
           >
@@ -121,10 +121,11 @@ export default function PhilosophyTeaser() {
             }}>{num}</span>
             <span style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      '0.58rem',
-              letterSpacing: '0.22em',
+              fontSize:      '0.74rem',
+              fontWeight:    500,
+              letterSpacing: '0.18em',
               textTransform: 'uppercase',
-              color:         'rgba(242,237,232,0.3)',
+              color:         'rgba(242,237,232,0.7)',
             }}>{label}</span>
           </div>
         ))}

@@ -10,16 +10,16 @@
   --gold: #b8975a;
   --gold-light: #d4b27a;
   --terracotta: #c1714f;
-  --muted-text: #8a8278;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --muted-text: #b2aaa0;
+  --font-serif: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+  --font-sans: var(--font-dm-sans), 'DM Sans', system-ui, sans-serif;
 }
 
 /* ─── Reset & Base ───────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
-  font-size: clamp(14px, 1.1vw, 18px);
+  font-size: clamp(16px, 1.12vw, 18.5px);
   background-color: var(--charcoal);
   color: var(--off-white);
   overflow-x: hidden;
@@ -27,11 +27,14 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.65;
   background-color: var(--charcoal);
   color: var(--off-white);
   overflow-x: hidden;
   cursor: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ─── Lenis smooth scroll ────────────────────────────── */
@@ -185,10 +188,10 @@ html.lenis, html.lenis body { height: auto; }
   top:            20px;
   left:           0;
   font-family:    var(--font-sans);
-  font-size:      0.72rem;
-  letter-spacing: 0.22em;
+  font-size:      0.82rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color:          rgba(242,237,232,0.35);
+  color:          rgba(242,237,232,0.6);
   pointer-events: none;
   transition:     top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
 }
@@ -197,7 +200,7 @@ html.lenis, html.lenis body { height: auto; }
 .float-field textarea:focus ~ label,
 .float-field textarea:not(:placeholder-shown) ~ label {
   top:       0;
-  font-size: 0.54rem;
+  font-size: 0.72rem;
   color:     var(--gold);
 }
 .float-field::after {

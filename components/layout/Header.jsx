@@ -42,8 +42,8 @@ function MagneticLogo() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
           <span style={{
             fontFamily:    'var(--font-serif)',
-            fontSize:      '1.05rem',
-            fontWeight:    400,
+            fontSize:      '1.15rem',
+            fontWeight:    500,
             letterSpacing: '0.08em',
             color:         'var(--off-white)',
             lineHeight:    1.1,
@@ -52,11 +52,12 @@ function MagneticLogo() {
           </span>
           <span style={{
             fontFamily:    'var(--font-sans)',
-            fontSize:      '0.54rem',
-            letterSpacing: '0.22em',
+            fontSize:      '0.68rem',
+            fontWeight:    500,
+            letterSpacing: '0.18em',
             textTransform: 'uppercase',
             color:         'var(--gold)',
-            lineHeight:    1,
+            lineHeight:    1.2,
           }}>
             We Build Your Dream House
           </span>
@@ -150,10 +151,11 @@ export default function Header() {
           <span
             style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      '0.62rem',
-              letterSpacing: '0.28em',
+              fontSize:      '0.78rem',
+              fontWeight:    500,
+              letterSpacing: '0.22em',
               textTransform: 'uppercase',
-              color:         menuHover ? 'var(--gold)' : 'rgba(242,237,232,0.7)',
+              color:         menuHover ? 'var(--gold)' : 'rgba(242,237,232,0.85)',
               transition:    'color 0.3s',
             }}
           >

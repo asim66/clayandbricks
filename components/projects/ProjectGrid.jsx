@@ -62,16 +62,16 @@ export default function ProjectGrid() {
                 style={{
                   background: isSel ? 'var(--gold)' : 'transparent',
                   border: isSel ? '1px solid var(--gold)' : '1px solid rgba(242,237,232,0.15)',
-                  color: isSel ? 'var(--charcoal)' : 'rgba(242,237,232,0.6)',
+                  color: isSel ? 'var(--charcoal)' : 'rgba(242,237,232,0.7)',
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.68rem',
-                  letterSpacing: '0.14em',
+                  fontSize: '0.8rem',
+                  letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  padding: '8px 18px',
+                  padding: '9px 20px',
                   borderRadius: '2px',
                   cursor: 'none',
                   transition: 'all 0.3s ease',
-                  fontWeight: isSel ? 500 : 300,
+                  fontWeight: isSel ? 600 : 400,
                 }}
               >
                 {cat}
@@ -139,7 +139,7 @@ export default function ProjectGrid() {
                         position: 'absolute',
                         top: '14px',
                         left: '14px',
-                        background: 'rgba(20, 19, 17, 0.85)',
+                        background: 'rgba(20, 19, 17, 0.88)',
                         backdropFilter: 'blur(8px)',
                         border: '1px solid rgba(245, 158, 11, 0.5)',
                         padding: '4px 10px',
@@ -162,11 +162,11 @@ export default function ProjectGrid() {
                       <span
                         style={{
                           fontFamily: 'var(--font-sans)',
-                          fontSize: '0.58rem',
-                          letterSpacing: '0.14em',
+                          fontSize: '0.72rem',
+                          letterSpacing: '0.1em',
                           textTransform: 'uppercase',
                           color: '#f59e0b',
-                          fontWeight: 500,
+                          fontWeight: 600,
                         }}
                       >
                         {proj.status}
@@ -200,8 +200,9 @@ export default function ProjectGrid() {
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.6rem',
-                        letterSpacing: '0.2em',
+                        fontSize: '0.76rem',
+                        fontWeight: 500,
+                        letterSpacing: '0.14em',
                         textTransform: 'uppercase',
                         color: 'var(--terracotta)',
                         display: 'block',
@@ -224,8 +225,8 @@ export default function ProjectGrid() {
                   <span
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.68rem',
-                      color: 'rgba(242,237,232,0.4)',
+                      fontSize: '0.82rem',
+                      color: 'rgba(242,237,232,0.65)',
                       letterSpacing: '0.04em',
                     }}
                   >

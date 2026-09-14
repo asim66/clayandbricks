@@ -8,8 +8,9 @@ export default function SectionLabel({ number, label, color = 'var(--gold)' }) {
       <span
         style={{
           fontFamily:    'var(--font-sans)',
-          fontSize:      '0.6rem',
-          letterSpacing: '0.32em',
+          fontSize:      '0.75rem',
+          fontWeight:    600,
+          letterSpacing: '0.24em',
           textTransform: 'uppercase',
           color,
         }}
@@ -22,17 +23,18 @@ export default function SectionLabel({ number, label, color = 'var(--gold)' }) {
           width:      '32px',
           height:     '1px',
           background: color,
-          opacity:    0.5,
+          opacity:    0.7,
         }}
         aria-hidden="true"
       />
       <span
         style={{
           fontFamily:    'var(--font-sans)',
-          fontSize:      '0.6rem',
-          letterSpacing: '0.28em',
+          fontSize:      '0.75rem',
+          fontWeight:    500,
+          letterSpacing: '0.22em',
           textTransform: 'uppercase',
-          color:         'rgba(242,237,232,0.38)',
+          color:         'rgba(242,237,232,0.72)',
         }}
       >
         {label}

@@ -115,10 +115,10 @@ export default function WhyChooseUs() {
           <p
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.86rem',
-              color: 'rgba(242,237,232,0.55)',
+              fontSize: '0.96rem',
+              color: 'rgba(242,237,232,0.78)',
               maxWidth: '460px',
-              fontWeight: 300,
+              fontWeight: 400,
               lineHeight: 1.7,
             }}
           >
@@ -167,8 +167,8 @@ export default function WhyChooseUs() {
                   >
                     <div
                       style={{
-                        width: '42px',
-                        height: '42px',
+                        width: '44px',
+                        height: '44px',
                         borderRadius: '6px',
                         background: 'rgba(184,151,90,0.08)',
                         border: '1px solid rgba(184,151,90,0.25)',
@@ -178,15 +178,16 @@ export default function WhyChooseUs() {
                         color: 'var(--gold)',
                       }}
                     >
-                      <Icon size={20} />
+                      <Icon size={22} />
                     </div>
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.6rem',
+                        fontSize: '0.75rem',
+                        fontWeight: 600,
                         letterSpacing: '0.2em',
                         textTransform: 'uppercase',
-                        color: 'rgba(242,237,232,0.35)',
+                        color: 'rgba(242,237,232,0.55)',
                       }}
                     >
                       0{idx + 1}
@@ -196,12 +197,13 @@ export default function WhyChooseUs() {
                   <span
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.62rem',
-                      letterSpacing: '0.16em',
+                      fontSize: '0.74rem',
+                      fontWeight: 500,
+                      letterSpacing: '0.14em',
                       textTransform: 'uppercase',
                       color: 'var(--terracotta)',
                       display: 'block',
-                      marginBottom: '6px',
+                      marginBottom: '8px',
                     }}
                   >
                     {adv.tag}
@@ -210,7 +212,7 @@ export default function WhyChooseUs() {
                   <h3
                     style={{
                       fontFamily: 'var(--font-serif)',
-                      fontSize: '1.35rem',
+                      fontSize: '1.4rem',
                       fontWeight: 400,
                       color: 'var(--off-white)',
                       marginBottom: '12px',
@@ -222,10 +224,10 @@ export default function WhyChooseUs() {
                   <p
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.82rem',
-                      lineHeight: 1.65,
-                      color: 'rgba(242,237,232,0.65)',
-                      fontWeight: 300,
+                      fontSize: '0.94rem',
+                      lineHeight: 1.7,
+                      color: 'rgba(242,237,232,0.82)',
+                      fontWeight: 400,
                     }}
                   >
                     {adv.desc}

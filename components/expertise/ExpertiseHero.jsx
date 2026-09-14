@@ -38,12 +38,12 @@ export default function ExpertiseHero() {
           <p
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: 'clamp(1rem, 1.5vw, 1.25rem)',
-              color: 'rgba(242,237,232,0.6)',
+              fontSize: 'clamp(1.05rem, 1.5vw, 1.28rem)',
+              color: 'rgba(242,237,232,0.85)',
               marginTop: '40px',
               maxWidth: '640px',
-              lineHeight: 1.6,
-              fontWeight: 300,
+              lineHeight: 1.65,
+              fontWeight: 400,
             }}
           >
             We unite interior architecture and structural civil engineering under one roof. No gaps, no compromises. What we visualize, we build to the exact millimeter.

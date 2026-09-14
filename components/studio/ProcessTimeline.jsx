@@ -144,8 +144,9 @@ export default function ProcessTimeline() {
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.62rem',
-                        letterSpacing: '0.3em',
+                        fontSize: '0.76rem',
+                        fontWeight: 600,
+                        letterSpacing: '0.22em',
                         color: 'var(--terracotta)',
                       }}
                     >
@@ -166,10 +167,11 @@ export default function ProcessTimeline() {
                   <span
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.65rem',
-                      letterSpacing: '0.2em',
+                      fontSize: '0.78rem',
+                      letterSpacing: '0.14em',
                       textTransform: 'uppercase',
-                      color: 'rgba(242,237,232,0.4)',
+                      color: 'rgba(242,237,232,0.65)',
+                      fontWeight: 500,
                     }}
                   >
                     {item.duration}
@@ -179,12 +181,12 @@ export default function ProcessTimeline() {
                 <p
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: 'clamp(0.85rem, 1.2vw, 0.96rem)',
-                    lineHeight: 1.8,
-                    color: 'rgba(242,237,232,0.6)',
+                    fontSize: 'clamp(0.96rem, 1.25vw, 1.06rem)',
+                    lineHeight: 1.7,
+                    color: 'rgba(242,237,232,0.82)',
                     maxWidth: '720px',
                     marginBottom: '24px',
-                    fontWeight: 300,
+                    fontWeight: 400,
                   }}
                 >
                   {item.desc}
@@ -197,13 +199,13 @@ export default function ProcessTimeline() {
                       key={d}
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.65rem',
-                        letterSpacing: '0.12em',
-                        color: 'rgba(242,237,232,0.45)',
-                        border: '1px solid rgba(242,237,232,0.1)',
-                        padding: '6px 14px',
+                        fontSize: '0.8rem',
+                        letterSpacing: '0.04em',
+                        color: 'rgba(242,237,232,0.78)',
+                        border: '1px solid rgba(242,237,232,0.12)',
+                        padding: '7px 14px',
                         borderRadius: '2px',
-                        background: 'rgba(242,237,232,0.02)',
+                        background: 'rgba(242,237,232,0.04)',
                       }}
                     >
                       {d}

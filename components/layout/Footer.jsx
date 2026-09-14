@@ -68,14 +68,15 @@ function FooterCTA() {
             border:        '1px solid var(--gold)',
             padding:       '16px 32px',
             fontFamily:    'var(--font-sans)',
-            fontSize:      '0.72rem',
-            letterSpacing: '0.2em',
+            fontSize:      '0.84rem',
+            fontWeight:    500,
+            letterSpacing: '0.18em',
             textTransform: 'uppercase',
             color:         'var(--gold)',
           }}
         >
           Start a Conversation
-          <ArrowUpRight size={14} strokeWidth={1.5} />
+          <ArrowUpRight size={15} strokeWidth={1.5} />
         </span>
       </motion.div>
     </Link>
@@ -186,29 +187,29 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '20px' }}>
               <BrandLogo size={58} />
               <div>
-                <p style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontWeight: 300, color: 'var(--off-white)', lineHeight: 1.1 }}>
+                <p style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', fontWeight: 400, color: 'var(--off-white)', lineHeight: 1.1 }}>
                   Clay and Bricks
                 </p>
-                <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.55rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginTop: '3px' }}>
+                <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold)', marginTop: '3px' }}>
                   We Build Your Dream House
                 </p>
               </div>
             </div>
-            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', lineHeight: 1.8, color: 'rgba(242,237,232,0.4)', letterSpacing: '0.02em', marginBottom: '10px' }}>
+            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', lineHeight: 1.8, color: 'rgba(242,237,232,0.75)', letterSpacing: '0.01em', marginBottom: '12px' }}>
               Plot No. 400/3226/6837, Lane 1, Mahadev Nagar<br />
               Jharpada, Bhubaneswar — 751006<br />
               Odisha, India
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
               <a
                 href="tel:+918867355661"
-                style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', color: 'var(--gold)', textDecoration: 'none' }}
+                style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', fontWeight: 500, color: 'var(--gold)', textDecoration: 'none' }}
               >
                 +91 88673 55661
               </a>
               <a
                 href="mailto:hi.clayandbricks@gmail.com"
-                style={{ fontFamily: 'var(--font-sans)', fontSize: '0.72rem', color: 'rgba(242,237,232,0.5)', textDecoration: 'none' }}
+                style={{ fontFamily: 'var(--font-sans)', fontSize: '0.86rem', color: 'rgba(242,237,232,0.8)', textDecoration: 'none' }}
               >
                 hi.clayandbricks@gmail.com
               </a>
@@ -218,7 +219,7 @@ export default function Footer() {
           {/* Nav cols */}
           {NAV_COLS.map((col) => (
             <div key={col.heading}>
-              <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.58rem', letterSpacing: '0.28em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 600, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '16px' }}>
                 {col.heading}
               </p>
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -226,9 +227,9 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      style={{ fontFamily: 'var(--font-sans)', fontSize: '0.78rem', color: 'rgba(242,237,232,0.38)', textDecoration: 'none', letterSpacing: '0.02em', transition: 'color 0.3s' }}
+                      style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'rgba(242,237,232,0.72)', textDecoration: 'none', letterSpacing: '0.01em', transition: 'color 0.3s' }}
                       onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--off-white)')}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.38)')}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.72)')}
                     >
                       {link.label}
                     </Link>
@@ -251,10 +252,10 @@ export default function Footer() {
             padding:        'clamp(20px, 3vh, 28px) 0 clamp(24px, 4vh, 40px)',
           }}
         >
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.6rem', letterSpacing: '0.16em', color: 'rgba(242,237,232,0.2)' }}>
+          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', letterSpacing: '0.12em', color: 'rgba(242,237,232,0.55)' }}>
             © {new Date().getFullYear()} Clay and Bricks Pvt Ltd. All rights reserved.
           </p>
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.6rem', letterSpacing: '0.16em', color: 'rgba(242,237,232,0.15)', textAlign: 'right' }}>
+          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', letterSpacing: '0.12em', color: 'rgba(242,237,232,0.5)', textAlign: 'right' }}>
             Designed & Built in Bhubaneswar · Odisha Modern
           </p>
         </div>

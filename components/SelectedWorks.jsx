@@ -80,22 +80,24 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
                   <span
                     style={{
                       fontFamily:    'var(--font-sans)',
-                      fontSize:      '0.62rem',
-                      letterSpacing: '0.28em',
+                      fontSize:      '0.76rem',
+                      fontWeight:    500,
+                      letterSpacing: '0.22em',
                       textTransform: 'uppercase',
                       color:         'var(--terracotta)',
                     }}
                   >
                     {project.category}
                   </span>
-                  <span style={{ color: 'rgba(242,237,232,0.2)' }}>/</span>
+                  <span style={{ color: 'rgba(242,237,232,0.3)' }}>/</span>
                   <span
                     style={{
                       fontFamily:    'var(--font-sans)',
-                      fontSize:      '0.62rem',
-                      letterSpacing: '0.2em',
+                      fontSize:      '0.76rem',
+                      fontWeight:    500,
+                      letterSpacing: '0.18em',
                       textTransform: 'uppercase',
-                      color:         'rgba(242,237,232,0.45)',
+                      color:         'rgba(242,237,232,0.65)',
                     }}
                   >
                     {project.year}
@@ -105,10 +107,10 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
                 <span
                   style={{
                     fontFamily:    'var(--font-sans)',
-                    fontSize:      '0.68rem',
-                    letterSpacing: '0.24em',
+                    fontSize:      '0.82rem',
+                    letterSpacing: '0.22em',
                     color:         'var(--gold)',
-                    fontWeight:    500,
+                    fontWeight:    600,
                   }}
                 >
                   0{index + 1} / 0{total}
@@ -134,7 +136,8 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
               <p
                 style={{
                   fontFamily:    'var(--font-sans)',
-                  fontSize:      '0.75rem',
+                  fontSize:      '0.82rem',
+                  fontWeight:    500,
                   letterSpacing: '0.12em',
                   color:         'var(--gold)',
                   textTransform: 'uppercase',
@@ -148,11 +151,11 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
               <p
                 style={{
                   fontFamily:  'var(--font-sans)',
-                  fontSize:    'clamp(0.82rem, 1.1vw, 0.92rem)',
+                  fontSize:    'clamp(0.95rem, 1.25vw, 1.06rem)',
                   lineHeight:  1.75,
-                  color:       'rgba(242,237,232,0.6)',
-                  fontWeight:  300,
-                  maxWidth:    '460px',
+                  color:       'rgba(242,237,232,0.82)',
+                  fontWeight:  400,
+                  maxWidth:    '480px',
                   marginBottom: '28px',
                 }}
               >
@@ -166,13 +169,13 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
                     key={mat}
                     style={{
                       fontFamily:    'var(--font-sans)',
-                      fontSize:      '0.62rem',
-                      letterSpacing: '0.08em',
-                      color:         'rgba(242,237,232,0.5)',
-                      border:        '1px solid rgba(242,237,232,0.12)',
-                      padding:       '4px 10px',
+                      fontSize:      '0.75rem',
+                      letterSpacing: '0.06em',
+                      color:         'rgba(242,237,232,0.75)',
+                      border:        '1px solid rgba(242,237,232,0.16)',
+                      padding:       '5px 12px',
                       borderRadius:  '2px',
-                      background:    'rgba(242,237,232,0.03)',
+                      background:    'rgba(242,237,232,0.04)',
                     }}
                   >
                     {mat}
@@ -197,12 +200,12 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
                 <span
                   style={{
                     fontFamily:    'var(--font-sans)',
-                    fontSize:      '0.55rem',
-                    letterSpacing: '0.2em',
+                    fontSize:      '0.72rem',
+                    letterSpacing: '0.18em',
                     textTransform: 'uppercase',
-                    color:         'rgba(242,237,232,0.35)',
+                    color:         'rgba(242,237,232,0.6)',
                     display:       'block',
-                    marginBottom:  '2px',
+                    marginBottom:  '4px',
                   }}
                 >
                   Scale
@@ -210,9 +213,9 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
                 <span
                   style={{
                     fontFamily: 'var(--font-serif)',
-                    fontSize:   '1.1rem',
+                    fontSize:   '1.2rem',
                     color:      'var(--off-white)',
-                    fontWeight: 300,
+                    fontWeight: 400,
                   }}
                 >
                   {project.area}
@@ -228,11 +231,12 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
                   gap:            '8px',
                   background:     'rgba(184,151,90,0.1)',
                   border:         '1px solid var(--gold)',
-                  padding:        '10px 20px',
+                  padding:        '12px 24px',
                   borderRadius:   '2px',
                   fontFamily:     'var(--font-sans)',
-                  fontSize:       '0.68rem',
-                  letterSpacing:  '0.18em',
+                  fontSize:       '0.78rem',
+                  fontWeight:     500,
+                  letterSpacing:  '0.16em',
                   textTransform:  'uppercase',
                   color:          'var(--gold)',
                   textDecoration: 'none',
@@ -343,14 +347,14 @@ export default function SelectedWorks() {
           </h2>
         </div>
 
-        <div style={{ maxWidth: '380px', textAlign: 'right' }}>
+        <div style={{ maxWidth: '400px', textAlign: 'right' }}>
           <p
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize:   '0.82rem',
+              fontSize:   '0.94rem',
               lineHeight: 1.7,
-              color:      'rgba(242,237,232,0.45)',
-              fontWeight: 300,
+              color:      'rgba(242,237,232,0.75)',
+              fontWeight: 400,
               marginBottom: '16px',
             }}
           >
@@ -364,8 +368,9 @@ export default function SelectedWorks() {
               alignItems:     'center',
               gap:            '8px',
               fontFamily:     'var(--font-sans)',
-              fontSize:       '0.68rem',
-              letterSpacing:  '0.2em',
+              fontSize:       '0.78rem',
+              fontWeight:     500,
+              letterSpacing:  '0.18em',
               textTransform:  'uppercase',
               color:          'var(--gold)',
               textDecoration: 'none',

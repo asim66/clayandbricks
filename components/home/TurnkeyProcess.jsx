@@ -86,10 +86,10 @@ export default function TurnkeyProcess() {
           <p
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.84rem',
-              color: 'rgba(242,237,232,0.5)',
-              maxWidth: '420px',
-              fontWeight: 300,
+              fontSize: '0.96rem',
+              color: 'rgba(242,237,232,0.78)',
+              maxWidth: '440px',
+              fontWeight: 400,
               lineHeight: 1.7,
             }}
           >
@@ -150,12 +150,13 @@ export default function TurnkeyProcess() {
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.62rem',
-                        letterSpacing: '0.18em',
+                        fontSize: '0.75rem',
+                        fontWeight: 500,
+                        letterSpacing: '0.14em',
                         textTransform: 'uppercase',
-                        color: 'rgba(242,237,232,0.4)',
-                        border: '1px solid rgba(242,237,232,0.1)',
-                        padding: '4px 10px',
+                        color: 'rgba(242,237,232,0.75)',
+                        border: '1px solid rgba(242,237,232,0.18)',
+                        padding: '4px 12px',
                         borderRadius: '2px',
                       }}
                     >
@@ -179,10 +180,10 @@ export default function TurnkeyProcess() {
                   <p
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.82rem',
-                      lineHeight: 1.65,
-                      color: 'rgba(242,237,232,0.65)',
-                      fontWeight: 300,
+                      fontSize: '0.95rem',
+                      lineHeight: 1.7,
+                      color: 'rgba(242,237,232,0.82)',
+                      fontWeight: 400,
                       marginBottom: '24px',
                     }}
                   >
@@ -200,17 +201,18 @@ export default function TurnkeyProcess() {
                   <span
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.58rem',
-                      letterSpacing: '0.2em',
+                      fontSize: '0.74rem',
+                      fontWeight: 500,
+                      letterSpacing: '0.18em',
                       textTransform: 'uppercase',
-                      color: 'rgba(242,237,232,0.35)',
+                      color: 'rgba(242,237,232,0.65)',
                       display: 'block',
-                      marginBottom: '8px',
+                      marginBottom: '10px',
                     }}
                   >
                     Key Deliverables
                   </span>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                     {step.deliverables.map((del) => (
                       <div
                         key={del}
@@ -219,12 +221,12 @@ export default function TurnkeyProcess() {
                           alignItems: 'center',
                           gap: '8px',
                           fontFamily: 'var(--font-sans)',
-                          fontSize: '0.74rem',
-                          color: 'rgba(242,237,232,0.85)',
-                          fontWeight: 300,
+                          fontSize: '0.85rem',
+                          color: 'rgba(242,237,232,0.9)',
+                          fontWeight: 400,
                         }}
                       >
-                        <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: step.accent }} />
+                        <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: step.accent }} />
                         <span>{del}</span>
                       </div>
                     ))}

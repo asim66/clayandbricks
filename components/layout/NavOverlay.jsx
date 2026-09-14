@@ -140,11 +140,12 @@ export default function NavOverlay({ isOpen, onClose }) {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.5rem',
-                    letterSpacing: '0.22em',
+                    fontSize: '0.68rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.18em',
                     textTransform: 'uppercase',
                     color: 'var(--gold)',
-                    lineHeight: 1,
+                    lineHeight: 1.2,
                     marginTop: '2px',
                   }}
                 >
@@ -167,7 +168,8 @@ export default function NavOverlay({ isOpen, onClose }) {
                 gap: '8px',
                 color: 'var(--off-white)',
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.62rem',
+                fontSize: '0.75rem',
+                fontWeight: 500,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
                 padding: '8px 16px',
@@ -236,10 +238,10 @@ export default function NavOverlay({ isOpen, onClose }) {
                           <span
                             style={{
                               fontFamily: 'var(--font-sans)',
-                              fontSize: '0.62rem',
-                              letterSpacing: '0.24em',
-                              color: isActive ? 'var(--gold)' : 'rgba(242,237,232,0.3)',
-                              fontWeight: 400,
+                              fontSize: '0.75rem',
+                              letterSpacing: '0.22em',
+                              color: isActive ? 'var(--gold)' : 'rgba(242,237,232,0.65)',
+                              fontWeight: 500,
                               minWidth: '24px',
                             }}
                           >
@@ -274,10 +276,10 @@ export default function NavOverlay({ isOpen, onClose }) {
                           <span
                             style={{
                               fontFamily: 'var(--font-sans)',
-                              fontSize: '0.62rem',
+                              fontSize: '0.72rem',
                               letterSpacing: '0.12em',
                               textTransform: 'uppercase',
-                              color: 'rgba(242,237,232,0.35)',
+                              color: 'rgba(242,237,232,0.6)',
                               display: 'none',
                             }}
                             className="hidden md:inline"
@@ -323,7 +325,8 @@ export default function NavOverlay({ isOpen, onClose }) {
                       alignItems: 'center',
                       gap: '6px',
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.62rem',
+                      fontSize: '0.72rem',
+                      fontWeight: 500,
                       letterSpacing: '0.2em',
                       textTransform: 'uppercase',
                       color: 'var(--gold)',
@@ -347,21 +350,21 @@ export default function NavOverlay({ isOpen, onClose }) {
                 </div>
 
                 {/* Direct Contact Links */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.7)' }}>
-                    <MapPin size={14} color="var(--gold)" />
-                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.78rem', fontWeight: 300 }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.85)' }}>
+                    <MapPin size={16} color="var(--gold)" />
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', fontWeight: 400 }}>
                       Jharpada, Bhubaneswar, Odisha 751006
                     </span>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.7)' }}>
-                    <Phone size={14} color="var(--gold)" />
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.85)' }}>
+                    <Phone size={16} color="var(--gold)" />
                     <a
                       href="tel:+918867355661"
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.78rem',
-                        fontWeight: 300,
+                        fontSize: '0.88rem',
+                        fontWeight: 400,
                         color: 'inherit',
                         textDecoration: 'none',
                         transition: 'color 0.2s ease',
@@ -372,14 +375,14 @@ export default function NavOverlay({ isOpen, onClose }) {
                       +91 88673 55661
                     </a>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.7)' }}>
-                    <Mail size={14} color="var(--gold)" />
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.85)' }}>
+                    <Mail size={16} color="var(--gold)" />
                     <a
                       href="mailto:hi.clayandbricks@gmail.com"
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.78rem',
-                        fontWeight: 300,
+                        fontSize: '0.88rem',
+                        fontWeight: 400,
                         color: 'inherit',
                         textDecoration: 'none',
                         transition: 'color 0.2s ease',
@@ -439,9 +442,9 @@ export default function NavOverlay({ isOpen, onClose }) {
             <p
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.6rem',
-                letterSpacing: '0.18em',
-                color: 'rgba(242,237,232,0.35)',
+                fontSize: '0.74rem',
+                letterSpacing: '0.12em',
+                color: 'rgba(242,237,232,0.55)',
                 textTransform: 'uppercase',
               }}
             >
@@ -460,15 +463,16 @@ export default function NavOverlay({ isOpen, onClose }) {
                   rel="noopener noreferrer"
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.58rem',
-                    letterSpacing: '0.16em',
+                    fontSize: '0.74rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.12em',
                     textTransform: 'uppercase',
-                    color: 'rgba(242,237,232,0.4)',
+                    color: 'rgba(242,237,232,0.65)',
                     textDecoration: 'none',
                     transition: 'color 0.2s',
                   }}
                   onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.4)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.65)')}
                 >
                   {item.name}
                 </a>

@@ -63,12 +63,12 @@ export default function StudioNarrative() {
               key={i}
               style={{
                 fontFamily:   'var(--font-sans)',
-                fontSize:     'clamp(0.82rem, 1.2vw, 0.95rem)',
-                fontWeight:   300,
-                lineHeight:   1.85,
-                color:        'rgba(242,237,232,0.5)',
+                fontSize:     'clamp(0.98rem, 1.3vw, 1.08rem)',
+                fontWeight:   400,
+                lineHeight:   1.75,
+                color:        'rgba(242,237,232,0.82)',
                 marginBottom: '24px',
-                letterSpacing: '0.015em',
+                letterSpacing: '0.01em',
               }}
             >
               {text}
@@ -85,7 +85,7 @@ export default function StudioNarrative() {
             {[['2010', 'Founded'], ['150+', 'Projects'], ['Bhubaneswar', 'Based']].map(([val, lbl]) => (
               <div key={lbl}>
                 <span style={{ fontFamily: 'var(--font-serif)', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', color: 'var(--gold)', display: 'block', fontWeight: 300, lineHeight: 1 }}>{val}</span>
-                <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.58rem', letterSpacing: '0.24em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.3)' }}>{lbl}</span>
+                <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.65)', fontWeight: 500 }}>{lbl}</span>
               </div>
             ))}
           </div>

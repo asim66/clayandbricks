@@ -109,10 +109,10 @@ export default function MaterialityLab() {
           <p
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.84rem',
-              color: 'rgba(242,237,232,0.5)',
-              maxWidth: '420px',
-              fontWeight: 300,
+              fontSize: '0.96rem',
+              color: 'rgba(242,237,232,0.78)',
+              maxWidth: '440px',
+              fontWeight: 400,
               lineHeight: 1.7,
             }}
           >
@@ -154,10 +154,10 @@ export default function MaterialityLab() {
                     <span
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.62rem',
+                        fontSize: '0.76rem',
                         letterSpacing: '0.2em',
-                        color: isSelected ? 'var(--gold)' : 'rgba(242,237,232,0.3)',
-                        fontWeight: 500,
+                        color: isSelected ? 'var(--gold)' : 'rgba(242,237,232,0.5)',
+                        fontWeight: 600,
                       }}
                     >
                       0{idx + 1}
@@ -166,9 +166,9 @@ export default function MaterialityLab() {
                       <h4
                         style={{
                           fontFamily: 'var(--font-serif)',
-                          fontSize: '1.25rem',
-                          fontWeight: isSelected ? 400 : 300,
-                          color: isSelected ? 'var(--off-white)' : 'rgba(242,237,232,0.65)',
+                          fontSize: '1.3rem',
+                          fontWeight: isSelected ? 500 : 400,
+                          color: isSelected ? 'var(--off-white)' : 'rgba(242,237,232,0.75)',
                           letterSpacing: '-0.01em',
                         }}
                       >
@@ -177,9 +177,9 @@ export default function MaterialityLab() {
                       <span
                         style={{
                           fontFamily: 'var(--font-sans)',
-                          fontSize: '0.68rem',
-                          color: 'rgba(242,237,232,0.4)',
-                          letterSpacing: '0.08em',
+                          fontSize: '0.78rem',
+                          color: 'rgba(242,237,232,0.65)',
+                          letterSpacing: '0.06em',
                         }}
                       >
                         {mat.tag}
@@ -230,12 +230,13 @@ export default function MaterialityLab() {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.65rem',
-                    letterSpacing: '0.24em',
+                    fontSize: '0.75rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.2em',
                     textTransform: 'uppercase',
                     color: activeMaterial.accent,
-                    background: 'rgba(255,255,255,0.04)',
-                    padding: '4px 12px',
+                    background: 'rgba(255,255,255,0.06)',
+                    padding: '5px 14px',
                     borderRadius: '2px',
                   }}
                 >
@@ -244,9 +245,9 @@ export default function MaterialityLab() {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.68rem',
-                    color: 'rgba(242,237,232,0.35)',
-                    letterSpacing: '0.1em',
+                    fontSize: '0.78rem',
+                    color: 'rgba(242,237,232,0.65)',
+                    letterSpacing: '0.08em',
                   }}
                 >
                   Provenance & Craft
@@ -269,10 +270,10 @@ export default function MaterialityLab() {
               <p
                 style={{
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.88rem',
+                  fontSize: '0.98rem',
                   lineHeight: 1.7,
-                  color: 'rgba(242,237,232,0.7)',
-                  fontWeight: 300,
+                  color: 'rgba(242,237,232,0.85)',
+                  fontWeight: 400,
                   marginBottom: '28px',
                 }}
               >
@@ -284,10 +285,11 @@ export default function MaterialityLab() {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.62rem',
-                    letterSpacing: '0.2em',
+                    fontSize: '0.74rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.18em',
                     textTransform: 'uppercase',
-                    color: 'rgba(242,237,232,0.4)',
+                    color: 'rgba(242,237,232,0.7)',
                     display: 'block',
                     marginBottom: '10px',
                   }}
@@ -300,11 +302,11 @@ export default function MaterialityLab() {
                       key={trait}
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.72rem',
+                        fontSize: '0.82rem',
                         color: 'var(--off-white)',
-                        background: 'rgba(184,151,90,0.08)',
-                        border: '1px solid rgba(184,151,90,0.2)',
-                        padding: '6px 12px',
+                        background: 'rgba(184,151,90,0.1)',
+                        border: '1px solid rgba(184,151,90,0.25)',
+                        padding: '6px 14px',
                         borderRadius: '2px',
                       }}
                     >
@@ -319,8 +321,9 @@ export default function MaterialityLab() {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.62rem',
-                    letterSpacing: '0.2em',
+                    fontSize: '0.74rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.18em',
                     textTransform: 'uppercase',
                     color: 'var(--gold)',
                     display: 'block',
@@ -329,7 +332,7 @@ export default function MaterialityLab() {
                 >
                   Featured In Portfolio Projects
                 </span>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {activeMaterial.applications.map((app) => (
                     <div
                       key={app}
@@ -338,11 +341,11 @@ export default function MaterialityLab() {
                         alignItems: 'center',
                         gap: '8px',
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.8rem',
-                        color: 'rgba(242,237,232,0.85)',
+                        fontSize: '0.88rem',
+                        color: 'rgba(242,237,232,0.9)',
                       }}
                     >
-                      <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: 'var(--gold)' }} />
+                      <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'var(--gold)' }} />
                       <span>{app}</span>
                     </div>
                   ))}

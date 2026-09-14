@@ -193,9 +193,9 @@ export default function ServicesAccordion() {
                   <span
                     style={{
                       fontFamily:    'var(--font-sans)',
-                      fontSize:      '0.68rem',
-                      letterSpacing: '0.24em',
-                      color:         isActive ? d.accentColor : 'rgba(242,237,232,0.3)',
+                      fontSize:      '0.78rem',
+                      letterSpacing: '0.22em',
+                      color:         isActive ? d.accentColor : 'rgba(242,237,232,0.5)',
                       fontWeight:    600,
                     }}
                   >
@@ -207,7 +207,7 @@ export default function ServicesAccordion() {
                         fontFamily:    'var(--font-serif)',
                         fontSize:      'clamp(1.2rem, 1.8vw, 1.6rem)',
                         fontWeight:    300,
-                        color:         isActive ? 'var(--off-white)' : 'rgba(242,237,232,0.5)',
+                        color:         isActive ? 'var(--off-white)' : 'rgba(242,237,232,0.7)',
                         transition:    'color 0.3s ease',
                       }}
                     >
@@ -216,9 +216,9 @@ export default function ServicesAccordion() {
                     <p
                       style={{
                         fontFamily:    'var(--font-sans)',
-                        fontSize:      '0.62rem',
-                        letterSpacing: '0.12em',
-                        color:         isActive ? 'var(--gold)' : 'rgba(242,237,232,0.3)',
+                        fontSize:      '0.74rem',
+                        letterSpacing: '0.14em',
+                        color:         isActive ? 'var(--gold)' : 'rgba(242,237,232,0.6)',
                         textTransform: 'uppercase',
                         marginTop:     '4px',
                       }}
@@ -281,8 +281,9 @@ export default function ServicesAccordion() {
                   <span
                     style={{
                       fontFamily:    'var(--font-sans)',
-                      fontSize:      '0.62rem',
-                      letterSpacing: '0.28em',
+                      fontSize:      '0.75rem',
+                      fontWeight:    500,
+                      letterSpacing: '0.22em',
                       textTransform: 'uppercase',
                       color:         activeData.accentColor,
                       display:       'block',
@@ -307,10 +308,10 @@ export default function ServicesAccordion() {
                   <p
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize:   'clamp(0.85rem, 1.2vw, 0.96rem)',
+                      fontSize:   'clamp(0.96rem, 1.25vw, 1.08rem)',
                       lineHeight: 1.8,
-                      color:      'rgba(242,237,232,0.65)',
-                      fontWeight: 300,
+                      color:      'rgba(242,237,232,0.82)',
+                      fontWeight: 400,
                       maxWidth:   '500px',
                       marginBottom: '32px',
                     }}
@@ -347,10 +348,11 @@ export default function ServicesAccordion() {
                       <span
                         style={{
                           fontFamily:    'var(--font-sans)',
-                          fontSize:      '0.54rem',
-                          letterSpacing: '0.14em',
+                          fontSize:      '0.72rem',
+                          fontWeight:    500,
+                          letterSpacing: '0.12em',
                           textTransform: 'uppercase',
-                          color:         'rgba(242,237,232,0.4)',
+                          color:         'rgba(242,237,232,0.72)',
                           lineHeight:    1.4,
                           display:       'block',
                         }}
@@ -462,8 +464,9 @@ export default function ServicesAccordion() {
             <span
               style={{
                 fontFamily:    'var(--font-sans)',
-                fontSize:      '0.62rem',
-                letterSpacing: '0.24em',
+                fontSize:      '0.75rem',
+                fontWeight:    500,
+                letterSpacing: '0.22em',
                 textTransform: 'uppercase',
                 color:         'var(--gold)',
               }}
@@ -495,7 +498,7 @@ export default function ServicesAccordion() {
                 <h5
                   style={{
                     fontFamily:    'var(--font-sans)',
-                    fontSize:      '0.82rem',
+                    fontSize:      '0.92rem',
                     fontWeight:    500,
                     color:         'var(--off-white)',
                     marginBottom:  '8px',
@@ -506,10 +509,10 @@ export default function ServicesAccordion() {
                 <p
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize:   '0.74rem',
+                    fontSize:   '0.86rem',
                     lineHeight: 1.7,
-                    color:      'rgba(242,237,232,0.45)',
-                    fontWeight: 300,
+                    color:      'rgba(242,237,232,0.75)',
+                    fontWeight: 400,
                   }}
                 >
                   {adv.desc}
@@ -533,9 +536,9 @@ export default function ServicesAccordion() {
           <p
             style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      '0.72rem',
-              color:         'rgba(242,237,232,0.4)',
-              letterSpacing: '0.04em',
+              fontSize:      '0.88rem',
+              color:         'rgba(242,237,232,0.75)',
+              letterSpacing: '0.02em',
             }}
           >
             Planning a custom villa or commercial flagship in Odisha?
@@ -546,7 +549,8 @@ export default function ServicesAccordion() {
               data-cursor-expand
               style={{
                 fontFamily:     'var(--font-sans)',
-                fontSize:       '0.72rem',
+                fontSize:       '0.82rem',
+                fontWeight:     500,
                 letterSpacing:  '0.16em',
                 textTransform:  'uppercase',
                 color:          'var(--gold)',
@@ -564,10 +568,10 @@ export default function ServicesAccordion() {
               style={{
                 background:     'var(--gold)',
                 color:          'var(--charcoal)',
-                padding:        '10px 24px',
+                padding:        '12px 28px',
                 borderRadius:   '2px',
                 fontFamily:     'var(--font-sans)',
-                fontSize:       '0.68rem',
+                fontSize:       '0.82rem',
                 letterSpacing:  '0.16em',
                 textTransform:  'uppercase',
                 fontWeight:     500,

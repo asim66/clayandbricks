@@ -93,10 +93,11 @@ export default function TeamGrid() {
             <span
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.62rem',
-                letterSpacing: '0.28em',
+                fontSize: '0.76rem',
+                letterSpacing: '0.2em',
                 textTransform: 'uppercase',
                 color: 'var(--gold)',
+                fontWeight: 600,
                 marginBottom: '8px',
               }}
             >
@@ -116,10 +117,10 @@ export default function TeamGrid() {
             <p
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.82rem',
+                fontSize: '0.94rem',
                 lineHeight: 1.7,
-                color: 'rgba(242,237,232,0.5)',
-                fontWeight: 300,
+                color: 'rgba(242,237,232,0.8)',
+                fontWeight: 400,
               }}
             >
               {item.desc}

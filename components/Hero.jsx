@@ -114,7 +114,7 @@ function MagneticButton({ children, href = '#services', delay = 1.4 }) {
             border:          '1px solid var(--gold)',
             color:           hovered ? 'var(--charcoal)' : 'var(--gold)',
             fontFamily:      'var(--font-sans)',
-            fontSize:        '0.75rem',
+            fontSize:        '0.84rem',
             fontWeight:      500,
             letterSpacing:   '0.16em',
             textTransform:   'uppercase',
@@ -158,9 +158,10 @@ function ScrollIndicator({ delay = 2.2 }) {
       <span
         style={{
           fontFamily:  'var(--font-sans)',
-          fontSize:    '0.55rem',
+          fontSize:    '0.72rem',
+          fontWeight:  500,
           color:       'var(--gold)',
-          letterSpacing: '0.24em',
+          letterSpacing: '0.22em',
           textTransform: 'uppercase',
         }}
       >
@@ -263,11 +264,11 @@ export default function Hero() {
           <span
             style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      '0.62rem',
-              letterSpacing: '0.3em',
+              fontSize:      '0.75rem',
+              letterSpacing: '0.22em',
               textTransform: 'uppercase',
               color:         'var(--gold)',
-              fontWeight:    400,
+              fontWeight:    500,
             }}
           >
             Turnkey Architecture · Interior Design · Civil Construction
@@ -320,11 +321,11 @@ export default function Hero() {
           animate="visible"
           style={{
             fontFamily:    'var(--font-sans)',
-            fontWeight:    300,
-            fontSize:      'clamp(0.88rem, 1.35vw, 1.05rem)',
+            fontWeight:    400,
+            fontSize:      'clamp(1rem, 1.4vw, 1.18rem)',
             lineHeight:    1.75,
-            color:         'rgba(242,237,232,0.75)',
-            maxWidth:      '480px',
+            color:         'rgba(242,237,232,0.85)',
+            maxWidth:      '520px',
             marginBottom:  'clamp(28px, 4vw, 44px)',
             letterSpacing: '0.01em',
           }}
@@ -349,12 +350,13 @@ export default function Hero() {
               data-cursor-expand
               style={{
                 fontFamily:    'var(--font-sans)',
-                fontSize:      '0.72rem',
-                letterSpacing: '0.18em',
+                fontSize:      '0.82rem',
+                fontWeight:    500,
+                letterSpacing: '0.16em',
                 textTransform: 'uppercase',
-                color:         'rgba(242,237,232,0.65)',
+                color:         'rgba(242,237,232,0.75)',
                 textDecoration: 'none',
-                borderBottom:  '1px solid rgba(184,151,90,0.4)',
+                borderBottom:  '1px solid rgba(184,151,90,0.5)',
                 paddingBottom: '3px',
                 transition:    'color 0.3s, border-color 0.3s',
               }}
@@ -382,27 +384,27 @@ export default function Hero() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <ShieldCheck size={20} color="var(--gold)" />
+            <ShieldCheck size={22} color="var(--gold)" />
             <div>
-              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--off-white)', display: 'block', fontWeight: 500 }}>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'var(--off-white)', display: 'block', fontWeight: 500 }}>
                 Single-Point Turnkey
               </span>
             </div>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <Compass size={20} color="var(--terracotta)" />
+            <Compass size={22} color="var(--terracotta)" />
             <div>
-              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--off-white)', display: 'block', fontWeight: 500 }}>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'var(--off-white)', display: 'block', fontWeight: 500 }}>
                 15+ Years in Odisha
               </span>
             </div>
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <Layers size={20} color="var(--gold)" />
+            <Layers size={22} color="var(--gold)" />
             <div>
-              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--off-white)', display: 'block', fontWeight: 500 }}>
+              <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'var(--off-white)', display: 'block', fontWeight: 500 }}>
                 In-House Millwork
               </span>
             </div>

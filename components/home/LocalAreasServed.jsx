@@ -85,8 +85,9 @@ export default function LocalAreasServed() {
               alignItems: 'center',
               gap: '8px',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.72rem',
-              letterSpacing: '0.16em',
+              fontSize: '0.82rem',
+              fontWeight: 500,
+              letterSpacing: '0.12em',
               textTransform: 'uppercase',
               color: 'var(--gold)',
               textDecoration: 'none',
@@ -95,7 +96,7 @@ export default function LocalAreasServed() {
             }}
           >
             Check Project Availability in Your Sector
-            <ArrowUpRight size={13} />
+            <ArrowUpRight size={14} />
           </Link>
         </div>
 
@@ -124,15 +125,15 @@ export default function LocalAreasServed() {
                   marginBottom: '18px',
                 }}
               >
-                <MapPin size={15} color="var(--gold)" />
+                <MapPin size={16} color="var(--gold)" />
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.68rem',
-                    letterSpacing: '0.2em',
+                    fontSize: '0.78rem',
+                    letterSpacing: '0.16em',
                     textTransform: 'uppercase',
                     color: 'var(--gold)',
-                    fontWeight: 500,
+                    fontWeight: 600,
                   }}
                 >
                   {region.hub}
@@ -145,12 +146,12 @@ export default function LocalAreasServed() {
                     key={area}
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.75rem',
+                      fontSize: '0.86rem',
                       letterSpacing: '0.02em',
-                      color: 'rgba(242,237,232,0.7)',
-                      background: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(242,237,232,0.08)',
-                      padding: '6px 12px',
+                      color: 'rgba(242,237,232,0.85)',
+                      background: 'rgba(255,255,255,0.04)',
+                      border: '1px solid rgba(242,237,232,0.1)',
+                      padding: '7px 14px',
                       borderRadius: '2px',
                     }}
                   >

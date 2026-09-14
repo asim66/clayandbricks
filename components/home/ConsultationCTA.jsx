@@ -61,12 +61,12 @@ export default function ConsultationCTA() {
         <p
           style={{
             fontFamily: 'var(--font-sans)',
-            fontSize: 'clamp(0.95rem, 1.4vw, 1.15rem)',
-            color: 'rgba(242,237,232,0.65)',
-            maxWidth: '640px',
+            fontSize: 'clamp(1rem, 1.4vw, 1.18rem)',
+            color: 'rgba(242,237,232,0.85)',
+            maxWidth: '680px',
             margin: '0 auto 48px',
-            lineHeight: 1.7,
-            fontWeight: 300,
+            lineHeight: 1.75,
+            fontWeight: 400,
           }}
         >
           Providing turnkey mastery for luxury villas and bespoke residential interiors.
@@ -96,7 +96,7 @@ export default function ConsultationCTA() {
               borderRadius: '4px',
               textDecoration: 'none',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.78rem',
+              fontSize: '0.86rem',
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
               fontWeight: 500,
@@ -124,10 +124,10 @@ export default function ConsultationCTA() {
               borderRadius: '4px',
               textDecoration: 'none',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.78rem',
+              fontSize: '0.86rem',
               letterSpacing: '0.14em',
               textTransform: 'uppercase',
-              fontWeight: 400,
+              fontWeight: 500,
               transition: 'background 0.3s ease',
             }}
           >
@@ -148,19 +148,19 @@ export default function ConsultationCTA() {
           }}
         >
           <div>
-            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', display: 'block', marginBottom: '6px' }}>
+            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.76rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', display: 'block', marginBottom: '8px' }}>
               Studio Address
             </span>
-            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(242,237,232,0.7)', fontWeight: 300, lineHeight: 1.5 }}>
+            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.94rem', color: 'rgba(242,237,232,0.82)', fontWeight: 400, lineHeight: 1.6 }}>
               Plot No. 400/3226/6837, Lane 1, Mahadev Nagar, Jharpada, Bhubaneswar 751006
             </p>
           </div>
 
           <div>
-            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', display: 'block', marginBottom: '6px' }}>
+            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.76rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', display: 'block', marginBottom: '8px' }}>
               Direct Telephony
             </span>
-            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(242,237,232,0.7)', fontWeight: 300, lineHeight: 1.5 }}>
+            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.94rem', color: 'rgba(242,237,232,0.82)', fontWeight: 400, lineHeight: 1.6 }}>
               <a
                 href="tel:+918867355661"
                 style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.2s ease' }}
@@ -174,10 +174,10 @@ export default function ConsultationCTA() {
           </div>
 
           <div>
-            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.62rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', display: 'block', marginBottom: '6px' }}>
+            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.76rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', display: 'block', marginBottom: '8px' }}>
               Email Inquiries
             </span>
-            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', color: 'rgba(242,237,232,0.7)', fontWeight: 300, lineHeight: 1.5 }}>
+            <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.94rem', color: 'rgba(242,237,232,0.82)', fontWeight: 400, lineHeight: 1.6 }}>
               <a
                 href="mailto:hi.clayandbricks@gmail.com"
                 style={{ color: 'inherit', textDecoration: 'none', transition: 'color 0.2s ease' }}

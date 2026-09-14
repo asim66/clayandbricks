@@ -82,14 +82,15 @@ export default function ProjectGallery({ images = [], projectTitle = 'Project Ga
               alignItems: 'center',
               gap: '8px',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.65rem',
-              letterSpacing: '0.24em',
+              fontSize: '0.76rem',
+              fontWeight: 500,
+              letterSpacing: '0.18em',
               textTransform: 'uppercase',
               color: 'var(--gold)',
               marginBottom: '8px',
             }}
           >
-            <Sparkles size={13} />
+            <Sparkles size={14} />
             <span>Visual Gallery & 3D Perspectives</span>
           </div>
           <h2
@@ -115,16 +116,16 @@ export default function ProjectGallery({ images = [], projectTitle = 'Project Ga
                   onClick={() => setActiveFilter(cat)}
                   style={{
                     background: activeFilter === cat ? 'var(--gold)' : 'transparent',
-                    color: activeFilter === cat ? 'var(--charcoal)' : 'rgba(242,237,232,0.6)',
+                    color: activeFilter === cat ? 'var(--charcoal)' : 'rgba(242,237,232,0.7)',
                     border: 'none',
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.68rem',
-                    letterSpacing: '0.1em',
+                    fontSize: '0.8rem',
+                    letterSpacing: '0.08em',
                     textTransform: 'uppercase',
-                    padding: '6px 14px',
+                    padding: '7px 16px',
                     borderRadius: '2px',
                     cursor: 'pointer',
-                    fontWeight: activeFilter === cat ? 500 : 300,
+                    fontWeight: activeFilter === cat ? 600 : 400,
                     transition: 'all 0.25s ease',
                   }}
                   data-cursor-expand
@@ -349,8 +350,9 @@ export default function ProjectGallery({ images = [], projectTitle = 'Project Ga
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.68rem',
-                    letterSpacing: '0.2em',
+                    fontSize: '0.8rem',
+                    fontWeight: 500,
+                    letterSpacing: '0.14em',
                     textTransform: 'uppercase',
                     color: 'var(--gold)',
                   }}

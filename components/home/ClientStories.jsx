@@ -155,9 +155,9 @@ export default function ClientStories() {
                   <p
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.78rem',
-                      color: 'rgba(242,237,232,0.6)',
-                      fontWeight: 300,
+                      fontSize: '0.88rem',
+                      color: 'rgba(242,237,232,0.75)',
+                      fontWeight: 400,
                     }}
                   >
                     {active.role} · {active.city}
@@ -169,9 +169,10 @@ export default function ClientStories() {
                   <span
                     style={{
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.68rem',
-                      letterSpacing: '0.14em',
-                      color: 'rgba(242,237,232,0.4)',
+                      fontSize: '0.82rem',
+                      fontWeight: 500,
+                      letterSpacing: '0.12em',
+                      color: 'rgba(242,237,232,0.65)',
                       marginRight: '8px',
                     }}
                   >
