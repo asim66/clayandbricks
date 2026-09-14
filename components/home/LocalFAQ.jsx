@@ -36,7 +36,53 @@ const FAQS = [
     answer:
       'We stand behind every square foot we construct. Clay and Bricks delivers an industry-leading 10-Year Structural Integrity Warranty on all civil RCC framing and waterproofing. In addition, our factory millwork and modular cabinetry carry a 5 to 10-year warranty alongside official manufacturer guarantees on international hardware (Blum, Hafele, Hettich) and luxury surface materials.',
   },
+  {
+    question: 'Do you offer Vastu-compliant interior design and architecture in Bhubaneswar?',
+    answer:
+      'Absolutely. Vastu Shastra compliance is integrated as a foundational principle at the layout stage—before a single wall is drawn. Our team coordinates room orientation, main door direction, kitchen placement, pooja room positioning, and natural light flow to align with traditional Vastu guidelines. We work in harmony with modern open-plan architecture without compromising either principle.',
+  },
+  {
+    question: 'Can you design interiors for a flat or apartment in Bhubaneswar?',
+    answer:
+      'Yes, apartment and flat interior design is a core service. We have successfully completed multiple 2 BHK, 3 BHK, and penthouse apartment projects across Bhubaneswar. Our process optimizes compact floor plans through space-efficient modular storage, multifunctional furniture, strategic false ceilings, and layered lighting—delivering a spacious, luxurious feel regardless of square footage.',
+  },
+  {
+    question: 'How long does a full turnkey interior project take in Bhubaneswar?',
+    answer:
+      'A standard 2–3 BHK apartment interior project is completed in 10–14 weeks from design sign-off to final handover. A full villa or duplex (3,000–6,000 sq ft) typically requires 16–24 weeks. Civil construction for ground-up residential projects ranges from 12 to 24 months depending on plot size, structural complexity, and monsoon scheduling. Precise timelines are formalized in our project Gantt schedule and contractually bound.',
+  },
+  {
+    question: "What materials are best for interior design in Bhubaneswar's hot and humid climate?",
+    answer:
+      "Bhubaneswar's tropical climate—intense summer heat exceeding 40°C and 80%+ monsoon humidity—demands climate-intelligent material selection. We exclusively specify BWP (Boiling Water Proof) marine-grade plywood for all cabinetry, PU edge-banding to prevent moisture ingress, anti-termite treated frameworks, and vitrified or stone flooring over carpet. For wall finishes, we recommend mineral-based textured paints or stone cladding over standard emulsions.",
+  },
+  {
+    question: 'What is the difference between a full-service interior designer and a local carpenter in Bhubaneswar?',
+    answer:
+      'A local carpenter executes on-site woodwork with limited design capability and no project management. A full-service studio like Clay and Bricks delivers end-to-end accountability: architectural space planning, 3D photorealistic visualization before execution, factory-precision millwork (engineered to ±1mm tolerances), licensed structural supervision, quality audits at every phase, and a formal warranty. The result is a higher quality outcome, delivered faster, with significantly lower risk of rework.',
+  },
+  {
+    question: 'Do you design commercial offices and retail spaces in Bhubaneswar?',
+    answer:
+      'Yes. Our commercial interior design portfolio spans corporate offices, executive boardrooms, boutique retail spaces, and hospitality venues across Bhubaneswar and Odisha. We understand commercial spatial ergonomics—acoustic zoning, biophilic design for productivity, brand identity integration, and high-traffic material durability. Our Konark Boutique Hotel and Stone Office, Janpath are landmark commercial references.',
+  },
+  {
+    question: 'How does the 3D design visualization process work?',
+    answer:
+      'After the initial consultation and measured site survey, our design team develops scaled 2D floor plans followed by full photorealistic 3D renders using ray-traced lighting simulation. You will virtually walk through every room—including material selections, lighting moods, furniture arrangements, and colour schemes—before a single rupee is committed to execution. Revisions are iterative and unlimited until you achieve complete satisfaction. This eliminates all post-construction regrets.',
+  },
+  {
+    question: 'What is the minimum project size you accept?',
+    answer:
+      'We accept projects from ₹8 lakhs upward for interior design scope. Modular kitchen and custom millwork standalone projects start from ₹2.5 lakhs. For civil construction, our minimum engagement is a full-floor or complete residential unit. We do not undertake piecemeal repair or cosmetic touch-up work—our commitment is to holistic, quality-first transformations.',
+  },
+  {
+    question: 'How do I start a project with Clay and Bricks?',
+    answer:
+      'Begin with a free 30-minute discovery call or studio visit at our Jharpada office. We then conduct a measured site assessment and present a preliminary design concept and project investment estimate within 7 working days—at no cost and with no obligation. To schedule your consultation, call +91 88673 55661 or email hi.clayandbricks@gmail.com. We currently serve clients across Bhubaneswar, Cuttack, and Puri.',
+  },
 ];
+
 
 export default function LocalFAQ() {
   const [openIndex, setOpenIndex] = useState(0);
