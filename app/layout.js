@@ -91,6 +91,9 @@ export const metadata = {
     icon:  '/logo.svg',
     apple: '/logo.svg',
   },
+  verification: {
+    google: 'google1670fbf50bec096b',
+  },
 };
 
 export const viewport = { themeColor: '#1a1917' };
