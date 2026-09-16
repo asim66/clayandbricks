@@ -1,6 +1,5 @@
 import './globals.css';
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google';
-import { ViewTransition } from 'react';
 import SmoothScrollProvider from '@/components/SmoothScrollProvider';
 import MagneticCursor from '@/components/MagneticCursor';
 import Header from '@/components/layout/Header';
@@ -111,16 +110,9 @@ export default function RootLayout({ children }) {
         <Header />
 
         <SmoothScrollProvider>
-          {/*
-           * ViewTransition wraps page content so Next.js 16's native
-           * view-transition API fires on every route change.
-           * The laterite-red curtain wipe is defined in globals.css.
-           */}
-          <ViewTransition>
-            <main style={{ paddingTop: 0 }}>
-              {children}
-            </main>
-          </ViewTransition>
+          <main style={{ paddingTop: 0 }}>
+            {children}
+          </main>
 
           <Footer />
         </SmoothScrollProvider>

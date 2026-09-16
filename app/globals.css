@@ -110,42 +110,6 @@ html.lenis, html.lenis body { height: auto; }
 /* ─── Selection ──────────────────────────────────────── */
 ::selection { background: var(--gold); color: var(--charcoal); }
 
-/* ─── Native View Transitions (Next.js 16 / React 19) ── */
-/*
- * Laterite Red curtain wipe between routes.
- * ::view-transition-new(root) slides in from the bottom,
- * ::view-transition-old(root) slides out upward.
- */
-@keyframes vt-slide-in {
-  from { clip-path: inset(100% 0 0 0); }
-  to   { clip-path: inset(0 0 0 0);   }
-}
-@keyframes vt-slide-out {
-  from { clip-path: inset(0 0 0 0);   opacity: 1; }
-  to   { clip-path: inset(0 0 100% 0); opacity: 0; }
-}
-
-::view-transition-old(root) {
-  animation: vt-slide-out 0.55s cubic-bezier(0.76, 0, 0.24, 1) forwards;
-}
-::view-transition-new(root) {
-  animation: vt-slide-in 0.55s cubic-bezier(0.76, 0, 0.24, 1) forwards;
-  background: var(--terracotta);
-}
-::view-transition {
-  pointer-events: none;
-}
-
-/* Respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  ::view-transition-old(*),
-  ::view-transition-new(*),
-  ::view-transition-group(*) {
-    animation-duration: 0s !important;
-    animation-delay:    0s !important;
-  }
-}
-
 /* ─── Page padding utility ───────────────────────────── */
 .page-pad {
   padding-left:  clamp(24px, 6vw, 96px);
