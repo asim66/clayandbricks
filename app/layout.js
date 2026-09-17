@@ -29,7 +29,10 @@ export const metadata = {
   alternates: {
     canonical: '/',
     types: {
-      'text/markdown': [{ url: '/llms.txt', title: 'LLMs.txt' }],
+      'text/markdown': [
+        { url: '/llms.txt', title: 'LLMs.txt' },
+        { url: '/llms-full.txt', title: 'LLMs-Full.txt' },
+      ],
     },
   },
   title: {
@@ -109,6 +112,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs.txt" />
+        <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="LLMs-Full.txt" />
       </head>
       <body>
         <LocalBusinessSchema />

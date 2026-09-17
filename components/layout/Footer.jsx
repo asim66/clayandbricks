@@ -100,8 +100,10 @@ const NAV_COLS = [
       { label: 'Luxury Interior Design',      href: '/services/interior-design-bhubaneswar' },
       { label: 'Modular Kitchen Design',      href: '/services/modular-kitchen-bhubaneswar' },
       { label: 'Duplex Villa Interiors',      href: '/services/duplex-interior-design' },
+      { label: 'Architectural Design',        href: '/services/architectural-design-bhubaneswar' },
       { label: 'Commercial Office Design',    href: '/services/commercial-interior-design' },
       { label: 'Civil Construction',          href: '/services/civil-construction-bhubaneswar' },
+      { label: 'All Services Hub',            href: '/services' },
     ],
   },
   {
@@ -270,6 +272,40 @@ export default function Footer() {
           <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', letterSpacing: '0.12em', color: 'rgba(242,237,232,0.55)' }}>
             © {new Date().getFullYear()} Clay and Bricks Pvt Ltd. All rights reserved.
           </p>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <a
+              href="/sitemap.xml"
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '0.72rem',
+                letterSpacing: '0.08em',
+                color: 'rgba(242,237,232,0.45)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.45)')}
+            >
+              XML Sitemap
+            </a>
+            <span style={{ color: 'rgba(242,237,232,0.2)' }}>•</span>
+            <a
+              href="/llms.txt"
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '0.72rem',
+                letterSpacing: '0.08em',
+                color: 'rgba(242,237,232,0.45)',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--gold)')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.45)')}
+            >
+              LLMs Dossier
+            </a>
+          </div>
         </div>
       </div>
     </footer>

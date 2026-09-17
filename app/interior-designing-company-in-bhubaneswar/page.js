@@ -62,34 +62,11 @@ const pageSchema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': [
-        'LocalBusiness',
-        'HomeAndConstructionBusiness',
-        'ProfessionalService',
-        'InteriorDesigner',
-      ],
-      '@id': 'https://clayandbricks.com/#localbusiness',
-      name: 'Clay and Bricks Pvt Ltd — Interior Designing Company in Bhubaneswar',
-      alternateName: 'Clay and Bricks Interiors',
-      url: 'https://clayandbricks.com/interior-designing-company-in-bhubaneswar',
-      logo: 'https://clayandbricks.com/logo.png',
-      image: 'https://clayandbricks.com/hero-luxury-interior.jpg',
-      telephone: '+91 88673 55661',
-      email: 'hi.clayandbricks@gmail.com',
-      priceRange: '₹₹₹₹',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Plot No. 400/3226/6837, Lane 1, Mahadev Nagar, Jharpada',
-        addressLocality: 'Bhubaneswar',
-        addressRegion: 'Odisha',
-        postalCode: '751006',
-        addressCountry: 'IN',
-      },
-      geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 20.2783,
-        longitude: 85.8643,
-      },
+      '@type': 'Service',
+      '@id': 'https://clayandbricks.com/interior-designing-company-in-bhubaneswar/#service',
+      name: 'Turnkey Interior Design & Execution in Bhubaneswar',
+      serviceType: 'Turnkey Interior Architecture',
+      provider: { '@id': 'https://clayandbricks.com/#localbusiness' },
       areaServed: [
         { '@type': 'City', name: 'Bhubaneswar' },
         { '@type': 'Place', name: 'Patia, Bhubaneswar' },
@@ -100,23 +77,8 @@ const pageSchema = {
         { '@type': 'Place', name: 'Khandagiri, Bhubaneswar' },
         { '@type': 'Place', name: 'Shree Vihar, Bhubaneswar' },
       ],
-      openingHoursSpecification: [
-        {
-          '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-          opens: '10:00',
-          closes: '19:30',
-        },
-      ],
-    },
-    {
-      '@type': 'Service',
-      '@id': 'https://clayandbricks.com/interior-designing-company-in-bhubaneswar/#service',
-      name: 'Turnkey Interior Design & Execution',
-      serviceType: 'Turnkey Interior Architecture',
-      provider: { '@id': 'https://clayandbricks.com/#localbusiness' },
       description:
-        'Full-scope luxury interior design and turnkey contracting in Bhubaneswar. Includes spatial planning, 3D digital twins, factory-made modular joinery, Italian marble laying, false ceilings, and 10-year warranty.',
+        'Full-scope luxury interior design and turnkey contracting in Bhubaneswar. Includes spatial planning, 4K 3D digital twins, factory-made German CNC joinery, Italian marble laying, false ceilings, and 10-year warranty.',
       offers: {
         '@type': 'AggregateOffer',
         priceCurrency: 'INR',

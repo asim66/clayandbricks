@@ -45,11 +45,17 @@ Clay and Bricks Pvt Ltd is an integrated architecture and construction firm head
 - [Interior Designer in Khandagiri](https://clayandbricks.com/neighborhoods/khandagiri): Contemporary independent homes, apartment styling, and climate-responsive architecture in Khandagiri.
 - [Interior Designer in Chandrasekharpur](https://clayandbricks.com/neighborhoods/chandrasekharpur): Planned luxury villas, government officer residences, and modern modular kitchen execution in CSP.
 
-## Featured Project Case Studies
+## Featured Project Case Studies & Works
 
-- [Luxury Villa, Shree Vihar](https://clayandbricks.com/projects/luxury-villa-shree-vihar): 9,500 sq ft multi-generational estate featuring modular sage cabinetry, fluted glass partitions, and Italian marble.
-- [3 BHK Luxury Apartment, Laxmi Imperial](https://clayandbricks.com/projects/3-bhk-apartment-laxmi-imperial): 2,150 sq ft modern residence featuring warm wood veneer fluted walls, custom vitrines, and cove illumination.
-- [Bibhu Babu Villa](https://clayandbricks.com/projects/bibhu-babu-villa): 6,800 sq ft contemporary duplex villa uniting RCC structural engineering and bespoke interior finishing.
+- [Luxury Villa, Shree Vihar](https://clayandbricks.com/projects/luxury-villa-shree-vihar): 9,500 sq ft multi-generational estate in Shree Vihar, Bhubaneswar featuring modular sage cabinetry, fluted glass partitions, and Italian marble.
+- [3 BHK Luxury Apartment, Laxmi Imperial](https://clayandbricks.com/projects/3-bhk-apartment-laxmi-imperial): 2,150 sq ft modern residence at Laxmi Imperial, Bhubaneswar featuring warm wood veneer fluted walls, custom vitrines, and cove illumination.
+- [Bibhu Babu's Villa](https://clayandbricks.com/projects/bibhu-babu-villa): 4,800 sq ft contemporary duplex villa in Patharagadia, Bhubaneswar uniting RCC structural engineering and bespoke interior finishing.
+- [Laterite Villa](https://clayandbricks.com/projects/laterite-villa): 6,200 sq ft double-height private estate in Patia, Bhubaneswar blending raw Odisha laterite stone with polished concrete.
+- [Brass & Noir Kitchen](https://clayandbricks.com/projects/brass-noir-kitchen): 920 sq ft luxury modular kitchen in Sahid Nagar, Bhubaneswar featuring antique brass hardware, severe charcoal palette, and waterfall Calacatta marble island.
+- [Terracotta Sanctuary](https://clayandbricks.com/projects/terracotta-sanctuary): 840 sq ft master suite in Nayapalli, Bhubaneswar featuring hand-troweled terracotta plaster inspired by the sun temple walls of Konark.
+- [Stone Office, Janpath](https://clayandbricks.com/projects/stone-office-janpath): 3,800 sq ft corporate office on Janpath, Bhubaneswar featuring fluted sandstone wall panels and monolithic hand-carved stone boardroom desk.
+- [Forest Pool Villa](https://clayandbricks.com/projects/forest-pool-villa): 8,400 sq ft pavilion residence in Chandaka, Bhubaneswar dissolving into the forest canopy with an infinity basalt pool and laterite plinth.
+- [Konark Boutique Hotel](https://clayandbricks.com/projects/konark-boutique-hotel): 12,000 sq ft luxury boutique hotel on Puri Road, Bhubaneswar with double-height mandapa lobby, hand-carved sandstone screens, and gold leaf ceilings.
 
 ## Optional & Extended Technical Documentation
 
