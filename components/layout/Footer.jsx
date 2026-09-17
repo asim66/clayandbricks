@@ -122,6 +122,7 @@ const NAV_COLS = [
     links: [
       { label: '+91 88673 55661',            href: 'tel:+918867355661',            external: true },
       { label: 'hi.clayandbricks@gmail.com', href: 'mailto:hi.clayandbricks@gmail.com', external: true },
+      { label: 'Google Business Profile',    href: 'https://share.google/WEiFrgyIf4abzrGw2', external: true },
       { label: 'Schedule Consultation',      href: '/contact' },
     ],
   },
@@ -242,14 +243,27 @@ export default function Footer() {
               <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {col.links.map((link) => (
                   <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'rgba(242,237,232,0.72)', textDecoration: 'none', letterSpacing: '0.01em', transition: 'color 0.3s' }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--off-white)')}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.72)')}
-                    >
-                      {link.label}
-                    </Link>
+                    {link.external ? (
+                      <a
+                        href={link.href}
+                        target={link.href.startsWith('http') ? '_blank' : undefined}
+                        rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'rgba(242,237,232,0.72)', textDecoration: 'none', letterSpacing: '0.01em', transition: 'color 0.3s' }}
+                        onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--off-white)')}
+                        onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.72)')}
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'rgba(242,237,232,0.72)', textDecoration: 'none', letterSpacing: '0.01em', transition: 'color 0.3s' }}
+                        onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--off-white)')}
+                        onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(242,237,232,0.72)')}
+                      >
+                        {link.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

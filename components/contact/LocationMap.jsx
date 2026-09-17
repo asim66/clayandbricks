@@ -166,6 +166,42 @@ export default function LocationMap() {
             Mon — Sat: 10:00 AM – 7:30 PM (By Appointment)
           </p>
         </div>
+
+        <a
+          href="https://share.google/WEiFrgyIf4abzrGw2"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cursor-expand
+          style={{
+            marginTop: '12px',
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            border: '1px solid rgba(184,151,90,0.4)',
+            background: 'rgba(184,151,90,0.08)',
+            color: 'var(--gold)',
+            fontFamily: 'var(--font-sans)',
+            fontSize: '0.85rem',
+            fontWeight: 600,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            padding: '12px 20px',
+            textDecoration: 'none',
+            transition: 'all 0.3s ease',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = 'var(--gold)';
+            e.currentTarget.style.color = 'var(--charcoal)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = 'rgba(184,151,90,0.08)';
+            e.currentTarget.style.color = 'var(--gold)';
+          }}
+        >
+          <span>Get Directions on Google Maps</span>
+          <span>↗</span>
+        </a>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function LocalBusinessSchema() {
         ],
         '@id': 'https://clayandbricks.com/#localbusiness',
         name: 'Clay and Bricks Pvt Ltd',
-        alternateName: 'Clay and Bricks',
+        alternateName: ['Clay and Bricks', 'Clay And Bricks | The Interior Designer'],
         legalName: 'Clay and Bricks Pvt Ltd',
         url: 'https://clayandbricks.com',
         logo: 'https://clayandbricks.com/logo.png',
@@ -59,7 +59,7 @@ export default function LocalBusinessSchema() {
           },
           geoRadius: '80000',
         },
-        hasMap: 'https://maps.google.com/?q=20.2783,85.8643',
+        hasMap: 'https://share.google/WEiFrgyIf4abzrGw2',
         openingHoursSpecification: [
           {
             '@type': 'OpeningHoursSpecification',
@@ -188,6 +188,7 @@ export default function LocalBusinessSchema() {
           'query-input': 'required name=search_term_string',
         },
         sameAs: [
+          'https://share.google/WEiFrgyIf4abzrGw2',
           'https://www.instagram.com/clayandbricks',
           'https://www.facebook.com/clayandbricks',
           'https://www.linkedin.com/company/clayandbricks',
