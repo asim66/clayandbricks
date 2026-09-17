@@ -9,11 +9,12 @@ import BrandLogo from '@/components/ui/BrandLogo';
 
 /* ─── Nav items ─────────────────────────────────────── */
 const NAV_ITEMS = [
-  { index: '01', label: 'Home',      href: '/',          tag: 'Overview' },
-  { index: '02', label: 'Studio',    href: '/studio',    tag: 'Philosophy & Team' },
-  { index: '03', label: 'Projects',  href: '/projects',  tag: 'Curated Portfolio' },
-  { index: '04', label: 'Expertise', href: '/expertise', tag: 'Architecture & Turnkey' },
-  { index: '05', label: 'Contact',   href: '/contact',   tag: 'Commission a Space' },
+  { index: '01', label: 'Home',            href: '/',                                           tag: 'Overview' },
+  { index: '02', label: 'Interior Studio', href: '/interior-designing-company-in-bhubaneswar',   tag: 'Turnkey Company' },
+  { index: '03', label: 'Projects',        href: '/projects',                                   tag: 'Curated Portfolio' },
+  { index: '04', label: 'Expertise',       href: '/expertise',                                  tag: 'Architecture & Turnkey' },
+  { index: '05', label: 'Studio',          href: '/studio',                                     tag: 'Philosophy & Heritage' },
+  { index: '06', label: 'Contact',         href: '/contact',                                    tag: 'Commission a Space' },
 ];
 
 /* ─── Konark Chakra SVG Motif ───────────────────────── */

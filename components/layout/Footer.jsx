@@ -87,17 +87,32 @@ const NAV_COLS = [
   {
     heading: 'Studio',
     links: [
-      { label: 'About',       href: '/studio' },
-      { label: 'Our Process', href: '/studio#process' },
-      { label: 'Projects',    href: '/projects' },
+      { label: 'About Studio',      href: '/studio' },
+      { label: 'Curated Portfolio', href: '/projects' },
+      { label: 'Our Process',       href: '/studio#process' },
+      { label: 'Expertise',         href: '/expertise' },
     ],
   },
   {
-    heading: 'Expertise',
+    heading: 'Interior Services',
     links: [
-      { label: 'Interior Design',  href: '/expertise' },
-      { label: 'Construction',     href: '/expertise#construction' },
-      { label: '3D Visualization', href: '/expertise#viz' },
+      { label: 'Interior Designing Company',  href: '/interior-designing-company-in-bhubaneswar' },
+      { label: 'Luxury Interior Design',      href: '/services/interior-design-bhubaneswar' },
+      { label: 'Modular Kitchen Design',      href: '/services/modular-kitchen-bhubaneswar' },
+      { label: 'Duplex Villa Interiors',      href: '/services/duplex-interior-design' },
+      { label: 'Commercial Office Design',    href: '/services/commercial-interior-design' },
+      { label: 'Civil Construction',          href: '/services/civil-construction-bhubaneswar' },
+    ],
+  },
+  {
+    heading: 'Bhubaneswar Hubs',
+    links: [
+      { label: 'Patia & Infocity',     href: '/neighborhoods/patia' },
+      { label: 'Saheed Nagar',         href: '/neighborhoods/saheed-nagar' },
+      { label: 'Jayadev Vihar',        href: '/neighborhoods/jayadev-vihar' },
+      { label: 'Nayapalli',            href: '/neighborhoods/nayapalli' },
+      { label: 'Chandrasekharpur',     href: '/neighborhoods/chandrasekharpur' },
+      { label: 'Khandagiri',           href: '/neighborhoods/khandagiri' },
     ],
   },
   {
@@ -254,9 +269,6 @@ export default function Footer() {
         >
           <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', letterSpacing: '0.12em', color: 'rgba(242,237,232,0.55)' }}>
             © {new Date().getFullYear()} Clay and Bricks Pvt Ltd. All rights reserved.
-          </p>
-          <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.74rem', letterSpacing: '0.12em', color: 'rgba(242,237,232,0.5)', textAlign: 'right' }}>
-            Designed & Built in Bhubaneswar · Odisha Modern
           </p>
         </div>
       </div>

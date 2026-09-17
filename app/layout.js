@@ -28,6 +28,9 @@ export const metadata = {
   metadataBase: new URL(baseUrl),
   alternates: {
     canonical: '/',
+    types: {
+      'text/markdown': [{ url: '/llms.txt', title: 'LLMs.txt' }],
+    },
   },
   title: {
     template: '%s | Clay and Bricks — Luxury Interiors, Bhubaneswar',
@@ -104,6 +107,9 @@ export default function RootLayout({ children }) {
       className={`${cormorant.variable} ${dmSans.variable}`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs.txt" />
+      </head>
       <body>
         <LocalBusinessSchema />
         <MagneticCursor />

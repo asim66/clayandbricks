@@ -7,12 +7,13 @@ export default async function sitemap() {
 
   // Core static landing pages
   const staticRoutes = [
-    { url: `${baseUrl}`,           lastModified: currentDate, changeFrequency: 'weekly',  priority: 1.0 },
-    { url: `${baseUrl}/expertise`, lastModified: currentDate, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${baseUrl}/projects`,  lastModified: currentDate, changeFrequency: 'weekly',  priority: 0.9 },
-    { url: `${baseUrl}/studio`,    lastModified: currentDate, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/contact`,   lastModified: currentDate, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/services`,  lastModified: currentDate, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}`,                                                lastModified: currentDate, changeFrequency: 'weekly',  priority: 1.0 },
+    { url: `${baseUrl}/interior-designing-company-in-bhubaneswar`,      lastModified: currentDate, changeFrequency: 'weekly',  priority: 1.0 },
+    { url: `${baseUrl}/expertise`,                                      lastModified: currentDate, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${baseUrl}/projects`,                                       lastModified: currentDate, changeFrequency: 'weekly',  priority: 0.9 },
+    { url: `${baseUrl}/studio`,                                         lastModified: currentDate, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/contact`,                                        lastModified: currentDate, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/services`,                                       lastModified: currentDate, changeFrequency: 'monthly', priority: 0.9 },
   ];
 
   // Service landing pages — high-intent commercial keywords
