@@ -6,9 +6,15 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: '/',
         has: [{ type: 'host', value: 'www.clayandbricks.com' }],
-        destination: 'https://clayandbricks.com/:path*',
+        destination: 'https://clayandbricks.com',
+        permanent: true,
+      },
+      {
+        source: '/:path+',
+        has: [{ type: 'host', value: 'www.clayandbricks.com' }],
+        destination: 'https://clayandbricks.com/:path+',
         permanent: true,
       },
     ];
