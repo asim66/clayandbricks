@@ -9,7 +9,7 @@ export default function ConsultationCTA() {
     <section
       style={{
         background: 'linear-gradient(180deg, #161513 0%, #0d0c0a 100%)',
-        padding: 'clamp(90px, 14vh, 160px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(80px, 12vh, 160px) clamp(16px, 4.5vw, 96px)',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -140,7 +140,7 @@ export default function ConsultationCTA() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
             gap: '24px',
             borderTop: '1px solid rgba(242,237,232,0.1)',
             paddingTop: '36px',

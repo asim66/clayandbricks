@@ -61,7 +61,7 @@ export default function ServicesGrid() {
       id="services"
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(100px, 14vh, 180px) clamp(48px, 8vw, 120px)',
+        padding: 'clamp(80px, 12vh, 180px) clamp(16px, 4.5vw, 120px)',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -104,7 +104,7 @@ export default function ServicesGrid() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
             gap: 'clamp(32px, 4vw, 48px)',
           }}
         >
@@ -119,7 +119,7 @@ export default function ServicesGrid() {
                 transition={{ duration: 0.6, delay: (idx % 3) * 0.1, ease: [0.25, 1, 0.35, 1] }}
                 style={{
                   position: 'relative',
-                  padding: 'clamp(40px, 6vw, 60px) clamp(30px, 4vw, 40px)',
+                  padding: 'clamp(32px, 5vw, 60px) clamp(20px, 4vw, 40px)',
                   background: 'rgba(26,24,24,0.4)',
                   border: '1px solid rgba(255,255,255,0.04)',
                   borderRadius: '0',

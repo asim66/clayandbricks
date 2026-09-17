@@ -5,7 +5,7 @@ import SectionLabel from '@/components/ui/SectionLabel';
 
 export default function LocationMap() {
   return (
-    <div style={{ background: 'var(--charcoal-light)', padding: 'clamp(40px, 6vh, 60px)', borderRadius: '2px' }}>
+    <div style={{ background: 'var(--charcoal-light)', padding: 'clamp(24px, 5vw, 60px)', borderRadius: '2px' }}>
       <SectionLabel number="02" label="Studio Location" color="var(--gold)" />
 
       <h3

@@ -93,8 +93,16 @@ export const metadata = {
     images:      ['/hero-bg.jpg'],
   },
   icons: {
-    icon:  '/logo.svg',
-    apple: '/logo.svg',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
   },
   verification: {
     google: 'google1670fbf50bec096b',

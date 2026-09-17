@@ -311,7 +311,7 @@ export default async function ProjectDetailPage({ params }) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap: 'clamp(48px, 8vw, 120px)',
             marginBottom: 'clamp(64px, 10vh, 120px)',
           }}
@@ -432,7 +432,7 @@ export default async function ProjectDetailPage({ params }) {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
                 gap: '24px',
               }}
             >

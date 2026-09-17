@@ -19,7 +19,7 @@ export default function ProjectGrid() {
     <section
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(100px, 14vh, 180px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(90px, 13vh, 180px) clamp(16px, 4.5vw, 96px)',
       }}
     >
       {/* Header & Filter Controls */}
@@ -29,8 +29,8 @@ export default function ProjectGrid() {
           justifyContent: 'space-between',
           alignItems: 'flex-end',
           flexWrap: 'wrap',
-          gap: '32px',
-          marginBottom: 'clamp(48px, 6vh, 80px)',
+          gap: '24px',
+          marginBottom: 'clamp(40px, 5vh, 80px)',
         }}
       >
         <div>
@@ -38,10 +38,10 @@ export default function ProjectGrid() {
           <h1
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(2.6rem, 5.5vw, 5.8rem)',
+              fontSize: 'clamp(2.3rem, 5.5vw, 5.8rem)',
               fontWeight: 300,
               color: 'var(--off-white)',
-              marginTop: '16px',
+              marginTop: '14px',
               lineHeight: 1.05,
               letterSpacing: '-0.02em',
             }}
@@ -51,7 +51,18 @@ export default function ProjectGrid() {
         </div>
 
         {/* Minimalist filter buttons */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+        <div
+          className="no-scrollbar"
+          style={{
+            display: 'flex',
+            flexWrap: 'nowrap',
+            overflowX: 'auto',
+            WebkitOverflowScrolling: 'touch',
+            gap: '8px',
+            maxWidth: '100%',
+            paddingBottom: '4px',
+          }}
+        >
           {CATEGORIES.map((cat) => {
             const isSel = activeCat === cat;
             return (
@@ -64,14 +75,16 @@ export default function ProjectGrid() {
                   border: isSel ? '1px solid var(--gold)' : '1px solid rgba(242,237,232,0.15)',
                   color: isSel ? 'var(--charcoal)' : 'rgba(242,237,232,0.7)',
                   fontFamily: 'var(--font-sans)',
-                  fontSize: '0.8rem',
+                  fontSize: '0.78rem',
                   letterSpacing: '0.1em',
                   textTransform: 'uppercase',
-                  padding: '9px 20px',
+                  padding: '8px 18px',
                   borderRadius: '2px',
-                  cursor: 'none',
                   transition: 'all 0.3s ease',
                   fontWeight: isSel ? 600 : 400,
+                  whiteSpace: 'nowrap',
+                  flexShrink: 0,
+                  minHeight: '40px',
                 }}
               >
                 {cat}

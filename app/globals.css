@@ -32,9 +32,14 @@ body {
   background-color: var(--charcoal);
   color: var(--off-white);
   overflow-x: hidden;
-  cursor: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
 }
 
 /* ─── Lenis smooth scroll ────────────────────────────── */
@@ -117,8 +122,22 @@ html.lenis, html.lenis body { height: auto; }
 
 /* ─── Page padding utility ───────────────────────────── */
 .page-pad {
-  padding-left:  clamp(24px, 6vw, 96px);
-  padding-right: clamp(24px, 6vw, 96px);
+  padding-left:  clamp(16px, 4.5vw, 96px);
+  padding-right: clamp(16px, 4.5vw, 96px);
+}
+
+/* ─── Hide scrollbar utility for touch-friendly horizontal pill bars ── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Universal word wrap to prevent viewport breaking ── */
+h1, h2, h3, h4, h5, h6, p, span, a, label {
+  overflow-wrap: break-word;
 }
 
 /* ─── Masonry grid (Projects) ────────────────────────── */
@@ -150,7 +169,12 @@ html.lenis, html.lenis body { height: auto; }
   width:         100%;
   padding:       20px 0 0;
   resize:        none;
-  cursor:        none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .float-field input,
+  .float-field textarea {
+    cursor: none;
+  }
 }
 .float-field label {
   position:       absolute;

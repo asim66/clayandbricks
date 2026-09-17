@@ -155,18 +155,18 @@ export default function Footer() {
         <KonarkChakra />
       </div>
 
-      <div style={{ padding: '0 clamp(24px, 6vw, 96px)' }}>
+      <div style={{ padding: '0 clamp(16px, 4.5vw, 96px)' }}>
         {/* ── Main CTA ── */}
-        <div style={{ marginBottom: 'clamp(60px, 8vh, 100px)' }}>
+        <div style={{ marginBottom: 'clamp(48px, 6vh, 90px)' }}>
           <h2
             style={{
               fontFamily:    'var(--font-serif)',
-              fontSize:      'clamp(2.8rem, 7vw, 8rem)',
+              fontSize:      'clamp(2.1rem, 6vw, 7.5rem)',
               fontWeight:    300,
-              lineHeight:    1.0,
-              letterSpacing: '-0.03em',
+              lineHeight:    1.04,
+              letterSpacing: '-0.025em',
               color:         'var(--off-white)',
-              marginBottom:  '48px',
+              marginBottom:  'clamp(28px, 4vw, 48px)',
               maxWidth:      '900px',
             }}
           >
@@ -185,7 +185,7 @@ export default function Footer() {
             width:        '100%',
             height:       '1px',
             background:   'linear-gradient(90deg, var(--terracotta) 0%, transparent 60%)',
-            marginBottom: 'clamp(48px, 6vh, 72px)',
+            marginBottom: 'clamp(40px, 5vh, 64px)',
             opacity:      0.5,
           }}
           aria-hidden="true"
@@ -195,20 +195,20 @@ export default function Footer() {
         <div
           style={{
             display:             'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
-            gap:                 'clamp(32px, 4vw, 64px)',
-            marginBottom:        'clamp(48px, 6vh, 72px)',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))',
+            gap:                 'clamp(28px, 4vw, 64px)',
+            marginBottom:        'clamp(40px, 5vh, 64px)',
           }}
         >
           {/* Studio info col */}
           <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '20px' }}>
-              <BrandLogo size={58} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
+              <BrandLogo size={46} />
               <div>
-                <p style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', fontWeight: 400, color: 'var(--off-white)', lineHeight: 1.1 }}>
+                <p style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', fontWeight: 400, color: 'var(--off-white)', lineHeight: 1.1 }}>
                   Clay and Bricks
                 </p>
-                <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--gold)', marginTop: '3px' }}>
+                <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.64rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', marginTop: '2px' }}>
                   We Build Your Dream House
                 </p>
               </div>

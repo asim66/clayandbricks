@@ -109,7 +109,7 @@ export default function ProjectGallery({ images = [], projectTitle = 'Project Ga
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
           {/* Category Filter Chips if multiple exist */}
           {hasMultipleCategories && (
-            <div style={{ display: 'flex', gap: '6px', background: 'rgba(255,255,255,0.04)', padding: '4px', borderRadius: '4px' }}>
+            <div className="no-scrollbar" style={{ display: 'flex', gap: '6px', background: 'rgba(255,255,255,0.04)', padding: '4px', borderRadius: '4px', overflowX: 'auto', maxWidth: '100%', WebkitOverflowScrolling: 'touch' }}>
               {categories.map((cat) => (
                 <button
                   key={cat}
@@ -201,7 +201,7 @@ export default function ProjectGallery({ images = [], projectTitle = 'Project Ga
         layout
         style={{
           display: 'grid',
-          gridTemplateColumns: `repeat(auto-fit, minmax(${columns === 3 ? '320px' : '420px'}, 1fr))`,
+          gridTemplateColumns: `repeat(auto-fit, minmax(min(100%, ${columns === 3 ? '280px' : '360px'}), 1fr))`,
           gap: '28px',
         }}
       >

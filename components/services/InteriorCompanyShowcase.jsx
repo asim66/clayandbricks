@@ -723,7 +723,7 @@ export default function InteriorCompanyShowcase() {
             <div
               style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
                 gap: '1px',
                 background: 'rgba(242,237,232,0.08)',
                 border: '1px solid rgba(242,237,232,0.12)',
@@ -741,9 +741,10 @@ export default function InteriorCompanyShowcase() {
               ].map((stat, i) => (
                 <div
                   key={i}
+                  className={i === 4 ? 'col-span-2 sm:col-span-1' : ''}
                   style={{
                     background: 'rgba(26,25,23,0.7)',
-                    padding: '20px 24px',
+                    padding: 'clamp(14px, 2vw, 20px) clamp(16px, 2vw, 24px)',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center',
@@ -847,14 +848,18 @@ export default function InteriorCompanyShowcase() {
 
             {/* Filter Tabs */}
             <div
+              className="no-scrollbar"
               style={{
                 display: 'flex',
-                flexWrap: 'wrap',
+                flexWrap: 'nowrap',
+                overflowX: 'auto',
+                WebkitOverflowScrolling: 'touch',
                 gap: '8px',
                 background: 'rgba(242,237,232,0.04)',
                 padding: '6px',
                 borderRadius: '4px',
                 border: '1px solid rgba(242,237,232,0.08)',
+                maxWidth: '100%',
               }}
             >
               {CATEGORIES.map((cat) => {
@@ -875,6 +880,9 @@ export default function InteriorCompanyShowcase() {
                       borderRadius: '2px',
                       cursor: 'pointer',
                       transition: 'all 0.25s ease',
+                      whiteSpace: 'nowrap',
+                      flexShrink: 0,
+                      minHeight: '40px',
                     }}
                   >
                     {cat}
@@ -889,8 +897,8 @@ export default function InteriorCompanyShowcase() {
             layout
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(360px, 1fr))',
-              gap: '32px',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 320px), 1fr))',
+              gap: 'clamp(20px, 3vw, 32px)',
             }}
           >
             <AnimatePresence>
@@ -1190,8 +1198,8 @@ export default function InteriorCompanyShowcase() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(380px, 1fr))',
-              gap: '36px',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+              gap: 'clamp(20px, 3vw, 36px)',
             }}
           >
             {SPACES_SHOWCASE.map((space) => (
@@ -1586,8 +1594,8 @@ export default function InteriorCompanyShowcase() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
-              gap: '32px',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+              gap: 'clamp(20px, 3vw, 32px)',
               alignItems: 'stretch',
             }}
           >
@@ -1812,7 +1820,7 @@ export default function InteriorCompanyShowcase() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
               gap: '2px',
               background: 'rgba(242,237,232,0.06)',
               border: '1px solid rgba(242,237,232,0.08)',
@@ -2169,8 +2177,9 @@ export default function InteriorCompanyShowcase() {
                 overflow: 'hidden',
                 boxShadow: '0 32px 80px rgba(0,0,0,0.85)',
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
                 maxHeight: '90vh',
+                overflowY: 'auto',
               }}
             >
               {/* Close Button */}

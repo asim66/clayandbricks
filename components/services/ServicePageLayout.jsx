@@ -38,8 +38,8 @@ export default function ServicePageLayout({
           background: 'var(--charcoal)',
           paddingTop: 'clamp(120px, 18vh, 200px)',
           paddingBottom: 'clamp(60px, 10vh, 120px)',
-          paddingLeft: 'clamp(24px, 6vw, 96px)',
-          paddingRight: 'clamp(24px, 6vw, 96px)',
+          paddingLeft: 'clamp(16px, 4.5vw, 96px)',
+          paddingRight: 'clamp(16px, 4.5vw, 96px)',
           borderBottom: '1px solid rgba(242,237,232,0.08)',
         }}
       >
@@ -134,14 +134,14 @@ export default function ServicePageLayout({
       <section
         style={{
           background: 'var(--charcoal)',
-          padding: 'clamp(60px, 10vh, 120px) clamp(24px, 6vw, 96px)',
+          padding: 'clamp(60px, 10vh, 120px) clamp(16px, 4.5vw, 96px)',
         }}
       >
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
               gap: 'clamp(40px, 6vw, 80px)',
               alignItems: 'start',
             }}
@@ -226,7 +226,7 @@ export default function ServicePageLayout({
         <section
           style={{
             background: '#1a1917',
-            padding: 'clamp(60px, 10vh, 120px) clamp(24px, 6vw, 96px)',
+            padding: 'clamp(60px, 10vh, 120px) clamp(16px, 4.5vw, 96px)',
             borderTop: '1px solid rgba(242,237,232,0.06)',
           }}
         >
@@ -342,7 +342,7 @@ function ServiceFAQ({ faqs }) {
     <section
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(60px, 10vh, 120px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(60px, 10vh, 120px) clamp(16px, 4.5vw, 96px)',
         borderTop: '1px solid rgba(242,237,232,0.06)',
       }}
     >

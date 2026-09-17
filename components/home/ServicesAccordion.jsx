@@ -106,7 +106,7 @@ export default function ServicesAccordion() {
       id="expertise"
       style={{
         background: 'var(--charcoal-light)',
-        padding:    'clamp(100px, 14vh, 180px) clamp(20px, 5vw, 72px)',
+        padding:    'clamp(80px, 12vh, 180px) clamp(16px, 4.5vw, 72px)',
         position:   'relative',
         overflow:   'hidden',
       }}
@@ -163,7 +163,7 @@ export default function ServicesAccordion() {
         <div
           style={{
             display:       'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap:           '16px',
             marginBottom:  '40px',
           }}
@@ -263,7 +263,7 @@ export default function ServicesAccordion() {
             <div
               style={{
                 display:             'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
                 alignItems:          'stretch',
                 borderBottom:        '1px solid rgba(242,237,232,0.08)',
               }}
@@ -394,7 +394,7 @@ export default function ServicesAccordion() {
             <div
               style={{
                 display:             'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
                 gap:                 'clamp(24px, 3vw, 40px)',
                 padding:             'clamp(32px, 4vw, 48px)',
                 background:          'rgba(26,25,23,0.5)',
@@ -489,7 +489,7 @@ export default function ServicesAccordion() {
           <div
             style={{
               display:             'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
               gap:                 'clamp(24px, 3vw, 40px)',
             }}
           >

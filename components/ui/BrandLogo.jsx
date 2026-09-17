@@ -2,20 +2,22 @@
  * BrandLogo — Vector crisp official Clay and Bricks brand emblem.
  * Infinite resolution, zero pixelation on Retina/4K displays.
  */
-export default function BrandLogo({ size = 52, className = '' }) {
+export default function BrandLogo({ size, className = '', style = {} }) {
+  const finalSize = size !== undefined ? `${size}px` : 'clamp(38px, 4.2vw, 52px)';
   return (
     <div
       className={className}
       style={{
         position:     'relative',
-        width:        `${size}px`,
-        height:       `${size}px`,
+        width:        finalSize,
+        height:       finalSize,
         borderRadius: '50%',
         overflow:     'hidden',
         boxShadow:    '0 4px 16px rgba(0,0,0,0.35)',
         border:       '1.5px solid rgba(184,151,90,0.4)',
         flexShrink:   0,
         background:   '#e8ebec',
+        ...style,
       }}
     >
       <svg

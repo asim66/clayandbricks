@@ -24,7 +24,7 @@ export default function TeamGrid() {
     <section
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(100px, 14vh, 180px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(80px, 12vh, 180px) clamp(16px, 4.5vw, 96px)',
       }}
     >
       <div style={{ marginBottom: 'clamp(48px, 6vh, 80px)' }}>
@@ -47,7 +47,7 @@ export default function TeamGrid() {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: 'clamp(32px, 4vw, 64px)',
         }}
       >

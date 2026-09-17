@@ -16,7 +16,7 @@ export default function ContactPage() {
     <div
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(100px, 14vh, 180px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(90px, 12vh, 180px) clamp(16px, 4.5vw, 96px)',
       }}
     >
       <BreadcrumbSchema
@@ -28,7 +28,7 @@ export default function ContactPage() {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
           gap: 'clamp(48px, 8vw, 100px)',
           alignItems: 'flex-start',
         }}

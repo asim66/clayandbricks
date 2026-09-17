@@ -93,15 +93,17 @@ function MagneticCTA({ children, href, primary = true }) {
         href={href}
         className="group relative inline-flex items-center gap-4 overflow-hidden transition-all duration-300"
         style={{
-          padding: primary ? '18px 40px' : '17px 32px',
+          padding: primary 
+            ? 'clamp(14px, 2vh, 18px) clamp(22px, 3.5vw, 40px)' 
+            : 'clamp(13px, 1.8vh, 17px) clamp(18px, 3vw, 32px)',
           background: primary ? 'var(--gold)' : 'rgba(26, 25, 23, 0.75)',
           backdropFilter: primary ? 'none' : 'blur(16px)',
           border: primary ? '1px solid var(--gold)' : '1px solid rgba(242, 237, 232, 0.25)',
           color: primary ? 'var(--charcoal)' : 'var(--off-white)',
           fontFamily: 'var(--font-sans)',
-          fontSize: '0.86rem',
+          fontSize: 'clamp(0.78rem, 1.1vw, 0.86rem)',
           fontWeight: 600,
-          letterSpacing: '0.14em',
+          letterSpacing: '0.12em',
           textTransform: 'uppercase',
           textDecoration: 'none',
           borderRadius: '2px',
@@ -200,7 +202,7 @@ export default function Hero() {
           width: '100%',
           maxWidth: '1380px',
           margin: '0 auto',
-          padding: '0 clamp(28px, 6vw, 96px)',
+          padding: '0 clamp(16px, 4.5vw, 96px)',
         }}
         className="flex-1 flex flex-col justify-center my-auto"
       >
@@ -212,14 +214,14 @@ export default function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="flex items-center gap-3.5 mb-6"
+            className="flex items-center gap-2.5 sm:gap-3.5 mb-4 sm:mb-6 flex-wrap"
           >
-            <span className="w-8 h-px bg-[var(--gold)]" />
+            <span className="w-6 sm:w-8 h-px bg-[var(--gold)]" />
             <span
               style={{
                 fontFamily: 'var(--font-sans)',
-                fontSize: '0.78rem',
-                letterSpacing: '0.24em',
+                fontSize: 'clamp(0.68rem, 1.1vw, 0.78rem)',
+                letterSpacing: 'clamp(0.14em, 0.22vw, 0.24em)',
                 textTransform: 'uppercase',
                 color: 'var(--gold-light)',
                 fontWeight: 600,
@@ -237,12 +239,12 @@ export default function Hero() {
             animate="visible"
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(2.8rem, 6.6vw, 6.8rem)',
+              fontSize: 'clamp(2.15rem, 6vw, 6.8rem)',
               fontWeight: 300,
-              lineHeight: 1.01,
-              letterSpacing: '-0.028em',
+              lineHeight: 1.04,
+              letterSpacing: '-0.025em',
               color: 'var(--off-white)',
-              marginBottom: 'clamp(20px, 3vw, 32px)',
+              marginBottom: 'clamp(16px, 2.5vw, 32px)',
             }}
           >
             Architecture of Distinction.{' '}
@@ -259,11 +261,11 @@ export default function Hero() {
             animate="visible"
             style={{
               fontFamily: 'var(--font-sans)',
-              fontSize: 'clamp(1.05rem, 1.45vw, 1.25rem)',
-              lineHeight: 1.72,
+              fontSize: 'clamp(0.95rem, 1.3vw, 1.22rem)',
+              lineHeight: 1.68,
               color: 'rgba(242, 237, 232, 0.88)',
               maxWidth: '680px',
-              marginBottom: 'clamp(32px, 4.5vw, 48px)',
+              marginBottom: 'clamp(28px, 4vw, 48px)',
               fontWeight: 400,
             }}
           >
@@ -276,9 +278,9 @@ export default function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="flex flex-wrap items-center justify-between gap-6 w-full"
+            className="flex flex-wrap items-center justify-between gap-5 sm:gap-6 w-full"
           >
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+            <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <MagneticCTA href="/contact" primary={true}>
                 Commission a Project
               </MagneticCTA>
@@ -289,7 +291,7 @@ export default function Hero() {
             </div>
 
             {/* Subtle Minimalist Perspective Switcher */}
-            <div className="flex items-center gap-4 pt-2 sm:pt-0">
+            <div className="flex items-center gap-4 pt-1 sm:pt-0">
               {PERSPECTIVES.map((tab, idx) => {
                 const isSelected = activeTab === tab.id;
                 return (
@@ -297,18 +299,18 @@ export default function Hero() {
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     data-cursor-expand
-                    className="flex items-center gap-2.5 py-1.5 text-left cursor-pointer transition-opacity duration-300 group"
+                    className="flex items-center gap-2 py-1 text-left cursor-pointer transition-opacity duration-300 group"
                     style={{ opacity: isSelected ? 1 : 0.45 }}
                     aria-label={`Switch to ${tab.subtitle}`}
                   >
                     <span
                       className="block h-[2px] transition-all duration-500 rounded-full"
                       style={{
-                        width: isSelected ? '30px' : '14px',
+                        width: isSelected ? '26px' : '12px',
                         backgroundColor: isSelected ? 'var(--gold)' : 'rgba(255,255,255,0.45)',
                       }}
                     />
-                    <span className="font-sans text-[0.72rem] tracking-[0.2em] uppercase text-white/90 font-medium">
+                    <span className="font-sans text-[0.7rem] tracking-[0.18em] uppercase text-white/90 font-medium">
                       0{idx + 1} {tab.id === 'interior' ? 'Interior' : 'Facade'}
                     </span>
                   </button>
@@ -327,7 +329,7 @@ export default function Hero() {
           width: '100%',
           maxWidth: '1380px',
           margin: '0 auto',
-          padding: '0 clamp(28px, 6vw, 96px)',
+          padding: '0 clamp(16px, 4.5vw, 96px)',
           marginTop: 'clamp(20px, 3vh, 36px)',
         }}
       >
@@ -336,60 +338,60 @@ export default function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="pt-6 border-t border-white/12 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8"
+          className="pt-5 border-t border-white/12 grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-8"
         >
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
-              <ShieldCheck size={20} className="text-[var(--gold)]" />
+          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+              <ShieldCheck size={17} className="text-[var(--gold)]" />
             </div>
-            <div>
-              <div className="font-serif text-xl sm:text-2xl text-[var(--off-white)] leading-tight">
+            <div className="min-w-0">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
                 100% Turnkey
               </div>
-              <div className="text-[0.76rem] text-white/60 tracking-wider uppercase mt-0.5">
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
                 Zero Subcontractor Drift
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
-              <Compass size={20} className="text-[var(--terracotta)]" />
+          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+              <Compass size={17} className="text-[var(--terracotta)]" />
             </div>
-            <div>
-              <div className="font-serif text-xl sm:text-2xl text-[var(--off-white)] leading-tight">
+            <div className="min-w-0">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
                 15+ Years
               </div>
-              <div className="text-[0.76rem] text-white/60 tracking-wider uppercase mt-0.5">
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
                 Odisha Architectural Heritage
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
-              <Award size={20} className="text-[var(--gold)]" />
+          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+              <Award size={17} className="text-[var(--gold)]" />
             </div>
-            <div>
-              <div className="font-serif text-xl sm:text-2xl text-[var(--off-white)] leading-tight">
+            <div className="min-w-0">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
                 10-Year Warranty
               </div>
-              <div className="text-[0.76rem] text-white/60 tracking-wider uppercase mt-0.5">
-                Comprehensive Structural EPC
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
+                Structural EPC Guarantee
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-3.5">
-            <div className="w-10 h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center shrink-0">
-              <Layers size={20} className="text-[var(--off-white)]" />
+          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+              <Layers size={17} className="text-[var(--off-white)]" />
             </div>
-            <div>
-              <div className="font-serif text-xl sm:text-2xl text-[var(--off-white)] leading-tight">
+            <div className="min-w-0">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
                 Direct Millwork
               </div>
-              <div className="text-[0.76rem] text-white/60 tracking-wider uppercase mt-0.5">
-                German Precision Machinery
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
+                German CNC Precision
               </div>
             </div>
           </div>

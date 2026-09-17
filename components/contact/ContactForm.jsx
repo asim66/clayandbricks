@@ -90,7 +90,7 @@ export default function ContactForm() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
               gap: '24px',
             }}
           >
@@ -122,7 +122,7 @@ export default function ContactForm() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))',
               gap: '24px',
               margin: '12px 0 24px',
             }}
@@ -143,7 +143,6 @@ export default function ContactForm() {
                   fontSize: '0.92rem',
                   padding: '12px 14px',
                   outline: 'none',
-                  cursor: 'none',
                 }}
               >
                 <option value="Residential Architecture">Residential Architecture</option>
@@ -169,7 +168,6 @@ export default function ContactForm() {
                   fontSize: '0.92rem',
                   padding: '12px 14px',
                   outline: 'none',
-                  cursor: 'none',
                 }}
               >
                 <option value="₹ 25L – 50L">₹ 25L – ₹ 50L</option>
@@ -198,18 +196,19 @@ export default function ContactForm() {
               alignSelf: 'flex-start',
               background: 'transparent',
               border: '1px solid var(--gold)',
-              padding: '16px 36px',
+              padding: '16px clamp(24px, 4vw, 36px)',
               fontFamily: 'var(--font-sans)',
               fontSize: '0.84rem',
               fontWeight: 500,
               letterSpacing: '0.16em',
               textTransform: 'uppercase',
               color: 'var(--gold)',
-              cursor: 'none',
               display: 'inline-flex',
               alignItems: 'center',
+              justifyContent: 'center',
               gap: '12px',
               marginTop: '16px',
+              minHeight: '48px',
               transition: 'all 0.4s ease',
             }}
             onMouseEnter={(e) => {

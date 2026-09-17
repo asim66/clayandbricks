@@ -72,8 +72,8 @@ export default async function NeighborhoodPage({ params }) {
           background: 'var(--charcoal)',
           paddingTop: 'clamp(120px, 18vh, 200px)',
           paddingBottom: 'clamp(60px, 8vh, 100px)',
-          paddingLeft: 'clamp(24px, 6vw, 96px)',
-          paddingRight: 'clamp(24px, 6vw, 96px)',
+          paddingLeft: 'clamp(16px, 4.5vw, 96px)',
+          paddingRight: 'clamp(16px, 4.5vw, 96px)',
           borderBottom: '1px solid rgba(242,237,232,0.08)',
         }}
       >
@@ -164,14 +164,14 @@ export default async function NeighborhoodPage({ params }) {
       <section
         style={{
           background: 'var(--charcoal)',
-          padding: 'clamp(60px, 10vh, 120px) clamp(24px, 6vw, 96px)',
+          padding: 'clamp(60px, 10vh, 120px) clamp(16px, 4.5vw, 96px)',
         }}
       >
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
               gap: 'clamp(40px, 6vw, 80px)',
               alignItems: 'start',
             }}
@@ -294,7 +294,7 @@ export default async function NeighborhoodPage({ params }) {
       <section
         style={{
           background: '#1a1917',
-          padding: 'clamp(60px, 10vh, 100px) clamp(24px, 6vw, 96px)',
+          padding: 'clamp(60px, 10vh, 100px) clamp(16px, 4.5vw, 96px)',
           borderTop: '1px solid rgba(242,237,232,0.06)',
         }}
       >
@@ -324,7 +324,7 @@ export default async function NeighborhoodPage({ params }) {
           >
             What We Deliver in {n.name}
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 240px), 1fr))', gap: '2px' }}>
             {[
               { title: 'Interior Design', link: '/services/interior-design-bhubaneswar', desc: `Turnkey luxury interior design for homes and offices in ${n.name}.` },
               { title: 'Civil Construction', link: '/services/civil-construction-bhubaneswar', desc: `Ground-up construction with BDA approval and 10-year warranty in ${n.name}.` },

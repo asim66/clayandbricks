@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <clipPath id="disc-clip">
+      <circle cx="200" cy="200" r="186" />
+    </clipPath>
+  </defs>
+
+  <!-- Gold Ring Border -->
+  <circle cx="200" cy="200" r="195" fill="#b8975a" />
+  <!-- Inner Disc Base -->
+  <circle cx="200" cy="200" r="186" fill="#e8ebec" />
+
+  <!-- Architectural House Structure (centered at 200, 200) -->
+  <g clip-path="url(#disc-clip)">
+    <g transform="translate(200, 200) scale(1.08) translate(-200, -172)">
+      <!-- Main Right Gable Wall (Warm Beige/Cream) -->
+      <polygon points="248,88 346,134 346,270 248,270" fill="#eedcb7" />
+
+      <!-- Left Slanted Wall (Pure White) -->
+      <polygon points="54,208 248,88 248,270 54,270" fill="#ffffff" />
+
+      <!-- Main Slanted Roof Beam Line (Slate Teal) -->
+      <polygon points="54,196 248,74 248,88 54,208" fill="#1e4e52" />
+      <polygon points="248,74 346,122 346,134 248,88" fill="#1e4e52" />
+
+      <!-- Entrance Feature / Modern Door Frame (Deep Slate) -->
+      <polygon points="175,124 266,172 266,270 175,270" fill="#173436" />
+
+      <!-- Window Glass Panes & Reflections -->
+      <!-- Top-Left Pane (Warm Amber Glow) -->
+      <polygon points="207,162 227,172 227,204 207,188" fill="#ec9a43" />
+      <polygon points="207,188 227,204 227,224 207,224" fill="#326c70" />
+
+      <!-- Top-Right Pane (Muted Amber) -->
+      <polygon points="231,174 259,188 259,224 231,224" fill="#326c70" />
+      <polygon points="242,194 259,202 259,224 242,224" fill="#ec9a43" />
+
+      <!-- Bottom Panes (Teal Glass) -->
+      <polygon points="207,227 227,227 227,270 207,270" fill="#326c70" />
+      <polygon points="231,227 259,227 259,270 231,270" fill="#326c70" />
+      <polygon points="242,227 259,227 259,270 242,270" fill="#ec9a43" />
+
+      <!-- Window Framing Cross Lines -->
+      <line x1="207" y1="225" x2="259" y2="225" stroke="#173436" stroke-width="4" />
+      <line x1="229" y1="172" x2="229" y2="270" stroke="#173436" stroke-width="4" />
+    </g>
+  </g>
+</svg>

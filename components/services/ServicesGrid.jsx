@@ -58,7 +58,7 @@ export default function ServicesGrid() {
     <section
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(60px, 10vh, 120px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(60px, 10vh, 120px) clamp(16px, 4.5vw, 96px)',
       }}
     >
       <div
@@ -66,7 +66,7 @@ export default function ServicesGrid() {
           maxWidth: '1200px',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
           gap: '2px',
         }}
       >

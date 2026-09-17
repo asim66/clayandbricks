@@ -45,7 +45,7 @@ export default function LocalAreasServed() {
           width: '100%',
           maxWidth: '1400px',
           margin: '0 auto',
-          padding: '0 clamp(24px, 6vw, 96px)',
+          padding: '0 clamp(16px, 4.5vw, 96px)',
         }}
       >
         <div
@@ -103,7 +103,7 @@ export default function LocalAreasServed() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap: '32px',
           }}
         >

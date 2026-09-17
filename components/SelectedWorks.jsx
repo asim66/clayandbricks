@@ -50,7 +50,7 @@ function StackingProjectCard({ project, index, total, progress, range, targetSca
         <div
           style={{
             display:             'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
             alignItems:          'stretch',
             minHeight:           'clamp(480px, 68vh, 620px)',
           }}
@@ -312,7 +312,7 @@ export default function SelectedWorks() {
         position:   'relative',
         width:      '100%',
         background: 'var(--charcoal)',
-        padding:    'clamp(100px, 14vh, 160px) clamp(20px, 5vw, 72px)',
+        padding:    'clamp(80px, 12vh, 160px) clamp(16px, 4.5vw, 72px)',
       }}
     >
       {/* Section Header */}

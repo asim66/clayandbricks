@@ -49,7 +49,7 @@ export default function TurnkeyProcess() {
     <section
       style={{
         background: 'var(--charcoal)',
-        padding: 'clamp(80px, 12vh, 150px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(80px, 12vh, 150px) clamp(16px, 4.5vw, 96px)',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -98,12 +98,12 @@ export default function TurnkeyProcess() {
         </div>
 
         {/* 4-Step Process Grid */}
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-            gap: '24px',
-          }}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+              gap: '24px',
+            }}
         >
           {STEPS.map((step, idx) => {
             const Icon = step.icon;

@@ -77,7 +77,7 @@ export default function WhyChooseUs() {
       id="why-choose-us"
       style={{
         background: '#151412',
-        padding: 'clamp(80px, 12vh, 150px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(80px, 12vh, 150px) clamp(16px, 4.5vw, 96px)',
         position: 'relative',
         borderTop: '1px solid rgba(242,237,232,0.06)',
         borderBottom: '1px solid rgba(242,237,232,0.06)',
@@ -130,7 +130,7 @@ export default function WhyChooseUs() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap: '24px',
             marginBottom: 'clamp(64px, 10vh, 100px)',
           }}

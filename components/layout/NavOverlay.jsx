@@ -94,6 +94,8 @@ export default function NavOverlay({ isOpen, onClose }) {
             display: 'flex',
             flexDirection: 'column',
             overflowY: 'auto',
+            WebkitOverflowScrolling: 'touch',
+            paddingBottom: 'max(env(safe-area-inset-bottom, 0px), 24px)',
           }}
         >
           {/* Background Decorative Motif */}
@@ -118,18 +120,18 @@ export default function NavOverlay({ isOpen, onClose }) {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              padding: 'clamp(16px, 2.5vh, 24px) clamp(24px, 5vw, 72px)',
+              padding: 'clamp(12px, 2vh, 20px) clamp(16px, 4.5vw, 72px)',
               borderBottom: '1px solid rgba(242,237,232,0.06)',
               flexShrink: 0,
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <BrandLogo size={40} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <BrandLogo size={36} />
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 <span
                   style={{
                     fontFamily: 'var(--font-serif)',
-                    fontSize: '0.95rem',
+                    fontSize: 'clamp(0.88rem, 1.4vw, 0.98rem)',
                     fontWeight: 400,
                     letterSpacing: '0.06em',
                     color: 'var(--off-white)',
@@ -141,9 +143,9 @@ export default function NavOverlay({ isOpen, onClose }) {
                 <span
                   style={{
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.68rem',
+                    fontSize: '0.62rem',
                     fontWeight: 500,
-                    letterSpacing: '0.18em',
+                    letterSpacing: '0.16em',
                     textTransform: 'uppercase',
                     color: 'var(--gold)',
                     lineHeight: 1.2,
@@ -173,7 +175,8 @@ export default function NavOverlay({ isOpen, onClose }) {
                 fontWeight: 500,
                 letterSpacing: '0.2em',
                 textTransform: 'uppercase',
-                padding: '8px 16px',
+                padding: '8px 14px',
+                minHeight: '40px',
                 transition: 'all 0.3s ease',
               }}
             >
@@ -189,7 +192,7 @@ export default function NavOverlay({ isOpen, onClose }) {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: 'clamp(20px, 3vh, 40px) clamp(24px, 5vw, 72px)',
+              padding: 'clamp(16px, 2.5vh, 40px) clamp(16px, 4.5vw, 72px)',
             }}
           >
             <div
@@ -197,17 +200,17 @@ export default function NavOverlay({ isOpen, onClose }) {
                 width: '100%',
                 maxWidth: '1280px',
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                gap: 'clamp(32px, 5vw, 80px)',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+                gap: 'clamp(24px, 4vw, 80px)',
                 alignItems: 'center',
               }}
             >
-              {/* Left Column: Perfectly Proportioned 5 Nav Items */}
+              {/* Left Column: Perfectly Proportioned Nav Items */}
               <nav
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: 'clamp(4px, 1vh, 12px)',
+                  gap: 'clamp(2px, 0.8vh, 10px)',
                 }}
               >
                 {NAV_ITEMS.map((item, i) => {
@@ -230,20 +233,20 @@ export default function NavOverlay({ isOpen, onClose }) {
                           alignItems: 'center',
                           justifyContent: 'space-between',
                           textDecoration: 'none',
-                          padding: 'clamp(10px, 1.6vh, 16px) 0',
+                          padding: 'clamp(8px, 1.3vh, 15px) 0',
                           borderBottom: '1px solid rgba(242,237,232,0.07)',
                           transition: 'transform 0.3s ease',
                         }}
                       >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(14px, 2.5vw, 28px)' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(10px, 2vw, 24px)' }}>
                           <span
                             style={{
                               fontFamily: 'var(--font-sans)',
-                              fontSize: '0.75rem',
-                              letterSpacing: '0.22em',
+                              fontSize: '0.72rem',
+                              letterSpacing: '0.2em',
                               color: isActive ? 'var(--gold)' : 'rgba(242,237,232,0.65)',
                               fontWeight: 500,
-                              minWidth: '24px',
+                              minWidth: '22px',
                             }}
                           >
                             {item.index}
@@ -251,9 +254,9 @@ export default function NavOverlay({ isOpen, onClose }) {
                           <span
                             style={{
                               fontFamily: 'var(--font-serif)',
-                              fontSize: 'clamp(1.75rem, 3.6vw, 3.2rem)',
+                              fontSize: 'clamp(1.45rem, 3.2vw, 2.9rem)',
                               fontWeight: 300,
-                              lineHeight: 1.05,
+                              lineHeight: 1.08,
                               letterSpacing: '-0.02em',
                               color: isActive ? 'var(--off-white)' : 'rgba(242,237,232,0.6)',
                               transition: 'color 0.3s ease, letter-spacing 0.3s ease',
@@ -313,10 +316,10 @@ export default function NavOverlay({ isOpen, onClose }) {
                   background: 'rgba(255,255,255,0.02)',
                   border: '1px solid rgba(184,151,90,0.18)',
                   borderRadius: '6px',
-                  padding: 'clamp(20px, 3vh, 32px)',
+                  padding: 'clamp(16px, 2.2vh, 28px)',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '20px',
+                  gap: '16px',
                 }}
               >
                 <div>
@@ -326,12 +329,12 @@ export default function NavOverlay({ isOpen, onClose }) {
                       alignItems: 'center',
                       gap: '6px',
                       fontFamily: 'var(--font-sans)',
-                      fontSize: '0.72rem',
+                      fontSize: '0.7rem',
                       fontWeight: 500,
-                      letterSpacing: '0.2em',
+                      letterSpacing: '0.18em',
                       textTransform: 'uppercase',
                       color: 'var(--gold)',
-                      marginBottom: '8px',
+                      marginBottom: '6px',
                     }}
                   >
                     <Sparkles size={12} />
@@ -340,7 +343,7 @@ export default function NavOverlay({ isOpen, onClose }) {
                   <h3
                     style={{
                       fontFamily: 'var(--font-serif)',
-                      fontSize: 'clamp(1.3rem, 2vw, 1.6rem)',
+                      fontSize: 'clamp(1.2rem, 1.8vw, 1.5rem)',
                       fontWeight: 300,
                       color: 'var(--off-white)',
                       lineHeight: 1.2,
@@ -351,20 +354,20 @@ export default function NavOverlay({ isOpen, onClose }) {
                 </div>
 
                 {/* Direct Contact Links */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.85)' }}>
-                    <MapPin size={16} color="var(--gold)" />
-                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.88rem', fontWeight: 400 }}>
+                    <MapPin size={15} color="var(--gold)" />
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.85rem', fontWeight: 400 }}>
                       Jharpada, Bhubaneswar, Odisha 751006
                     </span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.85)' }}>
-                    <Phone size={16} color="var(--gold)" />
+                    <Phone size={15} color="var(--gold)" />
                     <a
                       href="tel:+918867355661"
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.88rem',
+                        fontSize: '0.85rem',
                         fontWeight: 400,
                         color: 'inherit',
                         textDecoration: 'none',
@@ -377,12 +380,12 @@ export default function NavOverlay({ isOpen, onClose }) {
                     </a>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'rgba(242,237,232,0.85)' }}>
-                    <Mail size={16} color="var(--gold)" />
+                    <Mail size={15} color="var(--gold)" />
                     <a
                       href="mailto:hi.clayandbricks@gmail.com"
                       style={{
                         fontFamily: 'var(--font-sans)',
-                        fontSize: '0.88rem',
+                        fontSize: '0.85rem',
                         fontWeight: 400,
                         color: 'inherit',
                         textDecoration: 'none',
@@ -408,16 +411,17 @@ export default function NavOverlay({ isOpen, onClose }) {
                     gap: '8px',
                     background: 'var(--gold)',
                     color: 'var(--charcoal)',
-                    padding: '12px 20px',
+                    padding: '12px 22px',
+                    minHeight: '44px',
                     borderRadius: '3px',
                     textDecoration: 'none',
                     fontFamily: 'var(--font-sans)',
-                    fontSize: '0.7rem',
+                    fontSize: '0.74rem',
                     letterSpacing: '0.14em',
                     textTransform: 'uppercase',
-                    fontWeight: 500,
+                    fontWeight: 600,
                     transition: 'opacity 0.2s ease',
-                    marginTop: '4px',
+                    marginTop: '2px',
                   }}
                 >
                   <span>Start Consultation</span>
@@ -430,7 +434,7 @@ export default function NavOverlay({ isOpen, onClose }) {
           {/* Bottom Footer Bar */}
           <div
             style={{
-              padding: 'clamp(12px, 2vh, 20px) clamp(24px, 5vw, 72px)',
+              padding: 'clamp(12px, 2vh, 20px) clamp(16px, 4.5vw, 72px)',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',

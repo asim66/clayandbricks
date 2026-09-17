@@ -31,33 +31,35 @@ function MagneticLogo() {
     <Link href="/" style={{ textDecoration: 'none' }} data-cursor-expand>
       <motion.div
         ref={logoRef}
-        style={{ x: sx, y: sy, display: 'flex', alignItems: 'center', gap: '14px' }}
+        style={{ x: sx, y: sy, display: 'flex', alignItems: 'center', gap: 'clamp(8px, 1.5vw, 14px)' }}
         onMouseMove={onMove}
         onMouseLeave={onLeave}
       >
         {/* Official Brand Vector Emblem */}
-        <BrandLogo size={54} />
+        <BrandLogo />
 
         {/* Wordmark */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
           <span style={{
             fontFamily:    'var(--font-serif)',
-            fontSize:      '1.15rem',
+            fontSize:      'clamp(1.02rem, 1.8vw, 1.2rem)',
             fontWeight:    500,
-            letterSpacing: '0.08em',
+            letterSpacing: '0.06em',
             color:         'var(--off-white)',
             lineHeight:    1.1,
+            whiteSpace:    'nowrap',
           }}>
             Clay and Bricks
           </span>
           <span style={{
             fontFamily:    'var(--font-sans)',
-            fontSize:      '0.68rem',
+            fontSize:      'clamp(0.56rem, 0.9vw, 0.68rem)',
             fontWeight:    500,
-            letterSpacing: '0.18em',
+            letterSpacing: '0.14em',
             textTransform: 'uppercase',
             color:         'var(--gold)',
             lineHeight:    1.2,
+            whiteSpace:    'nowrap',
           }}>
             We Build Your Dream House
           </span>
@@ -104,9 +106,9 @@ export default function Header() {
           display:        'flex',
           alignItems:     'center',
           justifyContent: 'space-between',
-          padding:        `clamp(18px, 3vh, 28px) clamp(24px, 5vw, 72px)`,
+          padding:        'clamp(12px, 2.5vh, 24px) clamp(16px, 4.5vw, 72px)',
           background:     scrolled || !isTransparentRoute
-            ? 'rgba(26, 25, 23, 0.9)'
+            ? 'rgba(26, 25, 23, 0.92)'
             : 'transparent',
           backdropFilter: scrolled || !isTransparentRoute ? 'blur(16px)' : 'none',
           borderBottom:   scrolled || !isTransparentRoute
@@ -128,11 +130,13 @@ export default function Header() {
           style={{
             background:   'none',
             border:       'none',
-            cursor:       'none',
             display:      'flex',
             alignItems:   'center',
-            gap:          '12px',
-            padding:      '6px 0',
+            gap:          '10px',
+            padding:      '8px 4px',
+            minHeight:    '44px',
+            minWidth:     '44px',
+            justifyContent: 'center',
           }}
         >
           {/* Animated burger lines */}

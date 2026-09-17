@@ -71,7 +71,7 @@ export default function MaterialityLab() {
     <section
       style={{
         background: '#161513',
-        padding: 'clamp(80px, 12vh, 140px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(80px, 12vh, 140px) clamp(16px, 4.5vw, 96px)',
         position: 'relative',
         borderTop: '1px solid rgba(242,237,232,0.06)',
         borderBottom: '1px solid rgba(242,237,232,0.06)',
@@ -124,7 +124,7 @@ export default function MaterialityLab() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap: 'clamp(32px, 5vw, 64px)',
             alignItems: 'center',
           }}
