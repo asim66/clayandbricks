@@ -338,59 +338,59 @@ export default function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="pt-5 border-t border-white/12 grid grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-8"
+          className="pt-5 border-t border-white/12 grid grid-cols-2 lg:flex lg:items-center lg:justify-between gap-y-5 gap-x-4 sm:gap-x-8 lg:gap-0"
         >
-          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
               <ShieldCheck size={17} className="text-[var(--gold)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 100% Turnkey
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 Zero Subcontractor Drift
               </div>
             </div>
           </div>
 
-          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
               <Compass size={17} className="text-[var(--terracotta)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 15+ Years
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 Odisha Architectural Heritage
               </div>
             </div>
           </div>
 
-          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
+          <div className="flex items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
               <Award size={17} className="text-[var(--gold)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 10-Year Warranty
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 Structural EPC Guarantee
               </div>
             </div>
           </div>
 
-          <div className="flex items-start sm:items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/5 border border-white/15 flex items-center justify-center shrink-0 mt-0.5 sm:mt-0">
-              <Layers size={17} className="text-[var(--off-white)]" />
+          <div className="flex items-center gap-2.5 sm:gap-3.5">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
+              <Layers size={17} className="text-[var(--terracotta)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight truncate">
+              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 Direct Millwork
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug">
+              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 German CNC Precision
               </div>
             </div>
