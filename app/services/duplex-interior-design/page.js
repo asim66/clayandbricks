@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ServicePageLayout from '@/components/services/ServicePageLayout';
 
 export const metadata = {
-  title: 'Duplex Interior Design in Bhubaneswar | Clay and Bricks',
+  title: 'Duplex Interior Design in Bhubaneswar | Turnkey Luxury Residences',
   description:
     'Expert duplex and split-level interior design in Bhubaneswar. Double-height living rooms, grand staircases, and multi-floor turnkey interiors. Clay and Bricks — Odisha\'s premier duplex interior design studio.',
   alternates: { canonical: '/services/duplex-interior-design' },

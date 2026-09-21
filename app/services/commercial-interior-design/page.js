@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ServicePageLayout from '@/components/services/ServicePageLayout';
 
 export const metadata = {
-  title: 'Commercial Interior Design in Bhubaneswar | Offices & Retail | Clay and Bricks',
+  title: 'Commercial Interior Design in Bhubaneswar | Office & Retail Fitouts',
   description:
     'Expert commercial interior design in Bhubaneswar — corporate offices, executive boardrooms, retail spaces, and hospitality interiors. Clay and Bricks delivers brand-aligned, high-performance commercial spaces in Odisha.',
   alternates: { canonical: '/services/commercial-interior-design' },

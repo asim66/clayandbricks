@@ -12,12 +12,69 @@ export async function generateStaticParams() {
   return PROJECTS.map((p) => ({ slug: p.slug }));
 }
 
+const PROJECT_RELATIONS = {
+  'luxury-villa-shree-vihar': {
+    serviceSlug: 'interior-design-bhubaneswar',
+    serviceName: 'Turnkey Luxury Interior Design',
+    neighborhoodSlug: 'patia',
+    neighborhoodName: 'Patia / Shree Vihar',
+  },
+  '3-bhk-apartment-laxmi-imperial': {
+    serviceSlug: 'interior-design-bhubaneswar',
+    serviceName: 'Apartment & Flat Interior Design',
+    neighborhoodSlug: 'patia',
+    neighborhoodName: 'Patia',
+  },
+  'bibhu-babu-villa': {
+    serviceSlug: 'duplex-interior-design',
+    serviceName: 'Duplex & Villa Interior Design',
+    neighborhoodSlug: 'jayadev-vihar',
+    neighborhoodName: 'Jayadev Vihar',
+  },
+  'laterite-villa': {
+    serviceSlug: 'civil-construction-bhubaneswar',
+    serviceName: 'Civil Construction & RCC Engineering',
+    neighborhoodSlug: 'nayapalli',
+    neighborhoodName: 'Nayapalli',
+  },
+  'brass-noir-kitchen': {
+    serviceSlug: 'modular-kitchen-bhubaneswar',
+    serviceName: 'Factory Modular Kitchens',
+    neighborhoodSlug: 'saheed-nagar',
+    neighborhoodName: 'Saheed Nagar',
+  },
+  'terracotta-sanctuary': {
+    serviceSlug: 'duplex-interior-design',
+    serviceName: 'Turnkey Residential Interiors',
+    neighborhoodSlug: 'khandagiri',
+    neighborhoodName: 'Khandagiri',
+  },
+  'stone-office-janpath': {
+    serviceSlug: 'commercial-interior-design',
+    serviceName: 'Corporate & Commercial Interiors',
+    neighborhoodSlug: 'saheed-nagar',
+    neighborhoodName: 'Janpath / Saheed Nagar',
+  },
+  'forest-pool-villa': {
+    serviceSlug: 'architectural-design-bhubaneswar',
+    serviceName: 'Contemporary Villa Architecture',
+    neighborhoodSlug: 'chandrasekharpur',
+    neighborhoodName: 'Chandrasekharpur',
+  },
+  'konark-boutique-hotel': {
+    serviceSlug: 'commercial-interior-design',
+    serviceName: 'Commercial & Hospitality Architecture',
+    neighborhoodSlug: 'nayapalli',
+    neighborhoodName: 'Bhubaneswar Central',
+  },
+};
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
-  if (!project) return { title: 'Project Not Found | Clay and Bricks' };
+  if (!project) return { title: 'Project Not Found' };
 
-  const title = `${project.title} — ${project.category} Architecture & Interiors | Clay and Bricks`;
+  const title = `${project.title} — ${project.category} Architecture & Interiors`;
   const description = `${project.brief} Located in ${project.location}. Turnkey execution by Clay and Bricks, Bhubaneswar.`;
   const canonical = `/projects/${project.slug}`;
 
@@ -57,6 +114,13 @@ export default async function ProjectDetailPage({ params }) {
   if (!project) {
     notFound();
   }
+
+  const relation = PROJECT_RELATIONS[slug] || {
+    serviceSlug: 'interior-design-bhubaneswar',
+    serviceName: 'Turnkey Luxury Interior Design',
+    neighborhoodSlug: 'patia',
+    neighborhoodName: 'Bhubaneswar',
+  };
 
   // Find next project for seamless navigation
   const currentIndex = PROJECTS.findIndex((p) => p.slug === slug);
@@ -245,9 +309,22 @@ export default async function ProjectDetailPage({ params }) {
             <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.6)', marginBottom: '4px' }}>
               Location
             </span>
-            <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.98rem', color: 'var(--off-white)', fontWeight: 400 }}>
-              {project.location}
-            </span>
+            <Link
+              href={`/neighborhoods/${relation.neighborhoodSlug}`}
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '0.98rem',
+                color: 'var(--gold)',
+                fontWeight: 400,
+                textDecoration: 'none',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px',
+              }}
+            >
+              <span>{project.location}</span>
+              <ArrowUpRight size={13} />
+            </Link>
           </div>
           <div>
             <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.74rem', fontWeight: 500, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.6)', marginBottom: '4px' }}>
@@ -491,6 +568,106 @@ export default async function ProjectDetailPage({ params }) {
 
         {/* Interactive 3D Renders Showcase Gallery */}
         <ProjectGallery images={project.images} projectTitle={project.title} />
+
+        {/* Locality & Specialized Disciplines Cross-Link Mesh */}
+        <div
+          style={{
+            marginTop: 'clamp(60px, 10vh, 100px)',
+            padding: '28px clamp(20px, 3.5vw, 36px)',
+            background: 'rgba(242,237,232,0.03)',
+            border: '1px solid rgba(242,237,232,0.1)',
+            borderRadius: '2px',
+          }}
+        >
+          <div style={{ marginBottom: '16px' }}>
+            <span
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '0.72rem',
+                fontWeight: 600,
+                letterSpacing: '0.18em',
+                textTransform: 'uppercase',
+                color: 'var(--gold)',
+                display: 'block',
+                marginBottom: '4px',
+              }}
+            >
+              Execution Context & Specialized Disciplines
+            </span>
+            <h3
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 'clamp(1.25rem, 2vw, 1.6rem)',
+                fontWeight: 300,
+                color: 'var(--off-white)',
+              }}
+            >
+              Explore Related Services & Locality Coverage
+            </h3>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
+              gap: '16px',
+            }}
+          >
+            <Link
+              href={`/services/${relation.serviceSlug}`}
+              style={{
+                display: 'block',
+                padding: '16px',
+                background: 'rgba(242,237,232,0.02)',
+                border: '1px solid rgba(242,237,232,0.08)',
+                textDecoration: 'none',
+              }}
+            >
+              <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.5)', marginBottom: '4px' }}>
+                Primary Service Discipline
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'var(--gold)', fontWeight: 500 }}>
+                {relation.serviceName} <ArrowUpRight size={14} />
+              </span>
+            </Link>
+
+            <Link
+              href={`/neighborhoods/${relation.neighborhoodSlug}`}
+              style={{
+                display: 'block',
+                padding: '16px',
+                background: 'rgba(242,237,232,0.02)',
+                border: '1px solid rgba(242,237,232,0.08)',
+                textDecoration: 'none',
+              }}
+            >
+              <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.5)', marginBottom: '4px' }}>
+                Locality Coverage Hub
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'var(--gold)', fontWeight: 500 }}>
+                {relation.neighborhoodName} Hub <ArrowUpRight size={14} />
+              </span>
+            </Link>
+
+            <Link
+              href="/interior-designing-company-in-bhubaneswar"
+              style={{
+                display: 'block',
+                padding: '16px',
+                background: 'rgba(242,237,232,0.02)',
+                border: '1px solid rgba(242,237,232,0.08)',
+                textDecoration: 'none',
+              }}
+            >
+              <span style={{ display: 'block', fontFamily: 'var(--font-sans)', fontSize: '0.68rem', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'rgba(242,237,232,0.5)', marginBottom: '4px' }}>
+                Turnkey Company Guide
+              </span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-sans)', fontSize: '0.88rem', color: 'var(--gold)', fontWeight: 500 }}>
+                2026 Cost & Execution Dossier <ArrowUpRight size={14} />
+              </span>
+            </Link>
+          </div>
+        </div>
 
         {/* Next Project & Consultation Callout */}
         <div

@@ -36,8 +36,8 @@ export const metadata = {
     },
   },
   title: {
-    template: '%s | Clay and Bricks — Luxury Interiors, Bhubaneswar',
-    default:  'Clay and Bricks Pvt Ltd | Luxury Interiors & Construction — Bhubaneswar',
+    template: '%s | Clay and Bricks',
+    default:  'Clay and Bricks | Luxury Turnkey Architecture, Interiors & Civil Construction',
   },
   description:
     'Award-winning luxury interior design, architectural planning, and premium turnkey construction services in Bhubaneswar, Odisha. Spaces crafted for those who demand perfection.',

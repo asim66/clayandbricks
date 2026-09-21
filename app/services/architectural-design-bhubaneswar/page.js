@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ServicePageLayout from '@/components/services/ServicePageLayout';
 
 export const metadata = {
-  title: 'Architect in Bhubaneswar | Villa & Residential Architecture | Clay and Bricks',
+  title: 'Architects in Bhubaneswar | Villa & Residential Architecture',
   description:
     'Award-winning architects in Bhubaneswar. Villa architecture, BDA approval drawings, contemporary facades, and climate-responsive design using laterite, sandstone, and local materials. Clay and Bricks — Architecture Studio, Odisha.',
   alternates: { canonical: '/services/architectural-design-bhubaneswar' },

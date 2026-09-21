@@ -3,7 +3,7 @@ import LocationMap from '@/components/contact/LocationMap';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Contact & Studio Consultation | Clay and Bricks — Bhubaneswar',
+  title: 'Contact & Studio Consultation',
   description:
     'Initiate a bespoke luxury interior or turnkey civil construction consultation with Clay and Bricks in Bhubaneswar, Odisha. Schedule an architectural consultation.',
   alternates: {

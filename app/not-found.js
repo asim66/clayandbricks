@@ -3,7 +3,7 @@ import { ArrowRight, Compass, Home, Phone, Sparkles } from 'lucide-react';
 import SectionLabel from '@/components/ui/SectionLabel';
 
 export const metadata = {
-  title: '404 — Page Not Found | Clay and Bricks',
+  title: '404 — Page Not Found',
   description: 'The requested architectural or interior page could not be located. Explore our luxury portfolio or contact our studio in Bhubaneswar.',
 };
 

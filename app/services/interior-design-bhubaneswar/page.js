@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ServicePageLayout from '@/components/services/ServicePageLayout';
 
 export const metadata = {
-  title: 'Interior Design Services in Bhubaneswar | Clay and Bricks — Luxury Interiors',
+  title: 'Best Interior Designers in Bhubaneswar | Turnkey Luxury Homes',
   description:
     'Expert luxury interior design in Bhubaneswar — residential villas, 3 BHK apartments, duplex homes, and commercial spaces. Clay and Bricks: Odisha\'s premier turnkey interior design studio with 15+ years of experience.',
   alternates: { canonical: '/services/interior-design-bhubaneswar' },

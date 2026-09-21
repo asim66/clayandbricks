@@ -4,7 +4,7 @@ import TeamGrid from '@/components/studio/TeamGrid';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Architecture Studio & Design Philosophy | Clay and Bricks — Bhubaneswar',
+  title: 'Architecture Studio & Design Philosophy',
   description:
     '15 years of luxury architectural practice and interior craft rooted in the material vernacular of Odisha. Meet the architects and civil engineers behind Clay and Bricks in Bhubaneswar.',
   alternates: {

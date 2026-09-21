@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ServicePageLayout from '@/components/services/ServicePageLayout';
 
 export const metadata = {
-  title: 'Modular Kitchen Design in Bhubaneswar | Clay and Bricks',
+  title: 'Modular Kitchen Design in Bhubaneswar | Factory Precision',
   description:
     'Bespoke factory-engineered modular kitchen design in Bhubaneswar. BWP marine-grade plywood, Blum hardware, Calacatta marble, and fluted glass vitrines. 5-year warranty. Clay and Bricks — Odisha\'s premier kitchen design studio.',
   alternates: { canonical: '/services/modular-kitchen-bhubaneswar' },

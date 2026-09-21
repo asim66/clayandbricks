@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import InteriorCompanyShowcase from '@/components/services/InteriorCompanyShowcase';
 
 export const metadata = {
-  title: 'Interior Designing Company in Bhubaneswar | Best Turnkey Luxury Interiors — Clay and Bricks',
+  title: 'Best Interior Designer & Company in Bhubaneswar',
   description:
     'Award-winning interior designing company in Bhubaneswar, Odisha. We deliver 100% turnkey residential villas, apartments & duplex interiors with precision factory millwork, 3D digital twins & 10-year warranty. Get your 2026 cost estimate.',
   keywords: [

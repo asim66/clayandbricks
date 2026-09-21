@@ -4,7 +4,7 @@ import ConsultationCTA from '@/components/home/ConsultationCTA';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 export const metadata = {
-  title: 'Interior Design & Civil Construction Capabilities | Clay and Bricks — Bhubaneswar',
+  title: 'Architecture, Interior Design & Civil Construction Capabilities',
   description:
     'Comprehensive interior architecture, 3D photorealistic digital twins, structural civil engineering, and turnkey construction capabilities in Bhubaneswar, Odisha.',
   alternates: {

@@ -10,7 +10,9 @@ import LocalAreasServed from '@/components/home/LocalAreasServed';
 import ConsultationCTA from '@/components/home/ConsultationCTA';
 
 export const metadata = {
-  title: 'Clay and Bricks | Luxury Architecture, Turnkey Interiors & Civil Construction — Bhubaneswar',
+  title: {
+    absolute: 'Clay and Bricks | Luxury Architecture, Turnkey Interiors & Civil Construction — Bhubaneswar',
+  },
   description:
     'Odisha’s premier turnkey architectural design, luxury interior design, and civil construction studio in Bhubaneswar. Single-point accountability, 3D digital twins, factory millwork, and 10-year warranty.',
   alternates: {

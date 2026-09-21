@@ -2,7 +2,7 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ServicePageLayout from '@/components/services/ServicePageLayout';
 
 export const metadata = {
-  title: 'Civil Construction & Turnkey Building in Bhubaneswar | Clay and Bricks',
+  title: 'Civil Construction & Turnkey Building in Bhubaneswar',
   description:
     'Expert civil construction contractors in Bhubaneswar. RCC framing, foundation engineering, BDA-compliant structural drawings, and 10-year structural warranty. Clay and Bricks — Odisha\'s premier turnkey construction studio.',
   alternates: { canonical: '/services/civil-construction-bhubaneswar' },

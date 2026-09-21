@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
 
 const SERVICES = [
   {
@@ -157,6 +158,66 @@ export default function ServicesGrid() {
             </div>
           </Link>
         ))}
+      </div>
+
+      {/* Turnkey Company Guide & Localities Link Banner */}
+      <div
+        style={{
+          maxWidth: '1200px',
+          margin: '48px auto 0',
+          padding: '28px clamp(20px, 3.5vw, 40px)',
+          background: 'rgba(184,151,90,0.05)',
+          border: '1px solid rgba(184,151,90,0.2)',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: '20px',
+        }}
+      >
+        <div>
+          <h3
+            style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: '1.4rem',
+              fontWeight: 400,
+              color: 'var(--off-white)',
+              marginBottom: '6px',
+            }}
+          >
+            Looking for Our Comprehensive Company Dossier?
+          </h3>
+          <p
+            style={{
+              fontFamily: 'var(--font-sans)',
+              fontSize: '0.88rem',
+              color: 'rgba(242,237,232,0.65)',
+            }}
+          >
+            Explore our 2026 cost estimations per sq ft, factory manufacturing specs, and 100-point turnkey inspection standards.
+          </p>
+        </div>
+        <Link
+          href="/interior-designing-company-in-bhubaneswar"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '8px',
+            background: 'var(--gold)',
+            color: 'var(--charcoal)',
+            padding: '12px 24px',
+            fontSize: '0.82rem',
+            fontFamily: 'var(--font-sans)',
+            fontWeight: 600,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            textDecoration: 'none',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          <span>View Company Dossier</span>
+          <ArrowUpRight size={15} />
+        </Link>
       </div>
     </section>
   );
