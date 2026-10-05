@@ -198,7 +198,7 @@ export default function ServicesGrid() {
           </p>
         </div>
         <Link
-          href="/interior-designing-company-in-bhubaneswar"
+          href="/services/interior-design-bhubaneswar"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -215,7 +215,7 @@ export default function ServicesGrid() {
             whiteSpace: 'nowrap',
           }}
         >
-          <span>View Company Dossier</span>
+          <span>Explore Interior Dossier</span>
           <ArrowUpRight size={15} />
         </Link>
       </div>

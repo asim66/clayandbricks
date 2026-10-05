@@ -14,12 +14,6 @@ export default async function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/interior-designing-company-in-bhubaneswar`,
-      lastModified: CURRENT_DATE,
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
       url: `${baseUrl}/services`,
       lastModified: CURRENT_DATE,
       changeFrequency: 'weekly',
@@ -53,17 +47,17 @@ export default async function sitemap() {
 
   // Service landing pages — high-intent commercial keywords
   const serviceRoutes = [
-    'interior-design-bhubaneswar',
-    'civil-construction-bhubaneswar',
-    'modular-kitchen-bhubaneswar',
-    'architectural-design-bhubaneswar',
-    'duplex-interior-design',
-    'commercial-interior-design',
-  ].map((slug) => ({
+    { slug: 'interior-design-bhubaneswar', priority: 1.0 },
+    { slug: 'civil-construction-bhubaneswar', priority: 0.95 },
+    { slug: 'architectural-design-bhubaneswar', priority: 0.95 },
+    { slug: 'modular-kitchen-bhubaneswar', priority: 0.9 },
+    { slug: 'duplex-interior-design', priority: 0.9 },
+    { slug: 'commercial-interior-design', priority: 0.9 },
+  ].map(({ slug, priority }) => ({
     url: `${baseUrl}/services/${slug}`,
     lastModified: CURRENT_DATE,
     changeFrequency: 'weekly',
-    priority: 0.9,
+    priority,
   }));
 
   // Neighborhood landing pages — local long-tail keywords

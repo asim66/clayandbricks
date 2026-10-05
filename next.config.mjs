@@ -6,6 +6,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/interior-designing-company-in-bhubaneswar',
+        destination: '/services/interior-design-bhubaneswar',
+        permanent: true,
+      },
+      {
         source: '/',
         has: [{ type: 'host', value: 'www.clayandbricks.com' }],
         destination: 'https://clayandbricks.com',

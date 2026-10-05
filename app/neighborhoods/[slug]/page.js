@@ -614,7 +614,7 @@ export default async function NeighborhoodPage({ params }) {
               </p>
             </div>
             <Link
-              href="/interior-designing-company-in-bhubaneswar"
+              href="/services/interior-design-bhubaneswar"
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',

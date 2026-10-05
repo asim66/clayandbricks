@@ -650,7 +650,7 @@ export default async function ProjectDetailPage({ params }) {
             </Link>
 
             <Link
-              href="/interior-designing-company-in-bhubaneswar"
+              href="/services/interior-design-bhubaneswar"
               style={{
                 display: 'block',
                 padding: '16px',

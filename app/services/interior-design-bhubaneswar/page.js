@@ -1,45 +1,150 @@
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
-import ServicePageLayout from '@/components/services/ServicePageLayout';
+import InteriorCompanyShowcase from '@/components/services/InteriorCompanyShowcase';
 
 export const metadata = {
-  title: 'Best Interior Designers in Bhubaneswar | Turnkey Luxury Homes',
+  title: 'Best Interior Designer & Company in Bhubaneswar | Turnkey Luxury Homes',
   description:
-    'Expert luxury interior design in Bhubaneswar — residential villas, 3 BHK apartments, duplex homes, and commercial spaces. Clay and Bricks: Odisha\'s premier turnkey interior design studio with 15+ years of experience.',
-  alternates: { canonical: '/services/interior-design-bhubaneswar' },
+    'Award-winning interior designing company in Bhubaneswar, Odisha. We deliver 100% turnkey residential villas, apartments & duplex interiors with precision factory millwork, 3D digital twins & 10-year warranty. 2026 cost estimates.',
+  keywords: [
+    'interior designing company in bhubaneswar',
+    'interior design company in bhubaneswar',
+    'best interior designer in bhubaneswar',
+    'best interior designing company in bhubaneswar',
+    'top interior designers in bhubaneswar',
+    'luxury interior design bhubaneswar',
+    'turnkey interior contractor bhubaneswar',
+    'home interior designers in bhubaneswar',
+    'interior design cost in bhubaneswar per sq ft',
+    '2 bhk interior design cost in bhubaneswar',
+    '3 bhk flat interior cost bhubaneswar',
+    'modular kitchen bhubaneswar',
+    'duplex interior design bhubaneswar',
+    'interior designers in Patia',
+    'interior designers in Saheed Nagar',
+    'interior designers in Jayadev Vihar',
+    'Clay and Bricks',
+  ],
+  alternates: {
+    canonical: 'https://clayandbricks.com/services/interior-design-bhubaneswar',
+  },
   openGraph: {
-    title: 'Interior Designer in Bhubaneswar | Clay and Bricks',
-    description: 'Luxury interior design for residences and commercial spaces in Bhubaneswar, Odisha. Free design consultation available.',
+    title: 'Interior Designing Company & Best Interior Designer in Bhubaneswar | Clay and Bricks',
+    description:
+      'Premier turnkey interior designing company in Bhubaneswar. 15+ years experience, factory-grade millwork, Italian marble execution, and 10-year structural warranty.',
     url: 'https://clayandbricks.com/services/interior-design-bhubaneswar',
+    siteName: 'Clay and Bricks',
+    locale: 'en_IN',
+    type: 'website',
+    images: [
+      {
+        url: 'https://clayandbricks.com/hero-luxury-interior.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Turnkey Luxury Interior Designing Company in Bhubaneswar — Clay and Bricks',
+      },
+      {
+        url: 'https://clayandbricks.com/projects/luxury-villa-shree-vihar/living-dining-layout.jpg',
+        width: 1200,
+        height: 800,
+        alt: 'Luxury villa interior design in Shree Vihar Bhubaneswar',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best Interior Designer & Company in Bhubaneswar | Clay and Bricks',
+    description:
+      'Odisha’s foremost turnkey interior design company. Bespoke residential estates, duplexes, and luxury apartments in Bhubaneswar.',
+    images: ['https://clayandbricks.com/hero-luxury-interior.jpg'],
   },
 };
 
-const serviceSchema = {
+const pageSchema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
       '@type': 'Service',
       '@id': 'https://clayandbricks.com/services/interior-design-bhubaneswar/#service',
-      name: 'Luxury Interior Design in Bhubaneswar',
-      serviceType: 'Interior Design',
+      name: 'Turnkey Interior Design & Execution in Bhubaneswar',
+      serviceType: 'Turnkey Interior Architecture',
       provider: { '@id': 'https://clayandbricks.com/#localbusiness' },
       areaServed: [
         { '@type': 'City', name: 'Bhubaneswar' },
-        { '@type': 'AdministrativeArea', name: 'Odisha' },
+        { '@type': 'Place', name: 'Patia, Bhubaneswar' },
+        { '@type': 'Place', name: 'Saheed Nagar, Bhubaneswar' },
+        { '@type': 'Place', name: 'Jayadev Vihar, Bhubaneswar' },
+        { '@type': 'Place', name: 'Nayapalli, Bhubaneswar' },
+        { '@type': 'Place', name: 'Chandrasekharpur, Bhubaneswar' },
+        { '@type': 'Place', name: 'Khandagiri, Bhubaneswar' },
+        { '@type': 'Place', name: 'Shree Vihar, Bhubaneswar' },
       ],
       description:
-        'End-to-end luxury interior design services in Bhubaneswar — residential villas, apartments, duplex homes, and commercial offices. Includes 3D visualization, factory millwork, and 10-year warranty.',
+        'Full-scope luxury interior design and turnkey contracting in Bhubaneswar. Includes spatial planning, 4K 3D digital twins, factory-made German CNC joinery, Italian marble laying, false ceilings, and 10-year warranty.',
       url: 'https://clayandbricks.com/services/interior-design-bhubaneswar',
       offers: {
-        '@type': 'Offer',
+        '@type': 'AggregateOffer',
         priceCurrency: 'INR',
-        price: '1800',
+        lowPrice: '1800',
+        highPrice: '4500',
         priceSpecification: {
           '@type': 'UnitPriceSpecification',
-          price: '1800',
           priceCurrency: 'INR',
-          unitText: 'per sq ft (starting from)',
+          unitText: 'per sq ft',
         },
       },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Which is the best interior designing company in Bhubaneswar for turnkey luxury homes?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Clay and Bricks Pvt Ltd is recognized as Bhubaneswar’s leading turnkey interior designing company. Unlike aggregators or independent brokers, Clay and Bricks provides single-point turnkey accountability — managing everything from 3D digital twins and Vastu layout to in-house factory millwork fabrication, Italian marble laying, and comprehensive structural execution under a 10-Year Warranty.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is the cost of interior design in Bhubaneswar per sq ft in 2026?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Turnkey interior design costs in Bhubaneswar typically range from ₹1,800 to ₹3,500+ per sq ft. Standard luxury residential apartments start from ₹1,800/sq ft (₹5.5L – ₹12.5L for 2 BHK; ₹12.5L – ₹28L for 3 BHK). Ultra-luxury duplexes and private villas range from ₹2,800 to ₹4,500+ per sq ft.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How does Clay and Bricks differ from aggregators like Livspace or local carpenters?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Unlike aggregators who outsource work to third-party subcontractors, Clay and Bricks operates with dedicated in-house civil engineers, interior architects, and precision factory manufacturing using German CNC machinery to ±1mm tolerance with boiling water-proof (IS 710 BWP) ply and branded hardware.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How long does a complete turnkey home interior project take to complete in Bhubaneswar?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A typical 2 to 3 BHK luxury apartment (1,200 – 2,200 sq ft) takes 60 to 90 days from finalized 3D design sign-off to handover. A large duplex or independent villa (3,500 – 9,500 sq ft) takes approximately 14 to 20 weeks.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Do you do Vastu-compliant interior design in Bhubaneswar?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Yes, Vastu compliance is integrated at the layout and planning stage for every project where required. Room orientations, kitchen and mandir placement, main door direction, and lighting flow are harmonized with Vastu Shastra principles.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which areas of Bhubaneswar do you serve for interior design?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We serve all major localities including Patia, Saheed Nagar, Jayadev Vihar, Nayapalli, Shree Vihar, Chandrasekharpur, Khandagiri, Rasulgarh, and Jharpada, as well as Cuttack and Puri.',
+          },
+        },
+      ],
     },
   ],
 };
@@ -47,66 +152,26 @@ const serviceSchema = {
 export default function InteriorDesignBhubaneswarPage() {
   return (
     <>
+      {/* Structured Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }}
+      />
+
+      {/* Breadcrumb Schema */}
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
           { name: 'Services', url: '/services' },
-          { name: 'Interior Design — Bhubaneswar', url: '/services/interior-design-bhubaneswar' },
+          {
+            name: 'Interior Design in Bhubaneswar',
+            url: '/services/interior-design-bhubaneswar',
+          },
         ]}
       />
-      <ServicePageLayout
-        heroTagline="Interior Design Studio — Bhubaneswar, Odisha"
-        title={<>Luxury Interior Design<br /><em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>in Bhubaneswar</em></>}
-        subtitle="From a single-bedroom apartment to a sprawling 8-bedroom villa — Clay & Bricks delivers complete, turnkey interior design solutions with zero handoff gaps, factory-precision millwork, and photorealistic 3D walkthroughs before a single rupee is spent on execution."
-        description="Why Clay & Bricks is Bhubaneswar's Interior Design Standard"
-        longDescription={`
-          <p>Finding the right interior designer in Bhubaneswar means more than picking a decorative style — it means choosing a partner who is accountable for every element from architectural spatial planning to final soft furnishings. Clay & Bricks is that studio.</p>
-          <p style="margin-top:16px">We design and execute interiors for luxury residences across Bhubaneswar — including Shree Vihar, Patia, Nayapalli, Jayadev Vihar, Saheed Nagar, and Chandrasekharpur — as well as commercial offices, boutique retail, and hospitality projects across Odisha.</p>
-          <p style="margin-top:16px">Our approach begins with a deep understanding of how you live, work, and entertain. Every layout is optimized for your lifestyle, Vastu compliance where required, and Bhubaneswar's tropical climate — specifying only BWP marine-grade plywood, PU edge-banding, anti-termite treatments, and climate-resilient finishes throughout.</p>
-          <p style="margin-top:16px">Interior design pricing starts from ₹1,800 per sq ft for standard residential projects and ₹2,800+ per sq ft for premium villa-grade execution with imported stones, custom brass joinery, and smart home integration. Looking for full turnkey project management? Explore our dedicated <a href="/interior-designing-company-in-bhubaneswar" style="color:var(--gold);text-decoration:underline;">Interior Designing Company in Bhubaneswar</a> dossier with detailed 2026 cost estimates, comparison charts, and factory millwork specifications.</p>
-        `}
-        benefits={[
-          'Single-point turnkey accountability — one team, zero coordination gaps',
-          'Factory-precision millwork engineered to ±1mm tolerance, not on-site carpentry',
-          '3D photorealistic visualization before any execution commitment',
-          'Vastu Shastra compliance integrated at the layout stage',
-          'BWP marine-grade plywood and climate-resilient materials throughout',
-          '5 to 10-year warranty on all millwork and cabinetry',
-          'Blum, Hafele, and Hettich hardware with manufacturer guarantees',
-          'Licensed interior architects and structural engineers on every project',
-        ]}
-        process={[
-          { title: 'Discovery Consultation', desc: 'Free 30-minute studio visit or site call to understand your vision, lifestyle needs, and project scope.' },
-          { title: 'Site Survey & Measurement', desc: 'Precision measured drawings of the existing space, noting structural constraints, light orientation, and services.' },
-          { title: '3D Concept Presentation', desc: 'Full photorealistic 3D renders, material boards, and lighting mood studies — walk through your future home before it exists.' },
-          { title: 'BOQ & Contract', desc: 'Transparent, itemized Bill of Quantities with zero hidden escalations. Formal contract with timeline Gantt and payment milestones.' },
-          { title: 'Factory Production', desc: 'All millwork, modular kitchens, and wardrobes precision-fabricated in our factory — not assembled on-site by daily-wage carpenters.' },
-          { title: 'Site Execution & Handover', desc: 'Licensed project manager on site daily. Weekly progress telemetry. Final snagging inspection before keys are handed over.' },
-        ]}
-        faqs={[
-          {
-            q: 'What is the cost of interior design in Bhubaneswar per sq ft?',
-            a: 'Interior design in Bhubaneswar typically ranges from ₹1,800 to ₹3,500+ per sq ft depending on material quality, finishes, and scope. Standard residential interiors with vitrified flooring, acrylic laminates, and basic lighting start at ₹1,800/sq ft. Premium villa-grade interiors with Italian marble, imported brass joinery, and smart home integration start at ₹2,800/sq ft. Clay & Bricks provides detailed, itemized BOQs with no hidden charges.',
-          },
-          {
-            q: 'How long does an interior project take to complete in Bhubaneswar?',
-            a: 'A 2–3 BHK apartment (1,200–2,000 sq ft) is completed in 10–14 weeks from design sign-off. A villa or duplex (3,000–6,000 sq ft) requires 16–24 weeks. All timelines are contractually bound with a critical-path Gantt schedule updated weekly.',
-          },
-          {
-            q: 'Do you offer interior design for apartments in Bhubaneswar?',
-            a: 'Yes. Apartment interior design is one of our most requested services. We\'ve completed 2 BHK, 3 BHK, and penthouse projects across Bhubaneswar. We specialize in space-efficient layouts that feel luxurious and spacious regardless of the square footage.',
-          },
-          {
-            q: 'Do you do Vastu-compliant interior design?',
-            a: 'Yes, Vastu compliance is integrated at the layout and planning stage for every project where the client requires it. Room orientations, kitchen and pooja room placement, main door direction, and natural light planning are all harmonized with Vastu Shastra principles.',
-          },
-          {
-            q: 'Which areas of Bhubaneswar do you serve for interior design?',
-            a: 'We serve all major localities including Shree Vihar, Patia, Nayapalli, Jayadev Vihar, Saheed Nagar, Khandagiri, Chandrasekharpur, Rasulgarh, Jharpada, Infocity, and Kalinga Nagar. We also take projects in Cuttack and Puri.',
-          },
-        ]}
-        schemaData={serviceSchema}
-      />
+
+      {/* World-Class Interior Company Showcase */}
+      <InteriorCompanyShowcase />
     </>
   );
 }
