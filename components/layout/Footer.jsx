@@ -96,13 +96,14 @@ const NAV_COLS = [
   {
     heading: 'Interior Services',
     links: [
-      { label: 'Turnkey Interior Design',     href: '/services/interior-design-bhubaneswar' },
-      { label: 'Modular Kitchen Design',      href: '/services/modular-kitchen-bhubaneswar' },
-      { label: 'Duplex Villa Interiors',      href: '/services/duplex-interior-design' },
-      { label: 'Architectural Design',        href: '/services/architectural-design-bhubaneswar' },
-      { label: 'Commercial Office Design',    href: '/services/commercial-interior-design' },
-      { label: 'Civil Construction',          href: '/services/civil-construction-bhubaneswar' },
-      { label: 'All Services Hub',            href: '/services' },
+      { label: 'Best Interior Design in Bhubaneswar', href: '/services/interior-design-bhubaneswar' },
+      { label: 'Turnkey Luxury Interiors',            href: '/services/interior-design-bhubaneswar' },
+      { label: 'Modular Kitchen Design',              href: '/services/modular-kitchen-bhubaneswar' },
+      { label: 'Duplex Villa Interiors',              href: '/services/duplex-interior-design' },
+      { label: 'Architectural Elevation',             href: '/services/architectural-design-bhubaneswar' },
+      { label: 'Commercial Office Design',            href: '/services/commercial-interior-design' },
+      { label: 'Civil Construction (Secondary)',      href: '/services/civil-construction-bhubaneswar' },
+      { label: 'All Services Hub',                    href: '/services' },
     ],
   },
   {
@@ -208,7 +209,7 @@ export default function Footer() {
                   Clay and Bricks
                 </p>
                 <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.64rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: 'var(--gold)', marginTop: '2px' }}>
-                  We Build Your Dream House
+                  Best Interior Designing Company in Bhubaneswar
                 </p>
               </div>
             </div>

@@ -2,14 +2,14 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import InteriorCompanyShowcase from '@/components/services/InteriorCompanyShowcase';
 
 export const metadata = {
-  title: 'Best Interior Designer & Company in Bhubaneswar | Turnkey Luxury Homes',
+  title: 'Best Interior Designing Company in Bhubaneswar | Clay and Bricks',
   description:
     'Award-winning interior designing company in Bhubaneswar, Odisha. We deliver 100% turnkey residential villas, apartments & duplex interiors with precision factory millwork, 3D digital twins & 10-year warranty. 2026 cost estimates.',
   keywords: [
+    'best interior designing company in bhubaneswar',
     'interior designing company in bhubaneswar',
     'interior design company in bhubaneswar',
     'best interior designer in bhubaneswar',
-    'best interior designing company in bhubaneswar',
     'top interior designers in bhubaneswar',
     'luxury interior design bhubaneswar',
     'turnkey interior contractor bhubaneswar',
@@ -28,7 +28,7 @@ export const metadata = {
     canonical: 'https://clayandbricks.com/services/interior-design-bhubaneswar',
   },
   openGraph: {
-    title: 'Interior Designing Company & Best Interior Designer in Bhubaneswar | Clay and Bricks',
+    title: 'Best Interior Designing Company in Bhubaneswar | Clay and Bricks',
     description:
       'Premier turnkey interior designing company in Bhubaneswar. 15+ years experience, factory-grade millwork, Italian marble execution, and 10-year structural warranty.',
     url: 'https://clayandbricks.com/services/interior-design-bhubaneswar',
@@ -40,7 +40,7 @@ export const metadata = {
         url: 'https://clayandbricks.com/hero-luxury-interior.jpg',
         width: 1200,
         height: 630,
-        alt: 'Turnkey Luxury Interior Designing Company in Bhubaneswar — Clay and Bricks',
+        alt: 'Best Interior Designing Company in Bhubaneswar — Clay and Bricks',
       },
       {
         url: 'https://clayandbricks.com/projects/luxury-villa-shree-vihar/living-dining-layout.jpg',
@@ -52,7 +52,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Best Interior Designer & Company in Bhubaneswar | Clay and Bricks',
+    title: 'Best Interior Designing Company in Bhubaneswar | Clay and Bricks',
     description:
       'Odisha’s foremost turnkey interior design company. Bespoke residential estates, duplexes, and luxury apartments in Bhubaneswar.',
     images: ['https://clayandbricks.com/hero-luxury-interior.jpg'],

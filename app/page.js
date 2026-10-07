@@ -11,17 +11,17 @@ import ConsultationCTA from '@/components/home/ConsultationCTA';
 
 export const metadata = {
   title: {
-    absolute: 'Clay and Bricks | Turnkey Architecture & Residential Construction Studio — Bhubaneswar',
+    absolute: 'Clay and Bricks | Best Interior Designing Company in Bhubaneswar',
   },
   description:
-    'Odisha’s premier turnkey architectural design, residential villa construction, and design-build studio in Bhubaneswar. Single-point accountability from BDA approvals to structural engineering and bespoke execution.',
+    'Odisha’s premier interior designing company in Bhubaneswar. We craft luxury turnkey residential interiors, modular kitchens, 2/3 BHK flats, duplexes & bespoke villa architecture with in-house German CNC millwork and 10-year warranty.',
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Clay and Bricks | Turnkey Architecture & Residential Construction Studio — Bhubaneswar',
+    title: 'Clay and Bricks | Best Interior Designing Company in Bhubaneswar',
     description:
-      'Odisha’s premier turnkey architectural design, residential villa construction, and design-build studio in Bhubaneswar. Single-point accountability from BDA approvals to structural engineering and bespoke execution.',
+      'Odisha’s premier interior designing company in Bhubaneswar. We craft luxury turnkey residential interiors, modular kitchens, 2/3 BHK flats, duplexes & bespoke villa architecture with in-house German CNC millwork and 10-year warranty.',
     url: 'https://clayandbricks.com',
     siteName: 'Clay and Bricks',
     locale: 'en_IN',

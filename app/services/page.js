@@ -3,9 +3,9 @@ import ConsultationCTA from '@/components/home/ConsultationCTA';
 import ServicesGrid from '@/components/services/ServicesGrid';
 
 export const metadata = {
-  title: 'Turnkey Architecture, Interior Design & Construction Services',
+  title: 'Interior Design, Architecture & Turnkey Services in Bhubaneswar | Clay and Bricks',
   description:
-    "Full-service interior design, architecture, civil construction, modular kitchens, and commercial interiors in Bhubaneswar, Odisha. Clay and Bricks — Odisha's premier turnkey studio.",
+    "Premier interior designing company in Bhubaneswar offering luxury turnkey home interiors, bespoke modular kitchens, duplex styling, architecture, and civil construction with 10-year warranty.",
   alternates: { canonical: '/services' },
 };
 
@@ -51,11 +51,11 @@ export default function ServicesPage() {
             color: 'var(--off-white)',
             lineHeight: 1.08,
             letterSpacing: '-0.025em',
-            maxWidth: '800px',
+            maxWidth: '850px',
             marginBottom: '24px',
           }}
         >
-          Turnkey Services in{' '}
+          Interior Design & Turnkey Services in{' '}
           <em style={{ fontStyle: 'italic', color: 'var(--gold)' }}>Bhubaneswar</em>
         </h1>
         <p

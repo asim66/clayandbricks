@@ -227,7 +227,7 @@ export default function Hero() {
                 fontWeight: 600,
               }}
             >
-              Turnkey Architecture · Private Estates · Bhubaneswar
+              Best Interior Designing Company · Bhubaneswar · Estd. 2010
             </span>
           </motion.div>
 
@@ -239,7 +239,7 @@ export default function Hero() {
             animate="visible"
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(2.15rem, 6vw, 6.8rem)',
+              fontSize: 'clamp(2.15rem, 5.8vw, 6.4rem)',
               fontWeight: 300,
               lineHeight: 1.04,
               letterSpacing: '-0.025em',
@@ -247,9 +247,9 @@ export default function Hero() {
               marginBottom: 'clamp(16px, 2.5vw, 32px)',
             }}
           >
-            Architecture of Distinction.{' '}
+            Best Interior Designing Company{' '}
             <span className="block font-light italic text-[var(--gold)]">
-              Crafted for Generations.
+              in Bhubaneswar.
             </span>
           </motion.h1>
 
@@ -269,7 +269,7 @@ export default function Hero() {
               fontWeight: 400,
             }}
           >
-            Odisha’s foremost studio harmonizing sculptural structural engineering, Italian marble interiors, and in-house bespoke factory millwork under unbroken single-point accountability.
+            Odisha’s foremost luxury interior design studio and turnkey creators. Transforming apartments, duplexes, and private estates in Patia, Saheed Nagar, and Jayadev Vihar with 4K photorealistic digital twins, in-house German CNC factory millwork, and unbroken single-point accountability.
           </motion.p>
 
           {/* Action Group & Architectural Perspective Switcher */}
@@ -281,12 +281,12 @@ export default function Hero() {
             className="flex flex-wrap items-center justify-between gap-5 sm:gap-6 w-full"
           >
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
-              <MagneticCTA href="/contact" primary={true}>
-                Commission a Project
+              <MagneticCTA href="/services/interior-design-bhubaneswar" primary={true}>
+                Explore Interior Works
               </MagneticCTA>
 
-              <MagneticCTA href="/projects" primary={false}>
-                View Curated Portfolio
+              <MagneticCTA href="/contact" primary={false}>
+                Book Free Consultation
               </MagneticCTA>
             </div>
 

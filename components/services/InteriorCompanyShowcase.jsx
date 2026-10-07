@@ -621,7 +621,7 @@ export default function InteriorCompanyShowcase() {
                 maxWidth: '1100px',
               }}
             >
-              Interior Designing Company{' '}
+              Best Interior Designing Company{' '}
               <br />
               <em style={{ fontStyle: 'italic', color: 'var(--gold)', fontWeight: 300 }}>
                 in Bhubaneswar.

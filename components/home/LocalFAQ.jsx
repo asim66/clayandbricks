@@ -7,19 +7,19 @@ import SectionLabel from '@/components/ui/SectionLabel';
 
 const FAQS = [
   {
-    question: 'What turnkey architecture and interior design services do you offer in Bhubaneswar?',
+    question: 'Which is the best interior designing company in Bhubaneswar?',
     answer:
-      'Clay and Bricks provides single-point, end-to-end turnkey architectural and interior solutions across Bhubaneswar and Odisha. Our integrated scope includes architectural space planning, BDA structural drawings, 3D photorealistic digital twins, civil RCC construction, seismic-grade foundation engineering, customized modular millwork (kitchens, wardrobes, vitrines), luxury flooring, acoustic ceiling treatments, and final turnkey styling. Homeowners work with one unified team with zero handoff gaps.',
+      'Clay and Bricks Pvt Ltd is widely recognized as the best interior designing company in Bhubaneswar for luxury residential apartments, duplexes, and private villas. Unlike aggregators or local contractors who outsource work, Clay and Bricks delivers complete turnkey accountability with dedicated interior architects, in-house German CNC precision factory millwork (±1mm tolerance), 3D photorealistic digital twins before execution, and a 10-Year Warranty.',
   },
   {
-    question: 'What is the cost of turnkey luxury interior design and construction per sq ft in Bhubaneswar?',
+    question: 'What is the cost of interior design in Bhubaneswar per sq ft in 2026?',
     answer:
-      'Turnkey interior execution typically ranges from ₹1,800 to ₹3,500+ per sq ft depending on the selected materiality—such as imported Italian marble vs large-format vitrified tiles, PU-lacquered acrylic vs natural teak veneers, bespoke brass joinery, and smart home automation. Complete ground-up civil construction ranges between ₹2,200 and ₹3,800 per sq ft including soil testing, RCC framing, premium brickwork, and high-performance waterproofing. We provide itemized, transparent BOQs with zero hidden escalations.',
+      'Turnkey interior design costs in Bhubaneswar typically range from ₹1,800 to ₹3,500+ per sq ft. Premium 2 BHK apartment interiors start from ₹5.5L – ₹12.5L, 3 BHK residences range from ₹12.5L – ₹28L, and luxury villas or duplexes range from ₹2,800 – ₹4,500+ per sq ft. All packages include 3D renders, IS 710 marine BWP plywood, branded soft-close hardware, false ceiling, and lighting.',
   },
   {
-    question: 'Which localities in Bhubaneswar and Odisha do you serve?',
+    question: 'Which localities in Bhubaneswar do you serve for interior design?',
     answer:
-      'Our primary studio serves all major residential and commercial sectors in Bhubaneswar, including Shree Vihar, Patia, Saheed Nagar, Jayadev Vihar, Nayapalli, Khandagiri, Chandrasekharpur, Jharpada, Rasulgarh, Infocity, and Kalinga Nagar. We also undertake signature villa and boutique hospitality projects in Cuttack (CDA Sectors, Cantonment) and the Puri coastal corridor.',
+      'Our studio executes turnkey interior design across all major residential sectors in Bhubaneswar, including Patia, Saheed Nagar, Jayadev Vihar, Nayapalli, Shree Vihar, Chandrasekharpur, Khandagiri, Jharpada, Rasulgarh, and Infocity. We also deliver signature villa interiors in Cuttack (CDA Sectors) and Puri.',
   },
   {
     question: 'Do you handle BDA (Bhubaneswar Development Authority) approval and structural sanction drawings?',

@@ -61,7 +61,7 @@ function MagneticLogo() {
             lineHeight:    1.2,
             whiteSpace:    'nowrap',
           }}>
-            We Build Your Dream House
+            Interior Design & Turnkey Living
           </span>
         </div>
       </motion.div>
@@ -119,26 +119,52 @@ export default function Header() {
       >
         <MagneticLogo />
 
-        {/* Menu button */}
-        <button
-          onClick={() => setNavOpen(true)}
-          onMouseEnter={() => setMenuHover(true)}
-          onMouseLeave={() => setMenuHover(false)}
-          data-cursor-expand
-          aria-label="Open navigation menu"
-          aria-expanded={navOpen}
-          style={{
-            background:   'none',
-            border:       'none',
-            display:      'flex',
-            alignItems:   'center',
-            gap:          '10px',
-            padding:      '8px 4px',
-            minHeight:    '44px',
-            minWidth:     '44px',
-            justifyContent: 'center',
-          }}
-        >
+        {/* Right Header Navigation Group */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: 'clamp(12px, 2vw, 20px)' }}>
+          <Link
+            href="/services/interior-design-bhubaneswar"
+            data-cursor-expand
+            style={{
+              textDecoration: 'none',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '6px',
+              padding: '6px 14px',
+              borderRadius: '20px',
+              border: '1px solid rgba(184,151,90,0.35)',
+              background: 'rgba(184,151,90,0.1)',
+              backdropFilter: 'blur(10px)',
+              color: 'var(--gold)',
+              fontFamily: 'var(--font-sans)',
+              fontSize: 'clamp(0.68rem, 0.9vw, 0.76rem)',
+              fontWeight: 600,
+              letterSpacing: '0.12em',
+              textTransform: 'uppercase',
+            }}
+          >
+            <span>Interior Design</span>
+          </Link>
+
+          {/* Menu button */}
+          <button
+            onClick={() => setNavOpen(true)}
+            onMouseEnter={() => setMenuHover(true)}
+            onMouseLeave={() => setMenuHover(false)}
+            data-cursor-expand
+            aria-label="Open navigation menu"
+            aria-expanded={navOpen}
+            style={{
+              background:   'none',
+              border:       'none',
+              display:      'flex',
+              alignItems:   'center',
+              gap:          '10px',
+              padding:      '8px 4px',
+              minHeight:    '44px',
+              minWidth:     '44px',
+              justifyContent: 'center',
+            }}
+          >
           {/* Animated burger lines */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', width: '22px' }}>
             <motion.span
@@ -166,9 +192,10 @@ export default function Header() {
             Menu
           </span>
         </button>
-      </header>
+      </div>
+    </header>
 
-      <NavOverlay isOpen={navOpen} onClose={() => setNavOpen(false)} />
-    </>
-  );
+    <NavOverlay isOpen={navOpen} onClose={() => setNavOpen(false)} />
+  </>
+);
 }

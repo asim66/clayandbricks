@@ -8,13 +8,15 @@ import { X, ArrowUpRight, Phone, Mail, MapPin, Sparkles } from 'lucide-react';
 import BrandLogo from '@/components/ui/BrandLogo';
 
 /* ─── Nav items ─────────────────────────────────────── */
+/* ─── Nav items ─────────────────────────────────────── */
 const NAV_ITEMS = [
-  { index: '01', label: 'Home',      href: '/',          tag: 'Overview' },
-  { index: '02', label: 'Services',  href: '/services',  tag: 'Architecture & Turnkey' },
-  { index: '03', label: 'Projects',  href: '/projects',  tag: 'Curated Portfolio' },
-  { index: '04', label: 'Expertise', href: '/expertise', tag: 'Specialized Capabilities' },
-  { index: '05', label: 'Studio',    href: '/studio',    tag: 'Philosophy & Heritage' },
-  { index: '06', label: 'Contact',   href: '/contact',   tag: 'Commission a Space' },
+  { index: '01', label: 'Home',            href: '/',                                tag: 'Studio Overview' },
+  { index: '02', label: 'Interior Design', href: '/services/interior-design-bhubaneswar', tag: 'Turnkey Luxury Living' },
+  { index: '03', label: 'All Services',    href: '/services',                        tag: 'Architecture & Build' },
+  { index: '04', label: 'Projects',        href: '/projects',                        tag: 'Curated Works' },
+  { index: '05', label: 'Expertise',       href: '/expertise',                       tag: 'Factory Joinery' },
+  { index: '06', label: 'Studio',          href: '/studio',                          tag: 'Philosophy & Heritage' },
+  { index: '07', label: 'Contact',         href: '/contact',                         tag: 'Free Interior Estimate' },
 ];
 
 /* ─── Konark Chakra SVG Motif ───────────────────────── */
@@ -152,7 +154,7 @@ export default function NavOverlay({ isOpen, onClose }) {
                     marginTop: '2px',
                   }}
                 >
-                  We Build Your Dream House
+                  Interior Design & Turnkey Living
                 </span>
               </div>
             </div>
