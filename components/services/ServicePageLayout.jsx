@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, Phone, Mail } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, CheckCircle, Phone, Mail, Sparkles } from 'lucide-react';
 import ConsultationCTA from '@/components/home/ConsultationCTA';
 
 const fadeUp = {
@@ -315,6 +315,94 @@ export default function ServicePageLayout({
           </div>
         </section>
       )}
+
+      {/* ── Turnkey Interior Design Flagship Cross-Link Banner ── */}
+      <section
+        style={{
+          background: 'rgba(184,151,90,0.06)',
+          borderTop: '1px solid rgba(184,151,90,0.22)',
+          borderBottom: '1px solid rgba(184,151,90,0.22)',
+          padding: 'clamp(36px, 5vh, 60px) clamp(16px, 4.5vw, 96px)',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1100px',
+            margin: '0 auto',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '24px',
+          }}
+        >
+          <div>
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                marginBottom: '8px',
+              }}
+            >
+              <Sparkles size={13} color="var(--gold)" />
+              <span
+                style={{
+                  fontFamily: 'var(--font-sans)',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  letterSpacing: '0.16em',
+                  textTransform: 'uppercase',
+                  color: 'var(--gold)',
+                }}
+              >
+                Turnkey Living in Bhubaneswar
+              </span>
+            </div>
+            <h3
+              style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: 'clamp(1.4rem, 2.2vw, 2rem)',
+                fontWeight: 300,
+                color: 'var(--off-white)',
+                marginBottom: '8px',
+              }}
+            >
+              Looking for Bhubaneswar’s Best Interior Designing Company?
+            </h3>
+            <p
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: 'clamp(0.88rem, 1.1vw, 0.96rem)',
+                color: 'rgba(242,237,232,0.7)',
+                maxWidth: '660px',
+                lineHeight: 1.6,
+              }}
+            >
+              Explore our flagship interior design showcase with 2026 per-sq-ft cost estimators, German CNC factory millwork, and 100+ delivered luxury residences across Bhubaneswar.
+            </p>
+          </div>
+          <Link
+            href="/services/interior-design-bhubaneswar"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              background: 'var(--gold)',
+              color: 'var(--charcoal)',
+              fontFamily: 'var(--font-sans)',
+              fontSize: '0.88rem',
+              fontWeight: 600,
+              padding: '14px 26px',
+              textDecoration: 'none',
+              borderRadius: '2px',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Best Interior Designing Rates & Packages <ArrowUpRight size={15} />
+          </Link>
+        </div>
+      </section>
 
       {/* ── FAQ ── */}
       {faqs?.length > 0 && (

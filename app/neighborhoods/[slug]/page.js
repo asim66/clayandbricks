@@ -18,12 +18,12 @@ export async function generateMetadata({ params }) {
   const n = getNeighborhoodBySlug(slug);
   if (!n) return {};
   return {
-    title: `Interior Designer in ${n.name}, Bhubaneswar`,
-    description: `Clay and Bricks provides luxury interior design and turnkey construction services in ${n.name}, Bhubaneswar. Serving villas, apartments, and commercial spaces in ${n.name} and surrounding localities.`,
+    title: `Best Interior Designer in ${n.name}, Bhubaneswar | Clay and Bricks`,
+    description: `Clay and Bricks is the best interior designing company serving ${n.name}, Bhubaneswar. Turnkey luxury villas, flats, modular kitchens & 10-year warranty. Get 2026 interior cost estimates.`,
     alternates: { canonical: `/neighborhoods/${n.slug}` },
     openGraph: {
-      title: `Interior Design in ${n.name}, Bhubaneswar | Clay and Bricks`,
-      description: `Premium interior design and construction in ${n.name}, Bhubaneswar. Contact Clay & Bricks for a free consultation.`,
+      title: `Best Interior Designer in ${n.name}, Bhubaneswar | Clay and Bricks`,
+      description: `Premium turnkey interior design and construction in ${n.name}, Bhubaneswar. Book a free studio consultation with Clay and Bricks.`,
       url: `https://clayandbricks.com/neighborhoods/${n.slug}`,
     },
   };
@@ -137,7 +137,7 @@ export default async function NeighborhoodPage({ params }) {
         </p>
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
           <Link
-            href="/contact"
+            href="/services/interior-design-bhubaneswar"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
@@ -147,7 +147,25 @@ export default async function NeighborhoodPage({ params }) {
               fontFamily: 'var(--font-sans)',
               fontSize: '0.9rem',
               fontWeight: 600,
-              letterSpacing: '0.06em',
+              letterSpacing: '0.04em',
+              padding: '14px 28px',
+              textDecoration: 'none',
+              transition: 'all 0.2s ease',
+            }}
+          >
+            Best Interior Designing Rates & Packages <ArrowUpRight size={15} />
+          </Link>
+          <Link
+            href="/contact"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              border: '1px solid rgba(242,237,232,0.3)',
+              color: 'var(--off-white)',
+              fontFamily: 'var(--font-sans)',
+              fontSize: '0.9rem',
+              fontWeight: 500,
               padding: '14px 28px',
               textDecoration: 'none',
             }}
@@ -160,12 +178,12 @@ export default async function NeighborhoodPage({ params }) {
               display: 'inline-flex',
               alignItems: 'center',
               gap: '10px',
-              border: '1px solid rgba(242,237,232,0.3)',
-              color: 'var(--off-white)',
+              border: '1px solid rgba(242,237,232,0.18)',
+              color: 'rgba(242,237,232,0.75)',
               fontFamily: 'var(--font-sans)',
               fontSize: '0.9rem',
               fontWeight: 500,
-              padding: '14px 28px',
+              padding: '14px 24px',
               textDecoration: 'none',
             }}
           >
@@ -621,17 +639,17 @@ export default async function NeighborhoodPage({ params }) {
                 gap: '8px',
                 background: 'var(--gold)',
                 color: 'var(--charcoal)',
-                padding: '10px 20px',
-                fontSize: '0.8rem',
+                padding: '12px 22px',
+                fontSize: '0.82rem',
                 fontFamily: 'var(--font-sans)',
                 fontWeight: 600,
-                letterSpacing: '0.08em',
+                letterSpacing: '0.06em',
                 textTransform: 'uppercase',
                 textDecoration: 'none',
                 whiteSpace: 'nowrap',
               }}
             >
-              <span>View Company Dossier</span>
+              <span>Best Bhubaneswar Interior Design Packages</span>
               <ArrowUpRight size={14} />
             </Link>
           </div>

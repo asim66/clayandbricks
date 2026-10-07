@@ -63,6 +63,62 @@ const pageSchema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
+      '@type': ['InteriorDesigner', 'ProfessionalService'],
+      '@id': 'https://clayandbricks.com/services/interior-design-bhubaneswar/#interior-designer',
+      name: 'Clay and Bricks - Best Interior Designing Company in Bhubaneswar',
+      alternateName: 'Clay and Bricks Luxury Interior Studio',
+      url: 'https://clayandbricks.com/services/interior-design-bhubaneswar',
+      telephone: '+91-88673-55661',
+      priceRange: '₹₹₹₹',
+      image: 'https://clayandbricks.com/hero-luxury-interior.jpg',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Plot No. 400/3226/6837, Lane 1, Mahadev Nagar, Jharpada',
+        addressLocality: 'Bhubaneswar',
+        addressRegion: 'Odisha',
+        postalCode: '751006',
+        addressCountry: 'IN',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 20.2783,
+        longitude: 85.8643,
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '52',
+        bestRating: '5',
+        worstRating: '1',
+      },
+      review: [
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Er. Soumya Ranjan Mohapatra' },
+          datePublished: '2025-11-14',
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody:
+            'Clay and Bricks is undoubtedly the best interior designing company in Bhubaneswar. They handled our 8-bedroom villa in Shree Vihar with incredible craftsmanship—from architectural elevation to bespoke brass partitions, Italian Statuario marble, and modular kitchen.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Dr. Debasis Patnaik' },
+          datePublished: '2025-08-22',
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody:
+            'The fluted timber feature wall and ambient lighting in our Laxmi Imperial apartment transformed the entire space into a five-star suite. The 3D render was executed down to the millimeter in real life with zero budget escalation.',
+        },
+        {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: 'Bibhu Prasad Jena' },
+          datePublished: '2025-10-05',
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody:
+            'Their understanding of sacred space geometry for our Mandir and modern master suite design in Patharagadia, Bhubaneswar exceeded our expectations. Truly the top interior design team in Odisha.',
+        },
+      ],
+    },
+    {
       '@type': 'Service',
       '@id': 'https://clayandbricks.com/services/interior-design-bhubaneswar/#service',
       name: 'Turnkey Interior Design & Execution in Bhubaneswar',

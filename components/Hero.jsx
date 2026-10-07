@@ -227,7 +227,7 @@ export default function Hero() {
                 fontWeight: 600,
               }}
             >
-              Best Interior Designing Company · Bhubaneswar · Estd. 2010
+              Luxury Interior Design Studio · Bhubaneswar · Estd. 2010
             </span>
           </motion.div>
 
@@ -247,7 +247,7 @@ export default function Hero() {
               marginBottom: 'clamp(16px, 2.5vw, 32px)',
             }}
           >
-            Best Interior Designing Company{' '}
+            Luxury Interior Design{' '}
             <span className="block font-light italic text-[var(--gold)]">
               in Bhubaneswar.
             </span>
@@ -269,7 +269,7 @@ export default function Hero() {
               fontWeight: 400,
             }}
           >
-            Odisha’s foremost luxury interior design studio and turnkey creators. Transforming apartments, duplexes, and private estates in Patia, Saheed Nagar, and Jayadev Vihar with 4K photorealistic digital twins, in-house German CNC factory millwork, and unbroken single-point accountability.
+            Odisha’s premier interior designing company and turnkey creators. Transforming apartments, duplexes, and private estates in Patia, Saheed Nagar, and Jayadev Vihar with 4K photorealistic digital twins, in-house German CNC factory millwork, and unbroken single-point accountability.
           </motion.p>
 
           {/* Action Group & Architectural Perspective Switcher */}
@@ -282,7 +282,7 @@ export default function Hero() {
           >
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <MagneticCTA href="/services/interior-design-bhubaneswar" primary={true}>
-                Explore Interior Works
+                Best Interior Designing Services & Rates
               </MagneticCTA>
 
               <MagneticCTA href="/contact" primary={false}>

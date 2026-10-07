@@ -1,32 +1,33 @@
 'use client';
 
-import { MapPin, ArrowUpRight } from 'lucide-react';
+import { MapPin, ArrowUpRight, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 import SectionLabel from '@/components/ui/SectionLabel';
+import { NEIGHBORHOODS } from '@/lib/neighborhoods';
 
 const REGIONS = [
   {
     hub: 'Bhubaneswar Prime Sectors',
     areas: [
-      'Shree Vihar',
-      'Patia (KIIT / Infocity Corridor)',
-      'Saheed Nagar',
-      'Jayadev Vihar',
-      'Nayapalli',
-      'Khandagiri & Jagamara',
-      'Chandrasekharpur',
-      'Jharpada & Cuttack Road',
-      'Sailashree & Niladri Vihar',
-      'Kalinga Nagar',
+      { name: 'Patia (KIIT / Infocity Corridor)', slug: 'patia' },
+      { name: 'Saheed Nagar', slug: 'saheed-nagar' },
+      { name: 'Jayadev Vihar', slug: 'jayadev-vihar' },
+      { name: 'Nayapalli', slug: 'nayapalli' },
+      { name: 'Khandagiri & Jagamara', slug: 'khandagiri' },
+      { name: 'Chandrasekharpur', slug: 'chandrasekharpur' },
+      { name: 'Shree Vihar', slug: null },
+      { name: 'Jharpada & Cuttack Road', slug: null },
+      { name: 'Sailashree & Niladri Vihar', slug: null },
+      { name: 'Kalinga Nagar', slug: null },
     ],
   },
   {
     hub: 'Regional & Coastal Destinations',
     areas: [
-      'Cuttack CDA Sectors 1–14',
-      'Cuttack Cantonment & Link Road',
-      'Puri Marine Drive Luxury Villas',
-      'Khordha Metropolitan Area',
+      { name: 'Cuttack CDA Sectors 1–14', slug: null },
+      { name: 'Cuttack Cantonment & Link Road', slug: null },
+      { name: 'Puri Marine Drive Luxury Villas', slug: null },
+      { name: 'Khordha Metropolitan Area', slug: null },
     ],
   },
 ];
@@ -78,7 +79,7 @@ export default function LocalAreasServed() {
           </div>
 
           <Link
-            href="/contact"
+            href="/services/interior-design-bhubaneswar"
             data-cursor-expand
             style={{
               display: 'inline-flex',
@@ -95,7 +96,7 @@ export default function LocalAreasServed() {
               paddingBottom: '4px',
             }}
           >
-            Check Project Availability in Your Sector
+            Best Bhubaneswar Interior Design Packages
             <ArrowUpRight size={14} />
           </Link>
         </div>
@@ -105,6 +106,7 @@ export default function LocalAreasServed() {
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
             gap: '32px',
+            marginBottom: '40px',
           }}
         >
           {REGIONS.map((region) => (
@@ -141,26 +143,93 @@ export default function LocalAreasServed() {
               </div>
 
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-                {region.areas.map((area) => (
-                  <span
-                    key={area}
-                    style={{
-                      fontFamily: 'var(--font-sans)',
-                      fontSize: '0.86rem',
-                      letterSpacing: '0.02em',
-                      color: 'rgba(242,237,232,0.85)',
-                      background: 'rgba(255,255,255,0.04)',
-                      border: '1px solid rgba(242,237,232,0.1)',
-                      padding: '7px 14px',
-                      borderRadius: '2px',
-                    }}
-                  >
-                    {area}
-                  </span>
-                ))}
+                {region.areas.map((area) =>
+                  area.slug ? (
+                    <Link
+                      key={area.name}
+                      href={`/neighborhoods/${area.slug}`}
+                      style={{
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '0.86rem',
+                        letterSpacing: '0.02em',
+                        color: 'var(--gold)',
+                        background: 'rgba(184,151,90,0.08)',
+                        border: '1px solid rgba(184,151,90,0.3)',
+                        padding: '7px 14px',
+                        borderRadius: '2px',
+                        textDecoration: 'none',
+                        transition: 'all 0.2s ease',
+                      }}
+                    >
+                      {area.name} →
+                    </Link>
+                  ) : (
+                    <span
+                      key={area.name}
+                      style={{
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '0.86rem',
+                        letterSpacing: '0.02em',
+                        color: 'rgba(242,237,232,0.85)',
+                        background: 'rgba(255,255,255,0.04)',
+                        border: '1px solid rgba(242,237,232,0.1)',
+                        padding: '7px 14px',
+                        borderRadius: '2px',
+                      }}
+                    >
+                      {area.name}
+                    </span>
+                  )
+                )}
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Interior Design Flagship Callout */}
+        <div
+          style={{
+            background: 'rgba(184,151,90,0.05)',
+            border: '1px solid rgba(184,151,90,0.2)',
+            padding: '24px 28px',
+            borderRadius: '4px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '16px',
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <Sparkles size={18} color="var(--gold)" />
+            <p
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontSize: '0.92rem',
+                color: 'var(--off-white)',
+                margin: 0,
+              }}
+            >
+              Seeking Bhubaneswar’s best interior designers for your villa, flat or duplex?
+            </p>
+          </div>
+          <Link
+            href="/services/interior-design-bhubaneswar"
+            style={{
+              fontFamily: 'var(--font-sans)',
+              fontSize: '0.82rem',
+              fontWeight: 600,
+              letterSpacing: '0.08em',
+              textTransform: 'uppercase',
+              color: 'var(--charcoal)',
+              background: 'var(--gold)',
+              padding: '10px 20px',
+              textDecoration: 'none',
+              borderRadius: '2px',
+            }}
+          >
+            Explore Interior Rates & Packages →
+          </Link>
         </div>
       </div>
     </section>

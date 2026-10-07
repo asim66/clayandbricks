@@ -3,9 +3,9 @@ import ConsultationCTA from '@/components/home/ConsultationCTA';
 import ServicesGrid from '@/components/services/ServicesGrid';
 
 export const metadata = {
-  title: 'Interior Design, Architecture & Turnkey Services in Bhubaneswar | Clay and Bricks',
+  title: 'Turnkey Interior Design & Living Services in Bhubaneswar | Clay and Bricks',
   description:
-    "Premier interior designing company in Bhubaneswar offering luxury turnkey home interiors, bespoke modular kitchens, duplex styling, architecture, and civil construction with 10-year warranty.",
+    "Explore Bhubaneswar's best interior designing services. Bespoke residential villas, modular kitchens, duplexes, architecture, and turnkey contracting with 10-year warranty.",
   alternates: { canonical: '/services' },
 };
 

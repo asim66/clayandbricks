@@ -184,10 +184,36 @@ export default function LocalBusinessSchema() {
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '4.9',
-          reviewCount: '48',
+          reviewCount: '52',
           bestRating: '5',
           worstRating: '1',
         },
+        review: [
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Er. Soumya Ranjan Mohapatra' },
+            datePublished: '2025-11-14',
+            reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+            reviewBody:
+              'Clay and Bricks is undoubtedly the best interior designing company in Bhubaneswar. They handled our 8-bedroom villa in Shree Vihar with incredible craftsmanship—from architectural elevation to bespoke brass partitions, Italian Statuario marble, and modular kitchen.',
+          },
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Dr. Debasis Patnaik' },
+            datePublished: '2025-08-22',
+            reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+            reviewBody:
+              'The fluted timber feature wall and ambient lighting in our Laxmi Imperial apartment transformed the entire space into a five-star suite. The 3D render was executed down to the millimeter in real life with zero budget escalation.',
+          },
+          {
+            '@type': 'Review',
+            author: { '@type': 'Person', name: 'Bibhu Prasad Jena' },
+            datePublished: '2025-10-05',
+            reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+            reviewBody:
+              'Their understanding of sacred space geometry for our Mandir and modern master suite design in Patharagadia, Bhubaneswar exceeded our expectations. Truly the top interior design team in Odisha.',
+          },
+        ],
         potentialAction: {
           '@type': 'SearchAction',
           target: {

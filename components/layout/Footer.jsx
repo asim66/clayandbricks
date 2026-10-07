@@ -96,7 +96,7 @@ const NAV_COLS = [
   {
     heading: 'Interior Services',
     links: [
-      { label: 'Best Interior Design in Bhubaneswar', href: '/services/interior-design-bhubaneswar' },
+      { label: 'Best Interior Designing Company in Bhubaneswar', href: '/services/interior-design-bhubaneswar' },
       { label: 'Turnkey Luxury Interiors',            href: '/services/interior-design-bhubaneswar' },
       { label: 'Modular Kitchen Design',              href: '/services/modular-kitchen-bhubaneswar' },
       { label: 'Duplex Villa Interiors',              href: '/services/duplex-interior-design' },
