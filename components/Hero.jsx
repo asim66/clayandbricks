@@ -87,21 +87,21 @@ function MagneticCTA({ children, href, primary = true }) {
       onMouseLeave={handleMouseLeave}
       onMouseEnter={() => setHovered(true)}
       data-cursor-expand
-      className="inline-block"
+      className="inline-block w-full sm:w-auto"
     >
       <Link
         href={href}
-        className="group relative inline-flex items-center gap-4 overflow-hidden transition-all duration-300"
+        className="group relative inline-flex items-center justify-center gap-4 overflow-hidden transition-all duration-300 w-full sm:w-auto text-center"
         style={{
           padding: primary 
-            ? 'clamp(14px, 2vh, 18px) clamp(22px, 3.5vw, 40px)' 
-            : 'clamp(13px, 1.8vh, 17px) clamp(18px, 3vw, 32px)',
+            ? 'clamp(13px, 1.8vh, 18px) clamp(20px, 3.5vw, 40px)' 
+            : 'clamp(12px, 1.6vh, 17px) clamp(16px, 3vw, 32px)',
           background: primary ? 'var(--gold)' : 'rgba(26, 25, 23, 0.75)',
           backdropFilter: primary ? 'none' : 'blur(16px)',
           border: primary ? '1px solid var(--gold)' : '1px solid rgba(242, 237, 232, 0.25)',
           color: primary ? 'var(--charcoal)' : 'var(--off-white)',
           fontFamily: 'var(--font-sans)',
-          fontSize: 'clamp(0.78rem, 1.1vw, 0.86rem)',
+          fontSize: 'clamp(0.76rem, 1.1vw, 0.86rem)',
           fontWeight: 600,
           letterSpacing: '0.12em',
           textTransform: 'uppercase',
@@ -114,7 +114,7 @@ function MagneticCTA({ children, href, primary = true }) {
       >
         <span className="relative z-10">{children}</span>
         <motion.span
-          className="relative z-10"
+          className="relative z-10 shrink-0"
           animate={{ x: hovered ? 4 : 0, y: hovered ? -3 : 0 }}
           transition={{ duration: 0.25 }}
         >
@@ -338,59 +338,59 @@ export default function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="pt-5 border-t border-white/12 grid grid-cols-2 lg:flex lg:items-center lg:justify-between gap-y-5 gap-x-4 sm:gap-x-8 lg:gap-0"
+          className="pt-5 border-t border-white/12 grid grid-cols-2 md:grid-cols-4 lg:flex lg:items-center lg:justify-between gap-y-4 gap-x-2.5 sm:gap-x-6 md:gap-x-4 lg:gap-0"
         >
-          <div className="flex items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
-              <ShieldCheck size={17} className="text-[var(--gold)]" />
+          <div className="flex items-center gap-2 sm:gap-3.5 min-w-0">
+            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
+              <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[var(--gold)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
+              <div className="font-serif text-[0.88rem] sm:text-lg lg:text-xl xl:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 100% Turnkey
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
+              <div className="text-[0.6rem] sm:text-[0.72rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 Zero Subcontractor Drift
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
-              <Compass size={17} className="text-[var(--terracotta)]" />
+          <div className="flex items-center gap-2 sm:gap-3.5 min-w-0">
+            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
+              <Compass className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[var(--terracotta)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
+              <div className="font-serif text-[0.88rem] sm:text-lg lg:text-xl xl:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 15+ Years
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
+              <div className="text-[0.6rem] sm:text-[0.72rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 Odisha Architectural Heritage
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
-              <Award size={17} className="text-[var(--gold)]" />
+          <div className="flex items-center gap-2 sm:gap-3.5 min-w-0">
+            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[var(--gold)]/12 border border-[var(--gold)]/35 flex items-center justify-center shrink-0">
+              <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[var(--gold)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
+              <div className="font-serif text-[0.88rem] sm:text-lg lg:text-xl xl:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 10-Year Warranty
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
+              <div className="text-[0.6rem] sm:text-[0.72rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 Structural EPC Guarantee
               </div>
             </div>
           </div>
 
-          <div className="flex items-center gap-2.5 sm:gap-3.5">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
-              <Layers size={17} className="text-[var(--terracotta)]" />
+          <div className="flex items-center gap-2 sm:gap-3.5 min-w-0">
+            <div className="w-7 h-7 sm:w-10 sm:h-10 rounded-full bg-[var(--terracotta)]/12 border border-[var(--terracotta)]/35 flex items-center justify-center shrink-0">
+              <Layers className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[var(--terracotta)]" />
             </div>
             <div className="min-w-0">
-              <div className="font-serif text-base sm:text-xl lg:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
+              <div className="font-serif text-[0.88rem] sm:text-lg lg:text-xl xl:text-2xl text-[var(--off-white)] leading-tight sm:whitespace-nowrap">
                 Direct Millwork
               </div>
-              <div className="text-[0.66rem] sm:text-[0.74rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
+              <div className="text-[0.6rem] sm:text-[0.72rem] text-white/60 tracking-wider uppercase mt-0.5 leading-snug sm:whitespace-nowrap">
                 German CNC Precision
               </div>
             </div>

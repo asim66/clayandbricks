@@ -86,20 +86,22 @@ export default function ConsultationCTA() {
           <Link
             href="/contact"
             data-cursor-expand
+            className="w-full sm:w-auto text-center"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
+              justifyContent: 'center',
               gap: '10px',
               background: 'var(--gold)',
               color: 'var(--charcoal)',
-              padding: '16px 36px',
+              padding: 'clamp(14px, 2vh, 16px) clamp(20px, 4vw, 36px)',
               borderRadius: '4px',
               textDecoration: 'none',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.86rem',
-              letterSpacing: '0.14em',
+              fontSize: 'clamp(0.78rem, 1vw, 0.86rem)',
+              letterSpacing: '0.12em',
               textTransform: 'uppercase',
-              fontWeight: 500,
+              fontWeight: 600,
               boxShadow: '0 8px 30px rgba(184,151,90,0.3)',
               transition: 'all 0.3s ease',
             }}
@@ -113,19 +115,21 @@ export default function ConsultationCTA() {
             target="_blank"
             rel="noopener noreferrer"
             data-cursor-expand
+            className="w-full sm:w-auto text-center"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
+              justifyContent: 'center',
               gap: '10px',
               background: 'rgba(255,255,255,0.06)',
               border: '1px solid rgba(184,151,90,0.3)',
               color: 'var(--off-white)',
-              padding: '16px 28px',
+              padding: 'clamp(14px, 2vh, 16px) clamp(20px, 4vw, 28px)',
               borderRadius: '4px',
               textDecoration: 'none',
               fontFamily: 'var(--font-sans)',
-              fontSize: '0.86rem',
-              letterSpacing: '0.14em',
+              fontSize: 'clamp(0.78rem, 1vw, 0.86rem)',
+              letterSpacing: '0.12em',
               textTransform: 'uppercase',
               fontWeight: 500,
               transition: 'background 0.3s ease',

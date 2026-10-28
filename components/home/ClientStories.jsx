@@ -52,19 +52,19 @@ export default function ClientStories() {
     <section
       style={{
         background: '#151412',
-        padding: 'clamp(80px, 12vh, 140px) clamp(24px, 6vw, 96px)',
+        padding: 'clamp(70px, 10vh, 140px) clamp(16px, 5vw, 96px)',
         position: 'relative',
         borderTop: '1px solid rgba(242,237,232,0.06)',
       }}
     >
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         {/* Section Header */}
-        <div style={{ textAlign: 'center', marginBottom: 'clamp(40px, 6vh, 64px)' }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(36px, 5vh, 64px)' }}>
           <SectionLabel number="05" label="Client Trust" color="var(--gold)" />
           <h2
             style={{
               fontFamily: 'var(--font-serif)',
-              fontSize: 'clamp(2.2rem, 4.5vw, 4.2rem)',
+              fontSize: 'clamp(2.1rem, 4.5vw, 4.2rem)',
               fontWeight: 300,
               color: 'var(--off-white)',
               lineHeight: 1.1,
@@ -82,7 +82,7 @@ export default function ClientStories() {
             background: 'linear-gradient(135deg, rgba(35,34,31,0.95) 0%, rgba(24,23,21,0.98) 100%)',
             border: '1px solid rgba(184,151,90,0.25)',
             borderRadius: '12px',
-            padding: 'clamp(32px, 6vw, 64px)',
+            padding: 'clamp(24px, 5vw, 64px)',
             position: 'relative',
             boxShadow: '0 24px 60px rgba(0,0,0,0.6)',
           }}
@@ -91,13 +91,13 @@ export default function ClientStories() {
           <div
             style={{
               position: 'absolute',
-              top: '24px',
-              right: '32px',
+              top: 'clamp(16px, 3vh, 24px)',
+              right: 'clamp(16px, 3vw, 32px)',
               color: 'rgba(184,151,90,0.12)',
               pointerEvents: 'none',
             }}
           >
-            <Quote size={80} strokeWidth={1} />
+            <Quote className="w-10 h-10 sm:w-16 sm:h-16" strokeWidth={1} />
           </div>
 
           <div style={{ display: 'flex', gap: '4px', marginBottom: '24px' }}>

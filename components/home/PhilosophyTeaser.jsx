@@ -17,33 +17,28 @@ export default function PhilosophyTeaser() {
       ref={ref}
       style={{
         background:    'var(--charcoal)',
-        padding:       'clamp(100px, 14vh, 180px) clamp(24px, 6vw, 96px)',
+        padding:       'clamp(80px, 12vh, 180px) clamp(16px, 5vw, 96px)',
         position:      'relative',
         overflow:      'hidden',
       }}
     >
       {/* Section label */}
-      <div style={{ marginBottom: 'clamp(48px, 6vh, 80px)' }}>
+      <div style={{ marginBottom: 'clamp(36px, 5vh, 80px)' }}>
         <SectionLabel number="01" label="Philosophy" color="var(--terracotta)" />
       </div>
 
-      {/* Asymmetric two-column layout */}
+      {/* Asymmetric responsive layout (1 col on mobile / fold outer, 2 col on md / fold inner) */}
       <div
-        style={{
-          display:             'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap:                 'clamp(32px, 6vw, 80px)',
-          alignItems:          'end',
-        }}
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-[clamp(32px,6vw,80px)] items-end"
       >
         {/* Left: large serif statement */}
         <motion.div style={{ y: leftY }}>
           <h2
             style={{
               fontFamily:    'var(--font-serif)',
-              fontSize:      'clamp(2.2rem, 5.5vw, 6.5rem)',
+              fontSize:      'clamp(2.1rem, 5.5vw, 6.5rem)',
               fontWeight:    300,
-              lineHeight:    1.05,
+              lineHeight:    1.06,
               letterSpacing: '-0.025em',
               color:         'var(--off-white)',
             }}
@@ -64,7 +59,7 @@ export default function PhilosophyTeaser() {
               width:        '100%',
               height:       '1px',
               background:   'linear-gradient(90deg, var(--terracotta) 0%, transparent 100%)',
-              marginBottom: '32px',
+              marginBottom: 'clamp(20px, 3vh, 32px)',
               opacity:      0.6,
             }}
             aria-hidden="true"
@@ -72,13 +67,13 @@ export default function PhilosophyTeaser() {
           <h2
             style={{
               fontFamily:    'var(--font-serif)',
-              fontSize:      'clamp(2.2rem, 5.5vw, 6.5rem)',
+              fontSize:      'clamp(2.1rem, 5.5vw, 6.5rem)',
               fontWeight:    300,
               fontStyle:     'italic',
-              lineHeight:    1.05,
+              lineHeight:    1.06,
               letterSpacing: '-0.025em',
               color:         'rgba(242,237,232,0.78)',
-              marginBottom:  '36px',
+              marginBottom:  'clamp(20px, 3vh, 36px)',
             }}
           >
             not how the world assumes it should.
@@ -86,9 +81,9 @@ export default function PhilosophyTeaser() {
           <p
             style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      'clamp(0.96rem, 1.25vw, 1.1rem)',
+              fontSize:      'clamp(0.92rem, 1.25vw, 1.1rem)',
               fontWeight:    400,
-              lineHeight:    1.8,
+              lineHeight:    1.75,
               color:         'rgba(242,237,232,0.82)',
               maxWidth:      '440px',
               letterSpacing: '0.015em',
@@ -99,20 +94,18 @@ export default function PhilosophyTeaser() {
         </motion.div>
       </div>
 
-      {/* Bottom: large faint counter */}
+      {/* Bottom: responsive counter strip */}
       <div
+        className="flex flex-wrap items-center justify-between sm:justify-end gap-5 sm:gap-[clamp(32px,5vw,72px)]"
         style={{
-          display:        'flex',
-          justifyContent: 'flex-end',
-          marginTop:      'clamp(60px, 8vh, 100px)',
-          gap:            'clamp(32px, 5vw, 72px)',
+          marginTop: 'clamp(44px, 7vh, 100px)',
         }}
       >
         {[['150+', 'Projects Delivered'], ['15', 'Years of Craft'], ['₹ 500Cr+', 'Value Constructed']].map(([num, label]) => (
-          <div key={label} style={{ textAlign: 'right' }}>
+          <div key={label} className="text-left sm:text-right flex-1 sm:flex-initial min-w-[85px]">
             <span style={{
               fontFamily:    'var(--font-serif)',
-              fontSize:      'clamp(2rem, 4vw, 4.5rem)',
+              fontSize:      'clamp(1.8rem, 4vw, 4.5rem)',
               fontWeight:    300,
               color:         'var(--gold)',
               display:       'block',
@@ -121,11 +114,13 @@ export default function PhilosophyTeaser() {
             }}>{num}</span>
             <span style={{
               fontFamily:    'var(--font-sans)',
-              fontSize:      '0.74rem',
+              fontSize:      'clamp(0.62rem, 0.9vw, 0.74rem)',
               fontWeight:    500,
-              letterSpacing: '0.18em',
+              letterSpacing: '0.14em',
               textTransform: 'uppercase',
               color:         'rgba(242,237,232,0.7)',
+              display:       'block',
+              marginTop:     '4px',
             }}>{label}</span>
           </div>
         ))}

@@ -112,13 +112,13 @@ export default function TurnkeyProcess() {
                 key={step.number}
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-50px' }}
+                viewport={{ once: true, margin: '0px' }}
                 transition={{ duration: 0.6, delay: idx * 0.1 }}
                 style={{
                   background: '#1c1b18',
                   border: '1px solid rgba(184,151,90,0.16)',
                   borderRadius: '8px',
-                  padding: '32px 28px',
+                  padding: 'clamp(24px, 4vw, 32px) clamp(18px, 3.5vw, 28px)',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',

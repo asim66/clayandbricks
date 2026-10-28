@@ -142,13 +142,13 @@ export default function WhyChooseUs() {
                 key={adv.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
+                viewport={{ once: true, margin: '0px' }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
                 style={{
                   background: '#1b1a17',
                   border: '1px solid rgba(184,151,90,0.16)',
                   borderRadius: '6px',
-                  padding: '32px 28px',
+                  padding: 'clamp(24px, 4vw, 32px) clamp(18px, 3.5vw, 28px)',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',

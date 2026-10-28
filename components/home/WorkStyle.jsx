@@ -119,13 +119,13 @@ export default function WorkStyle() {
                 key={pillar.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
+                viewport={{ once: true, margin: '0px' }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
                 style={{
                   background: 'linear-gradient(135deg, rgba(32,30,27,0.85) 0%, rgba(22,21,19,0.95) 100%)',
                   border: '1px solid rgba(184,151,90,0.18)',
                   borderRadius: '8px',
-                  padding: '36px 30px',
+                  padding: 'clamp(24px, 4vw, 36px) clamp(18px, 3.5vw, 30px)',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',

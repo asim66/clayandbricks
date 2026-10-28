@@ -143,6 +143,7 @@ export default function NavOverlay({ isOpen, onClose }) {
                   Clay and Bricks
                 </span>
                 <span
+                  className="hidden sm:block"
                   style={{
                     fontFamily: 'var(--font-sans)',
                     fontSize: '0.62rem',

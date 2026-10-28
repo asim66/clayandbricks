@@ -133,11 +133,11 @@ export default function ServicesGrid() {
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-40px' }}
+                  viewport={{ once: true, margin: '0px' }}
                   transition={{ duration: 0.6, delay: (idx % 3) * 0.1, ease: [0.25, 1, 0.35, 1] }}
                   style={{
                     position: 'relative',
-                    padding: 'clamp(32px, 5vw, 60px) clamp(20px, 4vw, 40px)',
+                    padding: 'clamp(28px, 4vw, 60px) clamp(16px, 3.5vw, 40px)',
                     background: 'rgba(26,24,24,0.4)',
                     border: '1px solid rgba(255,255,255,0.06)',
                     borderRadius: '0',
@@ -145,7 +145,7 @@ export default function ServicesGrid() {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '390px',
+                    minHeight: 'clamp(320px, 38vh, 390px)',
                     width: '100%',
                     cursor: 'pointer',
                   }}

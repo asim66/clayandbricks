@@ -51,16 +51,19 @@ function MagneticLogo() {
           }}>
             Clay and Bricks
           </span>
-          <span style={{
-            fontFamily:    'var(--font-sans)',
-            fontSize:      'clamp(0.56rem, 0.9vw, 0.68rem)',
-            fontWeight:    500,
-            letterSpacing: '0.14em',
-            textTransform: 'uppercase',
-            color:         'var(--gold)',
-            lineHeight:    1.2,
-            whiteSpace:    'nowrap',
-          }}>
+          <span
+            className="hidden sm:block"
+            style={{
+              fontFamily:    'var(--font-sans)',
+              fontSize:      'clamp(0.56rem, 0.9vw, 0.68rem)',
+              fontWeight:    500,
+              letterSpacing: '0.14em',
+              textTransform: 'uppercase',
+              color:         'var(--gold)',
+              lineHeight:    1.2,
+              whiteSpace:    'nowrap',
+            }}
+          >
             Interior Design & Turnkey Living
           </span>
         </div>
@@ -124,9 +127,9 @@ export default function Header() {
           <Link
             href="/services/interior-design-bhubaneswar"
             data-cursor-expand
+            className="hidden min-[480px]:inline-flex"
             style={{
               textDecoration: 'none',
-              display: 'inline-flex',
               alignItems: 'center',
               gap: '6px',
               padding: '6px 14px',

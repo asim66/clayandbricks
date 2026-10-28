@@ -88,20 +88,22 @@ function ServiceBlock({ item }) {
       ref={ref}
       style={{
         position: 'relative',
-        marginBottom: 'clamp(120px, 15vh, 200px)',
+        marginBottom: 'clamp(80px, 12vh, 180px)',
         display: 'flex',
         flexDirection: 'column',
         alignItems: item.align === 'right' ? 'flex-end' : 'flex-start',
+        overflow: 'hidden',
+        width: '100%',
       }}
     >
-      {/* Massive Typographic Watermark */}
+      {/* Massive Typographic Watermark (Contained within bounds) */}
       <div
         style={{
           position: 'absolute',
           top: '-10%',
-          [item.align === 'right' ? 'left' : 'right']: '-5%',
+          [item.align === 'right' ? 'left' : 'right']: '0%',
           fontFamily: 'var(--font-serif)',
-          fontSize: 'clamp(8rem, 20vw, 18rem)',
+          fontSize: 'clamp(6rem, 18vw, 16rem)',
           fontWeight: 300,
           color: 'rgba(255,255,255,0.03)',
           zIndex: 0,
@@ -113,13 +115,14 @@ function ServiceBlock({ item }) {
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-100px' }}
-        transition={{ duration: 0.8, ease: [0.25, 1, 0.35, 1] }}
+        viewport={{ once: true, margin: '0px' }}
+        transition={{ duration: 0.7, ease: [0.25, 1, 0.35, 1] }}
         style={{
           position: 'relative',
-          width: item.aspectRatio === '3/4' ? '70%' : '90%',
+          width: '100%',
+          maxWidth: item.aspectRatio === '3/4' ? '440px' : '640px',
           aspectRatio: item.aspectRatio,
           zIndex: 1,
         }}
@@ -142,16 +145,15 @@ function ServiceBlock({ item }) {
           y: yParallax,
           position: 'relative',
           zIndex: 10,
-          marginTop: '-15%', // Pull the card up over the image
+          marginTop: '-12%', // Pull the card up over the image
           [item.align === 'right' ? 'marginLeft' : 'marginRight']: 'auto',
-          [item.align === 'right' ? 'marginRight' : 'marginLeft']: '10%',
-          width: '85%',
-          maxWidth: '540px',
-          background: 'rgba(26,24,24,0.6)',
+          [item.align === 'right' ? 'marginRight' : 'marginLeft']: 'clamp(0px, 5vw, 10%)',
+          width: 'min(92%, 540px)',
+          background: 'rgba(26,24,24,0.7)',
           backdropFilter: 'blur(16px)',
           WebkitBackdropFilter: 'blur(16px)',
           border: '1px solid rgba(255,255,255,0.08)',
-          padding: 'clamp(24px, 4vw, 48px)',
+          padding: 'clamp(20px, 4vw, 48px)',
         }}
       >
         {/* Subtle grid lines on card */}
@@ -161,10 +163,10 @@ function ServiceBlock({ item }) {
         <h3
           style={{
             fontFamily: 'var(--font-serif)',
-            fontSize: 'clamp(1.5rem, 2.2vw, 2.2rem)',
+            fontSize: 'clamp(1.4rem, 2.2vw, 2.2rem)',
             fontWeight: 300,
             color: 'var(--off-white)',
-            marginBottom: '16px',
+            marginBottom: '14px',
             letterSpacing: '-0.01em',
             position: 'relative',
           }}
@@ -174,7 +176,7 @@ function ServiceBlock({ item }) {
         <p
           style={{
             fontFamily: 'var(--font-sans)',
-            fontSize: 'clamp(0.96rem, 1.2vw, 1.08rem)',
+            fontSize: 'clamp(0.92rem, 1.2vw, 1.08rem)',
             color: 'rgba(242,237,232,0.85)',
             fontWeight: 400,
             lineHeight: 1.75,
@@ -194,17 +196,17 @@ function CategorySection({ number, title, color, items, isLast }) {
       style={{
         display: 'flex',
         flexWrap: 'wrap',
-        gap: 'clamp(40px, 6vw, 80px)',
+        gap: 'clamp(36px, 6vw, 80px)',
         position: 'relative',
-        paddingBottom: 'clamp(80px, 10vh, 120px)',
+        paddingBottom: 'clamp(60px, 10vh, 120px)',
         borderBottom: isLast ? 'none' : '1px solid rgba(255,255,255,0.08)',
-        marginBottom: isLast ? '0' : 'clamp(80px, 10vh, 120px)',
+        marginBottom: isLast ? '0' : 'clamp(60px, 10vh, 120px)',
       }}
     >
       {/* Sticky Left Column */}
       <div
         style={{
-          flex: '1 1 340px',
+          flex: '1 1 min(100%, 300px)',
           position: 'relative',
         }}
       >
